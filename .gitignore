@@ -10,3 +10,7 @@
 
 # Always include this file itself
 !.gitignore
+
+# Ignore build output directories everywhere
+**/bin/
+**/obj/
