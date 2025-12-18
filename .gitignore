@@ -1,0 +1,12 @@
+# Track only C# source files across the repo
+# Ignore everything by default
+*
+
+# Allow directory traversal so patterns below can match files in subfolders
+!*/
+
+# Whitelist C# source files
+!*.cs
+
+# Always include this file itself
+!.gitignore
