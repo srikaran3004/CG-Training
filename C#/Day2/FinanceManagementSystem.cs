@@ -1,3 +1,4 @@
+#nullable disable
 using System;
 
 class Debit
@@ -17,16 +18,25 @@ class Debit
     public void emiCheck()
     {
         Console.Write("Enter monthly income: ");
-        double inc = double.Parse(Console.ReadLine());
+        if (!double.TryParse(Console.ReadLine(), out double monthlyIncome) || monthlyIncome <= 0)
+        {
+            Console.WriteLine("Invalid income amount.");
+            return;
+        }
 
-        Console.Write("Enter EMI amount: ");
-        double emi = double.Parse(Console.ReadLine());
+        Console.Write("Enter monthly EMI amount: ");
+        if (!double.TryParse(Console.ReadLine(), out double monthlyEmi) || monthlyEmi <= 0)
+        {
+            Console.WriteLine("Invalid Transaction.");
+            return;
+        }
 
-        if (emi <= inc * 0.40)
+        if (monthlyEmi <= monthlyIncome * 0.40)
             Console.WriteLine("EMI is financially manageable.");
         else
             Console.WriteLine("EMI exceeds safe income limit.");
     }
+
 
     public void dailySpend()
     {
@@ -108,7 +118,7 @@ class Credit
     }
 }
 
-class FinanceManagementSystem
+class FinancialManagementSystem
 {
     public static void calculate()
     {
@@ -118,7 +128,7 @@ class FinanceManagementSystem
 
         do
         {
-            Console.WriteLine("\n1. Debit Operations");
+            Console.WriteLine("1. Debit Operations");
             Console.WriteLine("2. Credit Operations");
             Console.WriteLine("3. Exit");
             Console.Write("Enter choice: ");
@@ -136,11 +146,16 @@ class FinanceManagementSystem
 
                     switch (dch)
                     {
-                        case 1: d.atmLimit(); break;
-                        case 2: d.emiCheck(); break;
-                        case 3: d.dailySpend(); break;
-                        case 4: d.minBalCheck(); break;
-                        default: Console.WriteLine("Invalid choice"); break;
+                        case 1:
+                            d.atmLimit(); break;
+                        case 2:
+                            d.emiCheck(); break;
+                        case 3:
+                            d.dailySpend(); break;
+                        case 4:
+                            d.minBalCheck(); break;
+                        default:
+                            Console.WriteLine("Invalid choice"); break;
                     }
                     break;
 
@@ -154,11 +169,16 @@ class FinanceManagementSystem
 
                     switch (cch)
                     {
-                        case 1: c.netSalary(); break;
-                        case 2: c.fdMaturity(); break;
-                        case 3: c.rewardPoints(); break;
-                        case 4: c.bonusCheck(); break;
-                        default: Console.WriteLine("Invalid choice"); break;
+                        case 1:
+                            c.netSalary(); break;
+                        case 2:
+                            c.fdMaturity(); break;
+                        case 3:
+                            c.rewardPoints(); break;
+                        case 4:
+                            c.bonusCheck(); break;
+                        default:
+                            Console.WriteLine("Invalid choice"); break;
                     }
                     break;
 
