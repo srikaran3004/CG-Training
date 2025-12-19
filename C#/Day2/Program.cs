@@ -18,6 +18,6 @@ class Program
             cnt--;
         }
         **/
-        BreakStatement.calculate();
+        FinancialControlSystem.calculate();
     }
 }
