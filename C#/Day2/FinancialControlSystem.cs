@@ -51,7 +51,7 @@ class FinancialControlSystem
                     Console.WriteLine($"Tax calculated: Rs{tax}");
                     break;
                 case 3:
-                    Console.WriteLine("Please Enter 5 Transacations");
+                    Console.WriteLine("Enter 5 Transacations");
                     int cnt = 0;
                     while (cnt < 5)
                     {
