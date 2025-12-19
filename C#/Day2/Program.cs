@@ -18,6 +18,6 @@ class Program
             cnt--;
         }
         **/
-        FinancialControlSystem.calculate();
+        FinancialManagementSystem.calculate();
     }
 }

@@ -8,7 +8,7 @@ class FinancialControlSystem
             Console.WriteLine("Main Menu: ");
             Console.WriteLine("1. Check Loan Eligibility");
             Console.WriteLine("2. Calculate tax");
-            Console.WriteLine("3. Enter Transactions");
+            Console.WriteLine("3. Enter User Transactions");
             Console.WriteLine("4. Exit");
             Console.WriteLine("Enter User Choice");
             int num = Convert.ToInt32(Console.ReadLine());
@@ -62,7 +62,7 @@ class FinancialControlSystem
                             Console.WriteLine("Invalid Transaction");
                             continue;
                         }
-                        Console.WriteLine($"Added to Curr Balance: {amt}");
+                        Console.WriteLine($"Added to Current Balance: {amt}");
                         cnt++;
                     }
                     break;
