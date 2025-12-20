@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
 class Program
 {
@@ -19,13 +18,14 @@ class Program
         BankAccount acc1 = new BankAccount();
         acc1.AccNum = 101;
         acc1.Deposit(10000);
-        **/
-        int sum1 = MathOps.add(10, 20);
-        double sum2 = MathOps.add(10.5, 20.3);
-        int sum3 = MathOps.add(1, 2, 3);
 
-        Console.WriteLine($"Sum of 2 ints: {sum1}");
-        Console.WriteLine($"Sum of 2 doubles: {sum2}");
-        Console.WriteLine($"Sum of 3 ints: {sum3}");
+        // calling ref example
+        int q, r;
+        ABC.Divide(10, 3, out q, out r);
+
+        Console.WriteLine("Quotient: " + q);
+        Console.WriteLine("Remainder: " + r);
+        **/
+        ABC.calculate();
     }
 }

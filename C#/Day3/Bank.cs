@@ -29,7 +29,7 @@ class Employee
 // Example: Aadhaar number, PAN number, Customer ID.
 class Wallet
 {
-    private double money;
+    private double money; //Here we have encapsulated the Wallet money, else it can be accessed and it could have been chnaged.
 
     public void addMoney(double amt)
     {
