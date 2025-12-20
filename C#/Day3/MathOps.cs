@@ -28,3 +28,4 @@ class MathOps
 //so that if we create a object m1 and use m1.add(2,3) or m1.add(3,4) or m1.add(0.3,4,0.5) then it automatically uses which add method it should use.
 // In C#, default (optional) parameters must always be placed after required parameters in a method declaration, otherwise a compile-time error occurs
 //In foreach loop "in" keyword is called membership operator.
+//A local method is the method that is defined inside another method, local method can use variables defined inside parent method and outside local method.

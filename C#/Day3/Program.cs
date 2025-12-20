@@ -25,7 +25,9 @@ class Program
 
         Console.WriteLine("Quotient: " + q);
         Console.WriteLine("Remainder: " + r);
+        Func<int, int> square = x => x * x;
+        Console.WriteLine(square(4));
         **/
-        ABC.calculate();
+        Calculator.calculate();
     }
 }
