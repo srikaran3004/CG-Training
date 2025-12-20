@@ -1,37 +1,31 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+
 class Program
 {
     static void Main()
     {
-        BankAccount acc1 = new BankAccount(); //Here first BankAccount acts as datatype for acc1 and next BankAccount represents obj of that class.
-        acc1.AccNum = 101;
-        acc1.balance = 10000;
+        /**
+        Wallet w1 = new Wallet();
+        w1.addMoney(5000);
+
+        Console.WriteLine($"Available amount: {w1.getBalance()}");
+
         Employee emp1 = new Employee();
         emp1.EmpName = "Srikaran";
         emp1.salary = 80000;
         emp1.displayDetails();
-    }
-}
-//static fields are accessed by the whole class.
-class BankAccount
-{
-    public int AccNum;
-    private double balance;
-    public void Deposit(double amt)
-    {
-        balance += amt;
-        Console.WriteLine($"Updated balance :{balance}");
-    }
-}
 
-class Employee
-{
-    public string EmpName = "";
-    public double salary;
-    public void displayDetails()
-    {
-        Console.WriteLine($"Employee {EmpName} earns {salary}");
+        BankAccount acc1 = new BankAccount();
+        acc1.AccNum = 101;
+        acc1.Deposit(10000);
+        **/
+        int sum1 = MathOps.add(10, 20);
+        double sum2 = MathOps.add(10.5, 20.3);
+        int sum3 = MathOps.add(1, 2, 3);
+
+        Console.WriteLine($"Sum of 2 ints: {sum1}");
+        Console.WriteLine($"Sum of 2 doubles: {sum2}");
+        Console.WriteLine($"Sum of 3 ints: {sum3}");
     }
 }
-
