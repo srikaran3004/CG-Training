@@ -4,7 +4,7 @@ class RevNum
     public static void calculate()
 
     {
-        int num = Convert.ToInt32(Console.WriteLine());
+        int num = Convert.ToInt32(Console.ReadLine());
         int rev = 0;
         while (num > 0)
         {
