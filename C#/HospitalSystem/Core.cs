@@ -1,36 +1,69 @@
 using System;
+
 class Patient
 {
-    public int PatId { get; }
+    public int PatientId { get; }
     public string Name { get; set; }
     public int Age { get; set; }
-    private string medicalHistory;
-    public Patient()
-    {
-        PatId = 0;
-        Name = "";
-        Age = 0;
-    }
+
+    private string medicalHistory = "";
+
     public Patient(int id, string name, int age)
     {
-        PatId = id;
+        PatientId = id;
         Name = name;
         Age = age;
     }
-    public setHistory(string history)
+
+    public void SetMedicalHistory(string history)
     {
-        return medicalhistory;
+        medicalHistory = history;
+    }
+
+    public string GetMedicalHistory()
+    {
+        return medicalHistory;
     }
 }
 
 class Doctor
 {
     public string Name { get; set; }
-    public string Spec { get; set; }
-    public readonly string LicenceNo;
-    public static int DocCnt;
+    public string Specialization { get; set; }
+    public readonly string LicenseNumber;
+
+    public static int TotalDoctors;
+
     static Doctor()
     {
-        
+        TotalDoctors = 0;
+        Console.WriteLine("Doctor system initialized");
+    }
+
+    public Doctor(string name, string specialization, string license)
+    {
+        Name = name;
+        Specialization = specialization;
+        LicenseNumber = license;
+        TotalDoctors++;
+    }
+}
+
+class Appointment
+{
+    public void Schedule(Patient patient, Doctor doctor)
+    {
+        Console.WriteLine("Appointment scheduled");
+        Console.WriteLine("Patient: " + patient.Name);
+        Console.WriteLine("Doctor: " + doctor.Name);
+    }
+
+    public void Schedule(Patient patient, Doctor doctor, DateTime date, string mode = "Offline")
+    {
+        Console.WriteLine("Appointment scheduled");
+        Console.WriteLine("Patient: " + patient.Name);
+        Console.WriteLine("Doctor: " + doctor.Name);
+        Console.WriteLine("Date: " + date.ToShortDateString());
+        Console.WriteLine("Mode: " + mode);
     }
 }
