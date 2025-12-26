@@ -111,14 +111,87 @@ class Program
         {
             Console.WriteLine($"Value of {i} is {i.Value}");
         }
-        **/
-        HashSet<int>st=new HashSet<int>();
+        HashSet<int> st = new HashSet<int>();
+        st.Add(3);
         st.Add(1);
         st.Add(1);
         st.Add(3);
-        foreach(int i in st)
+        st.Add(1);
+        st.Add(100);
+        st.Add(50);
+        st.Add(2);
+        foreach (int i in st)
         {
             Console.WriteLine(i);
         }
+        HashSet<int> st = new HashSet<int>();
+        for (int i = 1; i <= 20; i++)
+        {
+            st.Add(i);
+        }
+
+        foreach (int i in st)
+        {
+            Console.Write(i + " ");
+        }
+        SortedList<string, string> l = new SortedList<string, string>();
+        l.Add("b", "B");
+        l.Add("c", "C");
+        l.Add("d", "C"); //Keys should be unique in this, Values can be duplicate.
+        foreach (string s in l.Keys)
+        {
+            Console.WriteLine($"{s} : {l[s]}");
+        }
+        Dictionary<int, string> d = new Dictionary<int, string>();
+        d.Add(0, "user");
+        d.Add(1, "admin");
+        if(d.TryGetValue(1, out string? value))
+        {
+            Console.WriteLine(value);
+        }
+        d.Remove(1);
+        d.Add(1, "admin");
+
+--------  Ferquency of Number using Dictionary ---------
+        int[] arr = { 1, 2, 3, 2, 1, 4, 2 };
+        Dictionary<int, int> d = new Dictionary<int, int>();
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (d.ContainsKey(arr[i]))
+            {
+                d[arr[i]] += 1;
+            }
+            else
+            {
+                d[arr[i]] = 1;
+            }
+        }
+        foreach (int i in d.Keys)
+        {
+            Console.WriteLine($"Freq of {i} is {d[i]}");
+        }
+-------- Merge two sorted Arrays -------------
+        int[] arr1 = { 1, 3, 5 };
+        int[] arr2 = { 2, 4, 6 };
+        int i = 0, j = 0, k = 0;
+        int[] merged = new int[arr1.Length + arr2.Length];
+        while (i < arr1.Length && j < arr2.Length)
+        {
+            merged[k++] = arr1[i] <= arr2[j] ? arr1[i++] : arr2[j++];
+        }
+        while (i < arr1.Length)
+        {
+            merged[k++] = arr1[i++];
+        }
+        while (j < arr2.Length)
+        {
+            merged[k++] = arr2[j++];
+        }
+        foreach (int v in merged)
+        {
+            Console.Write(v + " ");
+        }
+        Console.WriteLine();
+        **/
     }
 }
