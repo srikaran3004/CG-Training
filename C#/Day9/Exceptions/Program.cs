@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Data.SqlClient;
-/**
 
 
 class InsufficientBalanceException : Exception
 {
     public InsufficientBalanceException(string message) : base(message) { }
 }
+/**
 class BankAccount
 {
     public decimal Balance { get; private set; } = 5000;
@@ -127,6 +127,26 @@ class Program
             // Wrap low-level exception into higher-level exception
             throw new Exception("Database operation failed in Service Layer", ex);
         }
+        try
+        {
+            try
+            {
+                File.ReadAllText("transactions.txt");
+            }
+            catch (IOException ioEx)
+            {
+                throw new ApplicationException(
+                    "Unable to load transaction data",
+                    ioEx
+                );
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Message: " + ex.Message);
+            Console.WriteLine("Root Cause: " + ex.InnerException.Message);
+        }
         **/
+        
     }
 }
