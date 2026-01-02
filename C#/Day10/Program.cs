@@ -148,7 +148,12 @@ class Program
         // Console.WriteLine("Order by Marks (Descending):");
         // foreach (var s in marksDesc)
         //     Console.WriteLine($"{s.Name} - {s.Marks}");
+        using (ResourceHandler handler = new ResourceHandler())
+        {
+            Console.WriteLine("Using resource...");
+        }
 
+        Console.WriteLine("End of program.");
     }
     // static void CreateObjects()
     // {
@@ -158,11 +163,23 @@ class Program
     //     }
     // }
 }
-class Student
+class ResourceHandler : IDisposable
 {
-    public string? Name { get; set; }
-    public int Marks { get; set; }
+    public ResourceHandler()
+    {
+        Console.WriteLine("Resource acquired.");
+    }
+    public void Dispose()
+    {
+        Console.WriteLine("Resource disposed.");
+    }
 }
+
+// class Student
+// {
+//     public string? Name { get; set; }
+//     public int Marks { get; set; }
+// }
 // class MyClass
 // {
 //     ~MyClass()
