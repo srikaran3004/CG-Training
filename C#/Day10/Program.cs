@@ -191,3 +191,4 @@ class ResourceHandler : IDisposable
 //In C# finalizer looks as destructor.
 // LINQ (Language Integrated Query) is a feature of C# that allows developers to query, filter, transform,
 // and manipulate data using SQL-Iike syntax directly inside thq C# language.
+
