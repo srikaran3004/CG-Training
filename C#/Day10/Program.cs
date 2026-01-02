@@ -11,7 +11,6 @@ using System.Data.Common;
 //         name = Name;
 //     }
 // }
-
 class Program
 {
     static void Main()
@@ -65,16 +64,92 @@ class Program
         // }
         // var (min, max) = FindMinMax(new int[] { 3, 5, 1, 9, 2 });
         // Console.WriteLine(min + " " + max);
-        int[] numbers = { 1, 2, 3, 4, 5, 6 };
-        var evenNumbers = numbers.Where(n => n % 2 == 0);
-        Console.WriteLine("Even numbers are:");
-        foreach (var n in evenNumbers)
-        {
-            Console.WriteLine(n);
-        }
-        Console.WriteLine(evenNumbers.GetType());
-    }
+        // int[] numbers = { 1, 2, 3, 4, 5, 6 };
+        // var evenNumbers = numbers.Where(n => n % 2 == 0);
+        // Console.WriteLine("Even numbers are:");
+        // foreach (var n in evenNumbers)
+        // {
+        //     Console.WriteLine(n);
+        // }
+        // Console.WriteLine(evenNumbers.GetType()); //evenNumbers . Get Type() -> IEnumerab1e Interface
+        //In C# we can use foreach only on Ienumerable Interfaces, by default all collections donot allow to use foreach iteration.
+        //All collections extend Ienumerable so we can use foreach loop on Lists.
 
+        // var res=numbers.Where(n=>n>3).Select(n=>n*2);
+        // foreach(int x in res)
+        // {
+        //     Console.WriteLine(x);
+        // }
+        // Console.WriteLine(res.GetType());
+        // var students = new List<Student>
+        // {
+        //     new Student { Name = "Sri", Marks = 75 },
+        //     new Student { Name = "Siva", Marks = 55 },
+        //     new Student { Name = "Pavan", Marks = 90 }
+        // };
+        // var result = students.Select(s => new
+        // {
+        //     s.Name,
+        //     Grade = s.Marks > 60 ? "Pass" : "Fail"
+        // }).ToList();
+        // foreach (var r in result)
+        // {
+        //     Console.WriteLine($"{r.Name} - {r.Grade}");
+        // }
+        // Console.WriteLine(result.GetType());
+
+        //Lambda Exp with multiple params
+        // int[] numbers = { 10, 20, 30, 40 };
+        // var indexedData = numbers.Select((value, index) =>
+        //     $"Index: {index}, Value: {value}");
+        // foreach (var item in indexedData)
+        // {
+        //     Console.WriteLine(item);
+        // }
+        //OrderBy()-> Ascending 
+        //OrderByDescending()->Descending (These create new Enumerables when used instead of editing in original one).
+
+        // int[]arr={2,10,3,234,23,23,42,34,23,4,1,434,6,56,46};
+        // var asc=arr.OrderBy(n=>n);
+        // var des=arr.OrderByDescending(n=>n);
+        // Console.WriteLine("Ascending Order: ");
+        // foreach(var i in asc)
+        // {
+        //     Console.WriteLine(i);
+        // }
+        // Console.WriteLine("Descending Order: ");
+        // foreach(var j in des)
+        // {
+        //     Console.WriteLine(j);
+        // }
+        // var students = new List<Student>
+        // {
+        //     new Student { Name = "Sri", Marks = 75 },
+        //     new Student { Name = "Siva", Marks = 55 },
+        //     new Student { Name = "Pavan", Marks = 90 },
+        //     new Student { Name = "Amit", Marks = 65 }
+        // };
+        // var nameAsc = students.OrderBy(s => s.Name);
+        // var nameDesc = students.OrderByDescending(s => s.Name);
+        // var marksAsc = students.OrderBy(s => s.Marks);
+        // var marksDesc = students.OrderByDescending(s => s.Marks);
+        // Console.WriteLine("Order by Name (Ascending):");
+        // foreach (var s in nameAsc)
+        //     Console.WriteLine($"{s.Name} - {s.Marks}");
+
+        // Console.WriteLine("Order by Name (Descending):");
+        // foreach (var s in nameDesc)
+        //     Console.WriteLine($"{s.Name} - {s.Marks}");
+
+        // Console.WriteLine("Order by Marks (Ascending):");
+        // foreach (var s in marksAsc)
+        //     Console.WriteLine($"{s.Name} - {s.Marks}");
+
+        // Console.WriteLine("Order by Marks (Descending):");
+        // foreach (var s in marksDesc)
+        //     Console.WriteLine($"{s.Name} - {s.Marks}");
+
+    }
     // static void CreateObjects()
     // {
     //     for (int i = 0; i < 5; i++)
@@ -82,6 +157,11 @@ class Program
     //         new MyClass();
     //     }
     // }
+}
+class Student
+{
+    public string? Name { get; set; }
+    public int Marks { get; set; }
 }
 // class MyClass
 // {
