@@ -54,5 +54,7 @@ class Program
         Console.WriteLine("Condition: " + condition);
         Console.WriteLine("Risk Level: " + riskLevel);
         Console.WriteLine("Final Payable Amount: " + finalAmount);
+
+        // Cardiologist c1= new Cardiologist(doctorName,specialization,"LIC123");   
     }
 }

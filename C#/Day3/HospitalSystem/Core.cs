@@ -67,3 +67,13 @@ class Appointment
         Console.WriteLine("Mode: " + mode);
     }
 }
+class Cardiologist : Doctor
+{
+    public Cardiologist(string name, string specialization, string license) : base(name, specialization, license)
+    {
+        Console.WriteLine($"Total doctors: {TotalDoctors}");
+        Console.WriteLine($"Name: {Name}");
+        Console.WriteLine($"Specialization: {Specialization}");
+        Console.WriteLine($"License Number: {LicenseNumber}");
+    }
+}
