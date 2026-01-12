@@ -72,3 +72,25 @@ public class Program
         Console.WriteLine("Discounted Price : " + chocolate.DiscountedPrice+"\n");
     }
 }
+
+// class Solution {
+// public:
+//     vector<int> topKFrequent(vector<int>& nums, int k) {
+//         unordered_map<int, int> freq;
+//         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
+//         for (int x : nums) {
+//             freq[x]++;
+//         }
+//         for (auto& [num, count] : freq) {
+//             pq.push({count, num});
+//             if (pq.size() > k)
+//                 pq.pop();
+//         }
+//         vector<int> res;
+//         while (!pq.empty()) {
+//             res.push_back(pq.top().second);
+//             pq.pop();
+//         }
+//         return res;
+//     }
+// };
