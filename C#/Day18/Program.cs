@@ -17,7 +17,7 @@ using System.Threading;
 
 class Program
 {
-    static int counter = 0;
+    // static int counter = 0;
     static void Main()
     {
         // // Create a new thread
@@ -32,22 +32,23 @@ class Program
         // worker.Join();
         // Console.WriteLine("Main thread finished");
         // Process.Start("explorer.exe");
-        Thread t1 = new Thread(Increment);
-        Thread t2 = new Thread(Increment);
-        t1.Start();
-        t2.Start();
-        t1.Join();
-        Console.WriteLine("Counter after t1: "+counter);
-        t2.Join();
-        Console.WriteLine("Final Counter value: " + counter);
+        // Thread t1 = new Thread(Increment);
+        // Thread t2 = new Thread(Increment);
+        // t1.Start();
+        // t2.Start();
+        // t1.Join();
+        // Console.WriteLine("Counter after t1: "+counter);
+        // t2.Join();
+        // Console.WriteLine("Final Counter value: " + counter);
+        
     }
-    static void Increment()
-    {
-        for (int i = 0; i < 100000; i++)
-        {
-            counter++;
-        }
-    }
+    // static void Increment()
+    // {
+    //     for (int i = 0; i < 100000; i++)
+    //     {
+    //         counter++;
+    //     }
+    // }
     // Thread t1 = new Thread(() =>
     // {
     //     for (int i = 0; i < 1000000; i++)
