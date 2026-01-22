@@ -7,4 +7,4 @@ class Program
         Console.WriteLine(c.Add(3, 2));
         Console.WriteLine(c.Div(4, 2));
     }
-}
+} 
