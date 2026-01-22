@@ -12,5 +12,4 @@
 !.gitignore
 
 # Ignore build output directories everywhere
-**/bin/
 **/obj/
