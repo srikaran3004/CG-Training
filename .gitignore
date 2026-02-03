@@ -8,6 +8,9 @@
 # Whitelist C# source files
 !*.cs
 
+# Allow SQL files
+!*.sql
+
 # Always include this file itself
 !.gitignore
 
