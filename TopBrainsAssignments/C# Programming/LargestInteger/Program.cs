@@ -1,0 +1,23 @@
+﻿using System;
+
+class Program
+{
+    static int Largest(int a, int b, int c)
+    {
+        if (a >= b && a >= c)
+            return a;
+        else if (b >= c)
+            return b;
+        else
+            return c;
+    }
+
+    public static void Main()
+    {
+        int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        int c = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(Largest(a, b, c));
+    }
+}
