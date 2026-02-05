@@ -1,28 +1,32 @@
 ﻿using System;
+using System.Linq;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main()
     {
-        object[] values = { 1, "hello", 5, true, null, 10, 3.14, false, -2 };
+        string[] r = Console.ReadLine().Split();
+        object[] v = new object[r.Length];
 
-        int sum = SumIntegers(values);
-
-        Console.WriteLine($"Sum of integers: {sum}");
-    }
-
-    public static int SumIntegers(object[] values)
-    {
-        int sum = 0;
-
-        foreach (var v in values)
+        for (int i = 0; i < r.Length; i++)
         {
-            if (v is int x)
-            {
-                sum += x;
-            }
+            if (int.TryParse(r[i], out int n))
+                v[i] = n;
+            else if (bool.TryParse(r[i], out bool b))
+                v[i] = b;
+            else if (r[i].ToLower() == "null")
+                v[i] = null;
+            else
+                v[i] = r[i];
         }
 
-        return sum;
+        int s = 0;
+
+        foreach (object o in v)
+            if (o is int n)
+                s += n;
+
+        Console.WriteLine(s);
     }
 }
