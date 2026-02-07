@@ -62,3 +62,10 @@ class Program
         Console.ReadLine();
     }
 }
+
+/**
+DataReader -> Connected Connection
+DataAdapter -> Disconnected Connection
+
+DataCommand either have functionality of Simple query, stored procedure or user defined function
+**/
