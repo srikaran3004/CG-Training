@@ -78,7 +78,7 @@ inner join Department d on e.DepartmentId = d.DepartmentId;
 
 --Q7.Subquery to find SalesAmount by employee over TotalAvg Sales--
 select EmpId, EmpName from Employee
-where EmpId in ( select EmpId from Sales group by EmpId having sum(SaleAmount) > (select avg(TotalSales)
+where EmpId in ( select EmpId from Sales group by EmpId having sum(SaleAmount) > (select avg(TotalSales) 
 from (select sum(SaleAmount) as TotalSales from Sales group by EmpId) t)
 );
 
