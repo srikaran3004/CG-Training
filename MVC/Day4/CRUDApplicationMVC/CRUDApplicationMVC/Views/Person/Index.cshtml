@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CRUDApplicationMVC.Models.PersonModel>
+
+<h2 style="text-align:center; color:#444;">Person CRUD</h2>
+
+@{
+    var person = new CRUDApplicationMVC.Models.PersonModel();
+}
+
+<!-- INSERT FORM -->
+<form asp-action="Insert" method="post">
+
+    Name:
+    <input asp-for="@person.Name" />
+    <span asp-validation-for="@person.Name" class="text-danger"></span>
+
+    Age:
+    <input asp-for="@person.Age" />
+    <span asp-validation-for="@person.Age" class="text-danger"></span>
+
+    State:
+    <input asp-for="@person.State" />
+    <span asp-validation-for="@person.State" class="text-danger"></span>
+
+    <input type="submit" value="Add" />
+</form>
+
+<br />
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>State</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <form asp-action="Update" method="post">
+                <input type="hidden" name="Id" value="@item.Id" />
+
+            <td>
+                <span class="display">@item.Name</span>
+                <input class="edit" name="Name" value="@item.Name" style="display:none;" />
+            </td>
+
+            <td>
+                <span class="display">@item.Age</span>
+                <input class="edit" type="number" name="Age" value="@item.Age" style="display:none;" />
+            </td>
+
+            <td>
+                <span class="display">@item.State</span>
+                <input class="edit" name="State" value="@item.State" style="display:none;" />
+            </td>
+
+            <td>
+                <button type="button" class="editBtn">Edit</button>
+                <input type="submit" value="Update" class="updateBtn" style="display:none;" />
+                <button type="button" class="cancelBtn" style="display:none;">Cancel</button>
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+            </form>
+        </tr>
+    }
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<script>
+    document.querySelectorAll(".editBtn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            let row = this.closest("tr");
+            row.querySelectorAll(".display").forEach(x => x.style.display = "none");
+            row.querySelectorAll(".edit").forEach(x => x.style.display = "inline");
+            row.querySelector(".updateBtn").style.display = "inline";
+            row.querySelector(".cancelBtn").style.display = "inline";
+            this.style.display = "none";
+        });
+    });
+
+    document.querySelectorAll(".cancelBtn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            let row = this.closest("tr");
+            row.querySelectorAll(".display").forEach(x => x.style.display = "inline");
+            row.querySelectorAll(".edit").forEach(x => x.style.display = "none");
+            row.querySelector(".updateBtn").style.display = "none";
+            row.querySelector(".editBtn").style.display = "inline";
+            this.style.display = "none";
+        });
+    });
+</script>

@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|d:\\capgemini training\\mvc\\day4\\crudapplicationmvc\\crudapplicationmvc\\dal\\persondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|solutionrelative:crudapplicationmvc\\dal\\persondal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|d:\\capgemini training\\mvc\\day4\\crudapplicationmvc\\crudapplicationmvc\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|solutionrelative:crudapplicationmvc\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|d:\\capgemini training\\mvc\\day4\\crudapplicationmvc\\crudapplicationmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|solutionrelative:crudapplicationmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|d:\\capgemini training\\mvc\\day4\\crudapplicationmvc\\crudapplicationmvc\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|solutionrelative:crudapplicationmvc\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|d:\\capgemini training\\mvc\\day4\\crudapplicationmvc\\crudapplicationmvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|solutionrelative:crudapplicationmvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|d:\\capgemini training\\mvc\\day4\\crudapplicationmvc\\crudapplicationmvc\\models\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51CB8CB1-D5C9-FDFB-CC93-FB1892C6A26A}|CRUDApplicationMVC\\CRUDApplicationMVC.csproj|solutionrelative:crudapplicationmvc\\models\\personmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "CRUDApplicationMVC\\appsettings.json",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\appsettings.json",
+              "RelativeToolTip": "CRUDApplicationMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T06:36:40.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CRUDApplicationMVC\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CRUDApplicationMVC\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-23T04:44:13.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\Views\\Person\\Index.cshtml",
+              "RelativeDocumentMoniker": "CRUDApplicationMVC\\Views\\Person\\Index.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\Views\\Person\\Index.cshtml",
+              "RelativeToolTip": "CRUDApplicationMVC\\Views\\Person\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T04:10:29.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "CRUDApplicationMVC\\Controllers\\PersonController.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "CRUDApplicationMVC\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:08:11.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonDAL.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\DAL\\PersonDAL.cs",
+              "RelativeDocumentMoniker": "CRUDApplicationMVC\\DAL\\PersonDAL.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\DAL\\PersonDAL.cs",
+              "RelativeToolTip": "CRUDApplicationMVC\\DAL\\PersonDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:03:50.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonModel.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\Models\\PersonModel.cs",
+              "RelativeDocumentMoniker": "CRUDApplicationMVC\\Models\\PersonModel.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day4\\CRUDApplicationMVC\\CRUDApplicationMVC\\Models\\PersonModel.cs",
+              "RelativeToolTip": "CRUDApplicationMVC\\Models\\PersonModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:02:27.418Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\bin\Debug\net10.0\DALCalculator.deps.json
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\bin\Debug\net10.0\DALCalculator.dll
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\bin\Debug\net10.0\DALCalculator.pdb
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.AssemblyInfoInputs.cache
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.AssemblyInfo.cs
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.sourcelink.json
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.dll
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\refint\DALCalculator.dll
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\DALCalculator.pdb
+D:\Capgemini Training\MVC\Day1\DALCalculator\DALCalculator\obj\Debug\net10.0\ref\DALCalculator.dll

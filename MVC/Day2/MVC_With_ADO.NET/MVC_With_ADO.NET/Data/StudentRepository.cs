@@ -10,7 +10,7 @@ namespace MVC_With_ADO.NET.Data
     {
         private readonly string _connectionString;
 
-        public StudentRepository(IConfiguration configuration)
+        public StudentRepository(IConfiguration configuration) //Here IConfiguration is used to get the connection string from appsettings.json
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }

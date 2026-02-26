@@ -1,0 +1,21 @@
+﻿using CalculateStudentMarks.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace CalculateStudentMarks.Controllers
+{
+    public class StudentController : Controller
+    {
+        public IActionResult CalculateMarks(int M1, int M2, int M3)
+        {
+            double average = (M1 + M2 + M3) / 3.0;
+            var model = new StudentViewModel
+            {
+                M1 = M1,
+                M2 = M2,
+                M3 = M3,
+                Average = average
+            };
+            return View(model);
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45F8C7B0-65BC-4528-8EFC-8F6DB873AE04}|CalculateStudentMarks\\CalculateStudentMarks.csproj|d:\\capgemini training\\mvc\\day2\\calculatestudentmarks\\calculatestudentmarks\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F8C7B0-65BC-4528-8EFC-8F6DB873AE04}|CalculateStudentMarks\\CalculateStudentMarks.csproj|solutionrelative:calculatestudentmarks\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F8C7B0-65BC-4528-8EFC-8F6DB873AE04}|CalculateStudentMarks\\CalculateStudentMarks.csproj|d:\\capgemini training\\mvc\\day2\\calculatestudentmarks\\calculatestudentmarks\\views\\student\\calculatemarks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45F8C7B0-65BC-4528-8EFC-8F6DB873AE04}|CalculateStudentMarks\\CalculateStudentMarks.csproj|solutionrelative:calculatestudentmarks\\views\\student\\calculatemarks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F8C7B0-65BC-4528-8EFC-8F6DB873AE04}|CalculateStudentMarks\\CalculateStudentMarks.csproj|d:\\capgemini training\\mvc\\day2\\calculatestudentmarks\\calculatestudentmarks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F8C7B0-65BC-4528-8EFC-8F6DB873AE04}|CalculateStudentMarks\\CalculateStudentMarks.csproj|solutionrelative:calculatestudentmarks\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\CalculateStudentMarks\\Program.cs",
+              "RelativeDocumentMoniker": "CalculateStudentMarks\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\CalculateStudentMarks\\Program.cs",
+              "RelativeToolTip": "CalculateStudentMarks\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T06:16:42.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculateMarks.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\CalculateStudentMarks\\Views\\Student\\CalculateMarks.cshtml",
+              "RelativeDocumentMoniker": "CalculateStudentMarks\\Views\\Student\\CalculateMarks.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\CalculateStudentMarks\\Views\\Student\\CalculateMarks.cshtml",
+              "RelativeToolTip": "CalculateStudentMarks\\Views\\Student\\CalculateMarks.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-20T06:11:42.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\CalculateStudentMarks\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "CalculateStudentMarks\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day2\\CalculateStudentMarks\\CalculateStudentMarks\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "CalculateStudentMarks\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T06:11:34.024Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

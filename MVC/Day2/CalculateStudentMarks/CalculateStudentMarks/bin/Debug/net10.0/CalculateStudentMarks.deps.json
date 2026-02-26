@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "CalculateStudentMarks/1.0.0": {
+        "runtime": {
+          "CalculateStudentMarks.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculateStudentMarks/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

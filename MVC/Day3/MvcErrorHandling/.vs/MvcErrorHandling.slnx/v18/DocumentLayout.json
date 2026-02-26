@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|d:\\capgemini training\\mvc\\day3\\mvcerrorhandling\\mvcerrorhandling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|solutionrelative:mvcerrorhandling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|d:\\capgemini training\\mvc\\day3\\mvcerrorhandling\\mvcerrorhandling\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|solutionrelative:mvcerrorhandling\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|d:\\capgemini training\\mvc\\day3\\mvcerrorhandling\\mvcerrorhandling\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|solutionrelative:mvcerrorhandling\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|d:\\capgemini training\\mvc\\day3\\mvcerrorhandling\\mvcerrorhandling\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|solutionrelative:mvcerrorhandling\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|d:\\capgemini training\\mvc\\day3\\mvcerrorhandling\\mvcerrorhandling\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0010295F-6D4D-8DE4-2765-60D4944B9638}|MvcErrorHandling\\MvcErrorHandling.csproj|solutionrelative:mvcerrorhandling\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MvcErrorHandling\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MvcErrorHandling\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T09:16:10.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "MvcErrorHandling\\Views\\Home\\Error.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "MvcErrorHandling\\Views\\Home\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T09:07:41.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "MvcErrorHandling\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "MvcErrorHandling\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T06:39:04.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MvcErrorHandling\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MvcErrorHandling\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwB0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T06:36:58.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Program.cs",
+              "RelativeDocumentMoniker": "MvcErrorHandling\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Day3\\MvcErrorHandling\\MvcErrorHandling\\Program.cs",
+              "RelativeToolTip": "MvcErrorHandling\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T05:25:25.561Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

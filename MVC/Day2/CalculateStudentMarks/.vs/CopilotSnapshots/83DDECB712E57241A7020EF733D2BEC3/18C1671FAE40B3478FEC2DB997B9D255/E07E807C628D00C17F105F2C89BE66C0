@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Student Marks";
+}
+
+<h2>Enter Student Marks</h2>
+
+<form asp-controller="Student" asp-action="CalculateMarks" method="get">
+    <div>
+        <label for="M1">Mark 1:</label>
+        <input type="number" name="M1" id="M1" required />
+    </div>
+    <div>
+        <label for="M2">Mark 2:</label>
+        <input type="number" name="M2" id="M2" required />
+    </div>
+    <div>
+        <label for="M3">Mark 3:</label>
+        <input type="number" name="M3" id="M3" required />
+    </div>
+    <div>
+        <button type="submit">Calculate Average</button>
+    </div>
+</form>

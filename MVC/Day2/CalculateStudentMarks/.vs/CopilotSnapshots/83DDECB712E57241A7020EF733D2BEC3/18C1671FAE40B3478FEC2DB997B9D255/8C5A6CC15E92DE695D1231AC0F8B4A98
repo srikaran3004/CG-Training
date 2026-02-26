@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Student Marks";
+}
+
+<h2>Calculate Student Marks</h2>
+
+<p>Pass marks directly in the URL:</p>
+<code>/Student/CalculateMarks?M1=80&amp;M2=70&amp;M3=90</code>

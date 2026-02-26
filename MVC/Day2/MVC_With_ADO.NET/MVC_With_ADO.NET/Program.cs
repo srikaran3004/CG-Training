@@ -4,7 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<StudentRepository>();
+builder.Services.AddScoped<StudentRepository>(); 
+//Addscoped is used to register the StudentRepository class as a service in the dependency injection container.
+//This means that a new instance of StudentRepository will be created for each HTTP request and shared within that request.
 
 var app = builder.Build();
 
