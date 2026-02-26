@@ -1,0 +1,123 @@
+﻿@model LpuApplicationForm.Models.StudentModel
+
+@{
+    ViewData["Title"] = Model?.StudentId > 0 ? "Edit Application" : "LPU Admission Form";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="glass-card">
+                <h2 class="text-center mb-4" style="letter-spacing: 2px;">
+                    @(Model?.StudentId > 0 ? "EDIT APPLICATION" : "LPU ADMISSION FORM")
+                </h2>
+
+                <div asp-validation-summary="All" class="text-danger mb-3 fw-bold"></div>
+
+                <hr style="border-color: rgba(255,255,255,0.1)">
+
+                <form asp-action="@(Model?.StudentId > 0 ? "Edit" : "Create")" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="StudentId" />
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="FullName" class="form-label"></label>
+                            <input asp-for="FullName" class="form-control" placeholder="John Doe" />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email" class="form-control" placeholder="john@example.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Mobile" class="form-label"></label>
+                            <input asp-for="Mobile" class="form-control" placeholder="10-digit number" />
+                            <span asp-validation-for="Mobile" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Gender" class="form-label"></label>
+                            <select asp-for="Gender" class="form-select">
+                                <option value="">-- Select --</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="DOB" class="form-label"></label>
+                            <input asp-for="DOB" class="form-control" type="date" />
+                            <span asp-validation-for="DOB" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-12 mb-3">
+                            <label asp-for="Address" class="form-label"></label>
+                            <textarea asp-for="Address" class="form-control" rows="2" placeholder="Full street address (min 10 chars)"></textarea>
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="City" class="form-label"></label>
+                            <input asp-for="City" class="form-control" />
+                            <span asp-validation-for="City" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="State" class="form-label"></label>
+                            <input asp-for="State" class="form-control" />
+                            <span asp-validation-for="State" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Pincode" class="form-label"></label>
+                            <input asp-for="Pincode" class="form-control" />
+                            <span asp-validation-for="Pincode" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="HighSchoolMarks" class="form-label"></label>
+                            <input asp-for="HighSchoolMarks" class="form-control" type="number" step="0.01" />
+                            <span asp-validation-for="HighSchoolMarks" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="IntermediateMarks" class="form-label"></label>
+                            <input asp-for="IntermediateMarks" class="form-control" type="number" step="0.01" />
+                            <span asp-validation-for="IntermediateMarks" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="CourseApplied" class="form-label"></label>
+                            <select asp-for="CourseApplied" class="form-select">
+                                <option value="">-- Choose Course --</option>
+                                <option value="B.Tech CSE">B.Tech CSE</option>
+                                <option value="MBA">MBA</option>
+                                <option value="BCA">BCA</option>
+                                <option value="M.Tech">M.Tech</option>
+                                <option value="B.Com">B.Com</option>
+                            </select>
+                            <span asp-validation-for="CourseApplied" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-grad text-white px-5">
+                            SUBMIT APPLICATION
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-light ms-2">BACK TO LIST</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

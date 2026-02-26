@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\models\\maxfilesizeandresolutionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\models\\maxfilesizeandresolutionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\models\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\models\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\views\\student\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|d:\\capgemini training\\mvc\\mini project\\lpuapplicationform\\lpuapplicationform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FCE79DDC-D67C-D4C8-F9D4-59CB8387DF47}|LpuApplicationForm\\LpuApplicationForm.csproj|solutionrelative:lpuapplicationform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "LpuApplicationForm\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAKkCAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-26T06:32:56.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Student\\Details.cshtml",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Views\\Student\\Details.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Student\\Details.cshtml",
+              "RelativeToolTip": "LpuApplicationForm\\Views\\Student\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T06:24:12.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "LpuApplicationForm\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAAAmwBEAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T04:17:40.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentModel.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Models\\StudentModel.cs",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Models\\StudentModel.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Models\\StudentModel.cs",
+              "RelativeToolTip": "LpuApplicationForm\\Models\\StudentModel.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:16:51.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MaxFileSizeAndResolutionAttribute.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Models\\MaxFileSizeAndResolutionAttribute.cs",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Models\\MaxFileSizeAndResolutionAttribute.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Models\\MaxFileSizeAndResolutionAttribute.cs",
+              "RelativeToolTip": "LpuApplicationForm\\Models\\MaxFileSizeAndResolutionAttribute.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:16:41.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Views\\Student\\Create.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "LpuApplicationForm\\Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAEoBAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T03:59:32.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "LpuApplicationForm\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAmwC8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T03:59:03.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LpuApplicationForm\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-26T05:06:11.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Repository\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "LpuApplicationForm\\Repository\\StudentRepository.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\Mini Project\\LpuApplicationForm\\LpuApplicationForm\\Repository\\StudentRepository.cs",
+              "RelativeToolTip": "LpuApplicationForm\\Repository\\StudentRepository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T04:17:16.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

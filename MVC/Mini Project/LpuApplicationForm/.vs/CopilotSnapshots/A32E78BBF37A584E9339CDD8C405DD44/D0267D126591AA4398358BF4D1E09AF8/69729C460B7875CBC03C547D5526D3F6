@@ -1,0 +1,587 @@
+﻿/* ═══════════════════════════════════════════════════════
+   LPU ADMISSION PORTAL — Official Brand Theme
+   Orange (#F47C00) + Black (#1A1A1A) + White (#FFFFFF)
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+    --brand-orange: #F47C00;
+    --brand-orange-dark: #D96500;
+    --brand-orange-light: #FF9B33;
+    --brand-black: #1A1A1A;
+    --brand-white: #FFFFFF;
+    --bg-main: #F5F5F5;
+    --bg-accent: #FFF3E6;
+    --bg-accent-deep: #FDE6CC;
+    --card-bg: #FFFFFF;
+    --border-light: #E5E5E5;
+    --border-input: #BFBFBF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-muted: #999999;
+    --error-red: #DC3545;
+    --success-green: #198754;
+    --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-orange: 0 4px 16px rgba(244, 124, 0, 0.25);
+    --radius-card: 12px;
+    --radius-input: 8px;
+    --glow-orange: 0 0 0 3px rgba(244, 124, 0, 0.15);
+    --transition: 0.3s ease;
+}
+
+/* ─── Global ─── */
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ─── Animated Orange Wave Background ─── */
+body::before {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background:
+        radial-gradient(ellipse 600px 400px at 20% 30%, rgba(244, 124, 0, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 350px at 75% 60%, rgba(255, 155, 51, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 450px 300px at 50% 85%, rgba(217, 101, 0, 0.05) 0%, transparent 70%),
+        radial-gradient(ellipse 350px 250px at 85% 15%, rgba(244, 124, 0, 0.04) 0%, transparent 70%);
+    animation: waveFloat 12s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background:
+        radial-gradient(ellipse 550px 380px at 60% 20%, rgba(253, 230, 204, 0.14) 0%, transparent 70%),
+        radial-gradient(ellipse 400px 300px at 30% 70%, rgba(244, 124, 0, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 350px at 80% 80%, rgba(255, 243, 230, 0.12) 0%, transparent 70%);
+    animation: waveDrift 16s ease-in-out infinite alternate-reverse;
+    pointer-events: none;
+}
+
+@keyframes waveFloat {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    25%  { transform: translate(-3%, 2%) rotate(0.5deg); }
+    50%  { transform: translate(-5%, -1%) rotate(-0.3deg); }
+    75%  { transform: translate(-2%, 3%) rotate(0.2deg); }
+    100% { transform: translate(-4%, -2%) rotate(-0.5deg); }
+}
+
+@keyframes waveDrift {
+    0%   { transform: translate(0, 0) rotate(0deg); }
+    33%  { transform: translate(2%, -3%) rotate(-0.4deg); }
+    66%  { transform: translate(-3%, 2%) rotate(0.3deg); }
+    100% { transform: translate(1%, -1%) rotate(-0.2deg); }
+}
+
+::selection {
+    background: var(--brand-orange);
+    color: #fff;
+}
+
+/* ─── Card Container ─── */
+.glass-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: 1.8rem 2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow var(--transition);
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--brand-orange), var(--brand-orange-light));
+}
+
+/* ─── Form Labels ─── */
+.form-label {
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+/* ─── Form Controls (Darker Borders) ─── */
+.form-control, .form-select {
+    background: var(--brand-white);
+    border: 1.5px solid var(--border-input);
+    color: var(--text-primary) !important;
+    border-radius: var(--radius-input);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.88rem;
+    height: auto;
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-control:focus, .form-select:focus {
+    background: var(--brand-white);
+    border-color: var(--brand-orange);
+    box-shadow: var(--glow-orange);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 52px;
+}
+
+.form-select option {
+    background: var(--brand-white);
+    color: var(--text-primary);
+}
+
+/* ─── Section Divider ─── */
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+    margin: 1rem 0;
+}
+
+/* ─── Form Section Header (Orange left border strip) ─── */
+.form-section-title {
+    color: var(--brand-orange);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding-left: 12px;
+    border-left: 3px solid var(--brand-orange);
+}
+
+.form-section-title i {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+/* ─── Validation ─── */
+.text-danger {
+    color: var(--error-red) !important;
+    font-size: 0.72rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 0.15rem;
+}
+
+.validation-summary-errors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.validation-summary-errors ul li {
+    background: rgba(220, 53, 69, 0.06);
+    border: 1px solid rgba(220, 53, 69, 0.15);
+    border-left: 3px solid var(--error-red);
+    border-radius: 6px;
+    padding: 0.45rem 0.8rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--error-red);
+}
+
+/* ─── Primary Button (Orange) ─── */
+.btn-grad {
+    background: var(--brand-orange);
+    border: none;
+    color: white !important;
+    font-weight: 600;
+    transition: all var(--transition);
+    border-radius: var(--radius-input);
+    padding: 0.55rem 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.78rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-grad:hover {
+    background: var(--brand-orange-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-orange);
+    color: white !important;
+}
+
+.btn-grad:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.btn-grad::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn-grad:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* ─── Back / Secondary Button ─── */
+.btn-outline-light {
+    border: 1.5px solid var(--border-light);
+    color: var(--text-secondary) !important;
+    background: transparent;
+    border-radius: var(--radius-input);
+    padding: 0.55rem 1.4rem;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.8px;
+    transition: all var(--transition);
+}
+
+.btn-outline-light:hover {
+    background: var(--bg-accent);
+    border-color: var(--brand-orange);
+    color: var(--brand-orange) !important;
+}
+
+/* ─── Action Buttons (Table) ─── */
+.btn-action-edit {
+    border: 1.5px solid var(--brand-orange);
+    color: var(--brand-orange) !important;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all var(--transition);
+    padding: 0.25rem 0.6rem;
+    font-size: 0.82rem;
+}
+
+.btn-action-edit:hover {
+    background: var(--brand-orange);
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-orange);
+}
+
+.btn-action-delete {
+    border: 1.5px solid var(--error-red);
+    color: var(--error-red) !important;
+    background: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all var(--transition);
+    padding: 0.25rem 0.6rem;
+    font-size: 0.82rem;
+}
+
+.btn-action-delete:hover {
+    background: var(--error-red);
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(220, 53, 69, 0.2);
+}
+
+.btn-outline-danger {
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all var(--transition);
+}
+
+.btn-outline-danger:hover {
+    box-shadow: 0 3px 10px rgba(220, 53, 69, 0.2);
+    transform: translateY(-1px);
+}
+
+/* ─── Page Heading ─── */
+.page-heading {
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--brand-black);
+    font-size: 1.4rem;
+}
+
+/* ─── Form Heading with Logo ─── */
+.form-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid var(--bg-accent-deep);
+}
+
+.form-heading-center {
+    text-align: center;
+}
+
+.form-heading-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 6px rgba(244, 124, 0, 0.2));
+}
+
+@media (max-width: 576px) {
+    .form-heading-logo {
+        width: 38px;
+        height: 38px;
+    }
+    .form-heading-row {
+        gap: 0.6rem;
+    }
+}
+
+/* ─── Table ─── */
+.table-custom {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+
+.table-custom thead th {
+    color: var(--brand-white);
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 12px 16px;
+    border: none;
+    background: var(--brand-black);
+}
+
+.table-custom thead th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.table-custom thead th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.table-custom tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+/* ─── Alternating Rows (Classic Form Style) ─── */
+.table-custom tbody tr {
+    background-color: var(--brand-white);
+    transition: all var(--transition);
+    border-left: 3px solid transparent;
+}
+
+.table-custom tbody tr:nth-child(even) {
+    background-color: #EDEDED;
+}
+
+.table-custom tbody tr:hover {
+    background-color: var(--bg-accent-deep) !important;
+    border-left: 3px solid var(--brand-orange);
+    box-shadow: 0 2px 8px rgba(244, 124, 0, 0.1);
+}
+
+.table-custom tbody tr td:first-child {
+    border-radius: 0;
+}
+
+.table-custom tbody tr td:last-child {
+    border-radius: 0;
+}
+
+.table-custom tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 8px;
+}
+
+.table-custom tbody tr:last-child td:last-child {
+    border-radius: 0 0 8px 0;
+}
+
+/* ─── Badge ─── */
+.badge-course {
+    background: var(--bg-accent);
+    color: var(--brand-orange-dark);
+    border: 1px solid rgba(244, 124, 0, 0.2);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-muted);
+}
+
+.empty-state i {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.35;
+    color: var(--brand-orange);
+}
+
+/* ─── Alert Banners ─── */
+.alert-banner {
+    border: none;
+    border-radius: var(--radius-input);
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    animation: slideDown 0.35s ease;
+}
+
+.alert-banner-success {
+    background: rgba(25, 135, 84, 0.08);
+    color: var(--success-green);
+    border: 1px solid rgba(25, 135, 84, 0.18);
+    border-left: 3px solid var(--success-green);
+}
+
+.alert-banner-error {
+    background: rgba(220, 53, 69, 0.06);
+    color: var(--error-red);
+    border: 1px solid rgba(220, 53, 69, 0.15);
+    border-left: 3px solid var(--error-red);
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Profile Photo Preview ─── */
+.photo-preview-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--border-light);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-accent);
+    box-shadow: 0 4px 16px rgba(244, 124, 0, 0.1);
+    transition: border-color var(--transition);
+}
+
+.photo-preview-frame:hover {
+    border-color: var(--brand-orange);
+}
+
+.photo-preview-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-preview-frame #previewPlaceholder {
+    font-size: 3.5rem;
+    color: var(--brand-orange);
+    opacity: 0.3;
+}
+
+/* ─── Table Avatar ─── */
+.table-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(244, 124, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.table-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-accent);
+    border: 2px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-orange);
+    font-size: 1.1rem;
+    opacity: 0.6;
+}
+
+/* ─── Custom Checkbox / Radio (Orange) ─── */
+.form-check-input:checked {
+    background-color: var(--brand-orange);
+    border-color: var(--brand-orange);
+}
+
+.form-check-input:focus {
+    box-shadow: var(--glow-orange);
+    border-color: var(--brand-orange);
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--brand-orange); }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.2rem;
+        border-radius: 10px;
+    }
+    .page-heading {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+    }
+}

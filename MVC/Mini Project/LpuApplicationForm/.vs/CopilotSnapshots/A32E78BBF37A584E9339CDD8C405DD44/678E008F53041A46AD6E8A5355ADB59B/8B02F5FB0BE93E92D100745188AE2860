@@ -1,0 +1,459 @@
+﻿:root {
+    --bg-main: #0b0d17;
+    --card-bg: rgba(20, 24, 40, 0.9);
+    --card-bg-solid: #151a2c;
+    --row-alt: #1a1f33;
+    --accent-blue: #00c6fb;
+    --accent-purple: #6f5cff;
+    --accent-gradient: linear-gradient(135deg, #00c6fb 0%, #6f5cff 100%);
+    --text-primary: #e8eaf0;
+    --text-muted: #7b8499;
+    --error-red: #f7415f;
+    --success-green: #0ebb88;
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --glow-blue: rgba(0, 198, 251, 0.3);
+    --glow-purple: rgba(111, 92, 255, 0.2);
+    --input-bg: rgba(26, 31, 51, 0.95);
+    --input-bg-focus: rgba(32, 38, 60, 0.98);
+}
+
+/* ─── Global ─── */
+body {
+    background-color: var(--bg-main);
+    background-image:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(0, 198, 251, 0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 100%, rgba(111, 92, 255, 0.04) 0%, transparent 60%);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: var(--accent-blue);
+    color: #000;
+}
+
+/* ─── Glass Card ─── */
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+    padding: 1.8rem 2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    border-radius: 16px 16px 0 0;
+}
+
+/* ─── Form Labels ─── */
+.form-label {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+/* ─── Compact Form Group ─── */
+.form-group-compact {
+    margin-bottom: 0.7rem;
+}
+
+/* ─── Form Controls ─── */
+.form-control, .form-select {
+    background: var(--input-bg);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.88rem;
+    height: auto;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background: var(--input-bg-focus);
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px var(--glow-blue);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.82rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 52px;
+}
+
+.form-select option {
+    background: #1a1f33;
+    color: #fff;
+}
+
+/* ─── Section Divider ─── */
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+    margin: 0.8rem 0;
+}
+
+/* ─── Form Section Header ─── */
+.form-section-title {
+    color: var(--accent-blue);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.form-section-title i {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* ─── Validation ─── */
+.text-danger {
+    color: var(--error-red) !important;
+    font-size: 0.72rem;
+    font-weight: 500;
+    display: block;
+    margin-top: 0.15rem;
+}
+
+.validation-summary-errors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.validation-summary-errors ul li {
+    background: rgba(247, 65, 95, 0.08);
+    border: 1px solid rgba(247, 65, 95, 0.2);
+    border-radius: 6px;
+    padding: 0.45rem 0.8rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+}
+
+/* ─── Buttons ─── */
+.btn-grad {
+    background: var(--accent-gradient);
+    border: none;
+    color: white !important;
+    font-weight: 700;
+    transition: all 0.25s ease;
+    border-radius: 8px;
+    padding: 0.55rem 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.78rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-grad:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--glow-blue), 0 3px 10px var(--glow-purple);
+    filter: brightness(1.08);
+}
+
+.btn-grad:active {
+    transform: translateY(0);
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.12);
+    color: var(--text-muted) !important;
+    border-radius: 8px;
+    padding: 0.55rem 1.4rem;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.8px;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+}
+
+.btn-outline-danger {
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-danger:hover {
+    box-shadow: 0 3px 10px rgba(220, 53, 69, 0.25);
+    transform: translateY(-1px);
+}
+
+/* ─── Page Heading ─── */
+.page-heading {
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.4rem;
+}
+
+/* ─── Form Heading with Logo ─── */
+.form-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.form-heading-center {
+    text-align: center;
+}
+
+.form-heading-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 576px) {
+    .form-heading-logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .form-heading-row {
+        gap: 0.6rem;
+    }
+}
+
+/* ─── Table ─── */
+.table-custom {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.table-custom thead th {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 10px 16px;
+    border: none;
+    background: transparent;
+    position: relative;
+}
+
+.table-custom thead th::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent-blue), transparent);
+    opacity: 0.25;
+}
+
+.table-custom tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    border: none;
+    font-size: 0.85rem;
+}
+
+.table-custom tbody tr:nth-child(odd) {
+    background-color: var(--card-bg-solid);
+}
+
+.table-custom tbody tr:nth-child(even) {
+    background-color: var(--row-alt);
+}
+
+.table-custom tbody tr {
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.table-custom tbody tr:hover {
+    background-color: rgba(0, 198, 251, 0.04) !important;
+    border-left: 3px solid var(--accent-blue);
+    transform: translateX(3px);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.table-custom tbody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.table-custom tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* ─── Badge ─── */
+.badge-course {
+    background: linear-gradient(135deg, rgba(0, 198, 251, 0.1) 0%, rgba(111, 92, 255, 0.1) 100%);
+    color: var(--accent-blue);
+    border: 1px solid rgba(0, 198, 251, 0.18);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: inline-block;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    color: var(--text-muted);
+}
+
+.empty-state i {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.35;
+}
+
+/* ─── Toasts ─── */
+#toast-container > .toast {
+    background-image: none !important;
+    border-radius: 8px;
+}
+
+.toast-success { background-color: var(--success-green) !important; }
+.toast-error { background-color: var(--error-red) !important; }
+
+/* ─── Alert Banners ─── */
+.alert-banner {
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    animation: slideDown 0.35s ease;
+}
+
+.alert-banner-success {
+    background: rgba(14, 187, 136, 0.1);
+    color: var(--success-green);
+    border: 1px solid rgba(14, 187, 136, 0.18);
+}
+
+.alert-banner-error {
+    background: rgba(247, 65, 95, 0.1);
+    color: var(--error-red);
+    border: 1px solid rgba(247, 65, 95, 0.18);
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Profile Photo Preview ─── */
+.photo-preview-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--input-bg);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.photo-preview-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-preview-frame #previewPlaceholder {
+    font-size: 3.5rem;
+    color: var(--text-muted);
+    opacity: 0.4;
+}
+
+/* ─── Table Avatar ─── */
+.table-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(0, 198, 251, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.table-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--input-bg);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+/* ─── Misc ─── */
+html { scroll-behavior: smooth; }
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .page-heading {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+    }
+}

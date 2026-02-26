@@ -1,0 +1,160 @@
+@model LpuApplicationForm.Models.StudentModel
+
+<div class="container-fluid px-4">
+    <div class="glass-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold page-heading mb-0">
+                <i class="bi bi-person-lines-fill me-2" style="color: var(--brand-orange);"></i>STUDENT DETAILS
+            </h2>
+            <div>
+                <a asp-action="DownloadApplicationPDF" asp-route-id="@Model.StudentId"
+                   class="btn btn-grad me-2">
+                    <i class="bi bi-file-earmark-pdf-fill me-1"></i>Download Application PDF
+                </a>
+                <a asp-action="DownloadIDCard" asp-route-id="@Model.StudentId"
+                   class="btn btn-grad me-2">
+                    <i class="bi bi-person-badge-fill me-1"></i>Download ID Card
+                </a>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i>Back to List
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Profile Photo Section -->
+            <div class="col-md-3 text-center mb-4">
+                <div class="detail-photo-frame mx-auto">
+                    @if (Model.ProfileImage != null && Model.ImageExtension != null)
+                    {
+                        <img src="data:image/@Model.ImageExtension.TrimStart('.');base64,@Convert.ToBase64String(Model.ProfileImage)"
+                             alt="Profile Photo" />
+                    }
+                    else
+                    {
+                        <i class="bi bi-person-fill" style="font-size: 5rem; color: var(--brand-orange); opacity: 0.3;"></i>
+                    }
+                </div>
+                <h4 class="fw-bold mt-3" style="color: var(--brand-orange);">@Model.FullName</h4>
+                <span class="badge-course">@Model.CourseApplied</span>
+            </div>
+
+            <!-- Details Section -->
+            <div class="col-md-9">
+                <!-- Personal Information -->
+                <div class="detail-section">
+                    <h5 class="detail-section-title">
+                        <i class="bi bi-person-fill me-2"></i>Personal Information
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-row">
+                                <span class="detail-label">Student ID</span>
+                                <span class="detail-value">@Model.StudentId</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-row">
+                                <span class="detail-label">Full Name</span>
+                                <span class="detail-value">@Model.FullName</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-row">
+                                <span class="detail-label">Gender</span>
+                                <span class="detail-value">@Model.Gender</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-row">
+                                <span class="detail-label">Date of Birth</span>
+                                <span class="detail-value">@Model.DOB?.ToString("dd MMMM yyyy")</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="detail-section">
+                    <h5 class="detail-section-title">
+                        <i class="bi bi-telephone-fill me-2"></i>Contact Information
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="detail-row">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value" style="color: var(--brand-orange);">@Model.Email</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-row">
+                                <span class="detail-label">Mobile</span>
+                                <span class="detail-value">@Model.Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address Information -->
+                <div class="detail-section">
+                    <h5 class="detail-section-title">
+                        <i class="bi bi-geo-alt-fill me-2"></i>Address Information
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="detail-row">
+                                <span class="detail-label">Address</span>
+                                <span class="detail-value">@Model.Address</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-row">
+                                <span class="detail-label">City</span>
+                                <span class="detail-value">@Model.City</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-row">
+                                <span class="detail-label">State</span>
+                                <span class="detail-value">@Model.State</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-row">
+                                <span class="detail-label">Pincode</span>
+                                <span class="detail-value">@Model.Pincode</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Information -->
+                <div class="detail-section">
+                    <h5 class="detail-section-title">
+                        <i class="bi bi-mortarboard-fill me-2"></i>Academic Information
+                    </h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="detail-row">
+                                <span class="detail-label">10th Marks (%)</span>
+                                <span class="detail-value fw-bold">@Model.HighSchoolMarks</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-row">
+                                <span class="detail-label">12th Marks (%)</span>
+                                <span class="detail-value fw-bold">@Model.IntermediateMarks</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detail-row">
+                                <span class="detail-label">Course Applied</span>
+                                <span class="detail-value"><span class="badge-course">@Model.CourseApplied</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

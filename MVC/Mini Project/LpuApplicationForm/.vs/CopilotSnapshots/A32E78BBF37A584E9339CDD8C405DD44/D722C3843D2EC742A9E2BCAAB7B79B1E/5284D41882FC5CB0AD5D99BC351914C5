@@ -1,0 +1,44 @@
+﻿@model IEnumerable<LpuApplicationForm.Models.StudentModel>
+
+<div class="container-fluid px-4">
+    <div class="glass-card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold">ADMISSION RECORDS</h2>
+            <a asp-action="Create" class="btn btn-grad text-white px-4">+ NEW APPLICATION</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table-custom text-white">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Course</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold">@item.FullName</td>
+                            <td class="text-info">@item.Email</td>
+                            <td>@item.Mobile</td>
+                            <td>
+                                <span class="badge" style="background: rgba(0, 210, 255, 0.1); color: #00d2ff; border: 1px solid #00d2ff;">
+                                    @item.CourseApplied
+                                </span>
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.StudentId" class="btn btn-sm btn-outline-light me-2">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.StudentId" class="btn btn-sm btn-outline-danger"
+                                   onclick="return confirm('Delete this record?')">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
