@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|d:\\capgemini training\\web api\\dtounderstanding\\dtounderstanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|solutionrelative:dtounderstanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|d:\\capgemini training\\web api\\dtounderstanding\\dtounderstanding\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|solutionrelative:dtounderstanding\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|d:\\capgemini training\\web api\\dtounderstanding\\dtounderstanding\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|solutionrelative:dtounderstanding\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|d:\\capgemini training\\web api\\dtounderstanding\\dtounderstanding\\dto\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|solutionrelative:dtounderstanding\\dto\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|d:\\capgemini training\\web api\\dtounderstanding\\dtounderstanding\\dto\\studentcreaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F66EDF-4B9D-B77D-A4C4-89CFF59FF47D}|DTOUnderstanding\\DTOUnderstanding.csproj|solutionrelative:dtounderstanding\\dto\\studentcreaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\Program.cs",
+              "RelativeDocumentMoniker": "DTOUnderstanding\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\Program.cs",
+              "RelativeToolTip": "DTOUnderstanding\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:11:53.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "DTOUnderstanding\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "DTOUnderstanding\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:07:31.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "DTOUnderstanding\\Models\\Student.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\Models\\Student.cs",
+              "RelativeToolTip": "DTOUnderstanding\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:06:23.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentResponseDTO.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\DTO\\StudentResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTOUnderstanding\\DTO\\StudentResponseDTO.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\DTO\\StudentResponseDTO.cs",
+              "RelativeToolTip": "DTOUnderstanding\\DTO\\StudentResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:05:39.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentCreateRequestDTO.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "RelativeDocumentMoniker": "DTOUnderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DTOUnderstanding\\DTOUnderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "RelativeToolTip": "DTOUnderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:04:44.656Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

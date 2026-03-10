@@ -1,0 +1,5 @@
+﻿namespace DbFirstApproach.Controllers
+{
+    // Temporary placeholder — will be restored after scaffold
+    public class StudentController { }
+}

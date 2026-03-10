@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0R3+jEEti5k=",
+  "success": true,
+  "projectFilePath": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\StudentDTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.4\\swashbuckle.aspnetcore.swaggerui.10.1.4.nupkg.sha512"
+  ],
+  "logs": []
+}

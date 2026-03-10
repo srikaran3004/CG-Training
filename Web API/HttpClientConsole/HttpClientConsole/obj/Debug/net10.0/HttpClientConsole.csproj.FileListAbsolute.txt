@@ -1,0 +1,15 @@
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\bin\Debug\net10.0\HttpClientConsole.exe
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\bin\Debug\net10.0\HttpClientConsole.deps.json
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\bin\Debug\net10.0\HttpClientConsole.runtimeconfig.json
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\bin\Debug\net10.0\HttpClientConsole.dll
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\bin\Debug\net10.0\HttpClientConsole.pdb
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.AssemblyInfoInputs.cache
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.AssemblyInfo.cs
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.sourcelink.json
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.dll
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\refint\HttpClientConsole.dll
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.pdb
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\HttpClientConsole.genruntimeconfig.cache
+D:\Capgemini Training\Web API\HttpClientConsole\HttpClientConsole\obj\Debug\net10.0\ref\HttpClientConsole.dll

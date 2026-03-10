@@ -1,0 +1,19 @@
+﻿using System.Text.Json;
+
+var handler = new HttpClientHandler
+{
+    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+};
+
+using HttpClient client = new(handler);
+
+string json = await client.GetStringAsync("https://localhost:7283/api/students");
+
+var students = JsonSerializer.Deserialize<List<string>>(json);
+
+foreach (var student in students!)
+{
+    string reversed = new(student.Reverse().ToArray());
+    Console.WriteLine($"{student}: {reversed}");
+    Console.WriteLine("---");
+}

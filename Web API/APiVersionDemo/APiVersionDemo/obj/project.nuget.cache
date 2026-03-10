@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "FAxsHd/od7Y=",
+  "success": true,
+  "projectFilePath": "D:\\Capgemini Training\\Web API\\APiVersionDemo\\APiVersionDemo\\APiVersionDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Srikaran\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\asp.versioning.mvc\\8.1.0\\asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.1.0\\asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

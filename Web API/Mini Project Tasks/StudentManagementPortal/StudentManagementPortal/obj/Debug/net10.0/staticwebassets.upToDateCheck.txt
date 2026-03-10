@@ -1,0 +1,2 @@
+wwwroot\index.html
+D:\Capgemini Training\Web API\Mini Project Tasks\StudentManagementPortal\StudentManagementPortal\wwwroot\index.html

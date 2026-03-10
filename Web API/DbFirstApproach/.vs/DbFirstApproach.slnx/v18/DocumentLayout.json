@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|d:\\capgemini training\\web api\\dbfirstapproach\\dbfirstapproach\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|solutionrelative:dbfirstapproach\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|d:\\capgemini training\\web api\\dbfirstapproach\\dbfirstapproach\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|solutionrelative:dbfirstapproach\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|d:\\capgemini training\\web api\\dbfirstapproach\\dbfirstapproach\\data\\collegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|solutionrelative:dbfirstapproach\\data\\collegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|d:\\capgemini training\\web api\\dbfirstapproach\\dbfirstapproach\\dbfirstapproach.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9418C2E4-AF28-4B00-824C-E7568FD493D1}|DbFirstApproach\\DbFirstApproach.csproj|solutionrelative:dbfirstapproach\\dbfirstapproach.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbFirstApproach",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\DbFirstApproach.csproj",
+              "RelativeDocumentMoniker": "DbFirstApproach\\DbFirstApproach.csproj",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\DbFirstApproach.csproj",
+              "RelativeToolTip": "DbFirstApproach\\DbFirstApproach.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-10T07:04:28.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CollegeDbContext.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\Data\\CollegeDbContext.cs",
+              "RelativeDocumentMoniker": "DbFirstApproach\\Data\\CollegeDbContext.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\Data\\CollegeDbContext.cs",
+              "RelativeToolTip": "DbFirstApproach\\Data\\CollegeDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:59:17.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\Program.cs",
+              "RelativeDocumentMoniker": "DbFirstApproach\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\Program.cs",
+              "RelativeToolTip": "DbFirstApproach\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAABBwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:55:41.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "DbFirstApproach\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbFirstApproach\\DbFirstApproach\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "DbFirstApproach\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:50:13.167Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

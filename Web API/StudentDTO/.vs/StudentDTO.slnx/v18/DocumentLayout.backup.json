@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Web API\\StudentDTO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|d:\\capgemini training\\web api\\studentdto\\studentdto\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|solutionrelative:studentdto\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|d:\\capgemini training\\web api\\studentdto\\studentdto\\dto\\createrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|solutionrelative:studentdto\\dto\\createrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|d:\\capgemini training\\web api\\studentdto\\studentdto\\dto\\updaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|solutionrelative:studentdto\\dto\\updaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|d:\\capgemini training\\web api\\studentdto\\studentdto\\dto\\getresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|solutionrelative:studentdto\\dto\\getresultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|d:\\capgemini training\\web api\\studentdto\\studentdto\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|solutionrelative:studentdto\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|d:\\capgemini training\\web api\\studentdto\\studentdto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D7DFD8D-47F3-4467-B0F5-30865305817D}|StudentDTO\\StudentDTO.csproj|solutionrelative:studentdto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\Program.cs",
+              "RelativeDocumentMoniker": "StudentDTO\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\Program.cs",
+              "RelativeToolTip": "StudentDTO\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:33:22.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "StudentDTO\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "StudentDTO\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwD0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:21:50.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetResultDTO.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\DTO\\GetResultDTO.cs",
+              "RelativeDocumentMoniker": "StudentDTO\\DTO\\GetResultDTO.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\DTO\\GetResultDTO.cs",
+              "RelativeToolTip": "StudentDTO\\DTO\\GetResultDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:19:45.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateRequestDTO.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\DTO\\UpdateRequestDTO.cs",
+              "RelativeDocumentMoniker": "StudentDTO\\DTO\\UpdateRequestDTO.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\DTO\\UpdateRequestDTO.cs",
+              "RelativeToolTip": "StudentDTO\\DTO\\UpdateRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:19:31.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateRequestDTO.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\DTO\\CreateRequestDTO.cs",
+              "RelativeDocumentMoniker": "StudentDTO\\DTO\\CreateRequestDTO.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\DTO\\CreateRequestDTO.cs",
+              "RelativeToolTip": "StudentDTO\\DTO\\CreateRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:19:16.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentDTO\\Models\\Student.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\StudentDTO\\StudentDTO\\Models\\Student.cs",
+              "RelativeToolTip": "StudentDTO\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:15:41.637Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

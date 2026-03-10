@@ -1,0 +1,6 @@
+@DTOUnderstanding_HostAddress = http://localhost:5093
+
+GET {{DTOUnderstanding_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

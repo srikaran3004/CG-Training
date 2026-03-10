@@ -1,0 +1,22 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace APiVersionDemo.Controllers
+{
+    [ApiController]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    public class StudentController : Controller
+    {
+        public IActionResult GetStudents()
+        {
+            return Ok(new
+            {
+                Version = "V1",
+                Students = new string[] { "Srikaran", "Pavan", "Vamsi" }
+            });
+        }
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}

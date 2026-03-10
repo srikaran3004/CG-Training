@@ -1,0 +1,23 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using StudentDTO.Models;
+using StudentDTO.DTO;
+
+namespace StudentDTO.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class StudentController : Controller
+    { 
+        private static List<Student> std = new List<Student>();
+        [HttpPost]
+        public IActionResult CreateStudent(CreatedAtActionResult request)
+        {
+            Student student = new Student
+            {
+                Id = std.Count + 1,
+                Name = request.Name,
+                Age = request.Age
+            };
+        }
+    }
+}
