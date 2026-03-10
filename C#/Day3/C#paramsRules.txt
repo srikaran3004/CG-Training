@@ -1,0 +1,30 @@
+params must always be the last parameter in a method declaration.
+
+Only one params parameter is allowed per method.
+
+ref parameters must be initialized before passing to a method.
+
+out parameters need not be initialized before passing but must be assigned inside the method.
+
+ref and out must be specified both in method declaration and method call.
+
+Default parameters must come after all required (non-default) parameters.
+
+Default parameters must be placed before a params parameter if both are used.
+
+A method can have ref, normal parameters, and params together if ordering rules are followed.
+
+A method cannot have more than one params parameter.
+
+Executable statements cannot be written directly inside a class; they must be inside methods.
+
+Static methods can access only static members unless values are passed as parameters.
+
+The return type is not considered for method overloading in C#.
+
+A method declared as void cannot return a value.
+
+params allows passing a variable number of arguments which are treated as an array.
+
+Method arguments are matched left-to-right at compile time.
+

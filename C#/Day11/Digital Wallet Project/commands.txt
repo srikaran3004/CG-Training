@@ -1,0 +1,21 @@
+# How to recreate the solution (commands to run manually)
+mkdir "Digital Wallet Project"
+cd "Digital Wallet Project"
+
+# Create an empty solution
+dotnet new sln --name DigitalWalletProject
+
+# Create the main console app (creates a DigitalWallet folder)
+dotnet new console -n DigitalWallet
+
+# Create the class library (creates a DigitalWallet.Core folder)
+dotnet new classlib -n DigitalWallet.Core 
+
+# Add both projects into the solution (with a solution folder for the app)
+dotnet sln "DigitalWalletProject.slnx" add "DigitalWallet/DigitalWallet.csproj" --solution-folder "DigitalWallet"
+dotnet sln "DigitalWalletProject.slnx" add "DigitalWallet.Core/DigitalWallet.Core.csproj"
+
+#Add Reference(Console -> Core DLL)
+dotnet add DigitalWallet/DigitalWallet.csproj reference DigitalWallet.Core/DigitalWallet.Core.csproj
+
+

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/DigitalWallet/">
+    <Project Path="DigitalWallet/DigitalWallet.csproj" />
+  </Folder>
+  <Project Path="DigitalWallet.Core/DigitalWallet.Core.csproj" />
+</Solution>

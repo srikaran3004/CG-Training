@@ -1,0 +1,95 @@
+1. 🧱 CORE C# LANGUAGE CONCEPTS
+2. Methods
+3. Method Signatures
+4. Void methods
+5. Parameters and arguments
+6. Reference types
+7. Heap vs Stack memory (basic understanding)
+
+8. 🔌 DELEGATES (VERY IMPORTANT)
+9. Delegate definition
+10. Delegate instantiation
+11. Delegate invocation
+12. Method group conversion
+13. Passing methods as variables
+14. Delegate as abstraction
+15. Delegate vs method call
+16. Single-cast delegates
+17. Multicast delegates
+18. Invocation list
+19. Order of execution in multicast delegates
+20. Null-safe invocation (?.Invoke)
+21. Delegate immutability
+22. Combining delegates (+=)
+23. Removing delegate methods (-=)
+
+24. ⚡ EVENTS (BUILT ON DELEGATES)
+25. Events
+26. Difference between delegate and event
+27. Why events are safer than delegates
+28. Publisher–Subscriber pattern
+29. Event subscription
+30. Event unsubscription
+31. Event invocation rules
+32. Custom event delegates
+33. Built-in EventHandler / EventHandler<T>
+
+34. 🧠 MULTICAST & ERROR HANDLING
+35. Multicast delegate internal working
+36. Exception handling in multicast delegates
+37. What happens when one handler fails
+38. Isolating failures in event handlers
+39. Try–catch per subscriber
+
+40. 🔗 DEPENDENCY INJECTION (DI)
+41. What is Dependency Injection
+42. Why DI is needed
+43. Dependency vs dependent
+44. Dependency inversion principle (DIP)
+45. Constructor injection
+46. Property injection
+47. Method injection
+48. Behavior injection (delegates)
+49. Manual DI
+50. DI using interfaces
+51. DI using delegates
+52. DI container (basic idea)
+
+53. 🧩 DESIGN PRINCIPLES & PATTERNS
+54. Loose coupling
+55. High cohesion
+56. Single Responsibility Principle (SRP)
+57. Open/Closed Principle (OCP)
+58. Observer pattern
+59. Inversion of Control (IoC)
+60. Composition over inheritance
+61. Plugin-style architecture
+
+62. 🔄 FUNCTIONAL CONCEPTS IN C#
+63. Anonymous methods
+64. Lambda expressions
+65. Action delegate
+66. Func delegate
+67. Predicate delegate
+68. Higher-order functions
+69. Passing behavior instead of data
+
+70. 🛡️ BEST PRACTICES & REAL-WORLD USE
+71. Event-driven architecture
+72. Decoupling hardware/services
+73. Extensible systems
+74. Testability with DI
+75. Mocking delegates/events
+76. Replacing implementations at runtime
+77. Logging, notification, auditing via delegates
+78. Framework usage (WinForms, WPF, ASP.NET events)
+
+79. 🧪 ADVANCED / INTERVIEW-LEVEL TOPICS
+80. Delegate memory model
+81. Thread-safety with events
+82. Weak events (memory leaks)
+83. Async event handlers
+84. Multicast delegates vs Observer pattern
+85. Why events cannot be invoked outside the class
+86. Why delegates can be dangerous
+87. Real-world DI example (ASP.NET Core)

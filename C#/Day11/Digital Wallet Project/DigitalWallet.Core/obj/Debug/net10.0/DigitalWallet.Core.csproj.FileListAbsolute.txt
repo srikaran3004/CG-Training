@@ -1,0 +1,24 @@
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\bin\Debug\net10.0\DigitalWallet.Core.deps.json
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\bin\Debug\net10.0\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\bin\Debug\net10.0\DigitalWallet.Core.pdb
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.AssemblyInfo.cs
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.sourcelink.json
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\refint\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.pdb
+D:\Capgemini Training\C#\Digital Wallet\DigitalWallet.Core\obj\Debug\net10.0\ref\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\bin\Debug\net10.0\DigitalWallet.Core.deps.json
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\bin\Debug\net10.0\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\bin\Debug\net10.0\DigitalWallet.Core.pdb
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.AssemblyInfo.cs
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.sourcelink.json
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\refint\DigitalWallet.Core.dll
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\DigitalWallet.Core.pdb
+D:\Capgemini Training\C#\Digital Wallet Project\DigitalWallet.Core\obj\Debug\net10.0\ref\DigitalWallet.Core.dll

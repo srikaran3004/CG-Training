@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\Day19\bin\Debug\net10.0\Day19.exe
+D:\Capgemini Training\C#\Day19\bin\Debug\net10.0\Day19.deps.json
+D:\Capgemini Training\C#\Day19\bin\Debug\net10.0\Day19.runtimeconfig.json
+D:\Capgemini Training\C#\Day19\bin\Debug\net10.0\Day19.dll
+D:\Capgemini Training\C#\Day19\bin\Debug\net10.0\Day19.pdb
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.AssemblyInfo.cs
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.sourcelink.json
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.dll
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\refint\Day19.dll
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.pdb
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\Day19.genruntimeconfig.cache
+D:\Capgemini Training\C#\Day19\obj\Debug\net10.0\ref\Day19.dll

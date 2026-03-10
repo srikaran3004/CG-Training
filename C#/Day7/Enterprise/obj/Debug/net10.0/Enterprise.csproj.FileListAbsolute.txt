@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.AssemblyInfo.cs
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.sourcelink.json
+D:\Capgemini Training\C#\Day7\Enterprise\bin\Debug\net10.0\Enterprise.exe
+D:\Capgemini Training\C#\Day7\Enterprise\bin\Debug\net10.0\Enterprise.deps.json
+D:\Capgemini Training\C#\Day7\Enterprise\bin\Debug\net10.0\Enterprise.runtimeconfig.json
+D:\Capgemini Training\C#\Day7\Enterprise\bin\Debug\net10.0\Enterprise.dll
+D:\Capgemini Training\C#\Day7\Enterprise\bin\Debug\net10.0\Enterprise.pdb
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.dll
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\refint\Enterprise.dll
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.pdb
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\Enterprise.genruntimeconfig.cache
+D:\Capgemini Training\C#\Day7\Enterprise\obj\Debug\net10.0\ref\Enterprise.dll

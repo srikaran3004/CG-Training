@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\RoboticsAssignment\bin\Debug\net10.0\RoboticsAssignment.exe
+D:\Capgemini Training\C#\RoboticsAssignment\bin\Debug\net10.0\RoboticsAssignment.deps.json
+D:\Capgemini Training\C#\RoboticsAssignment\bin\Debug\net10.0\RoboticsAssignment.runtimeconfig.json
+D:\Capgemini Training\C#\RoboticsAssignment\bin\Debug\net10.0\RoboticsAssignment.dll
+D:\Capgemini Training\C#\RoboticsAssignment\bin\Debug\net10.0\RoboticsAssignment.pdb
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.AssemblyInfo.cs
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.sourcelink.json
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.dll
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\refint\RoboticsAssignment.dll
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.pdb
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\RoboticsAssignment.genruntimeconfig.cache
+D:\Capgemini Training\C#\RoboticsAssignment\obj\Debug\net10.0\ref\RoboticsAssignment.dll

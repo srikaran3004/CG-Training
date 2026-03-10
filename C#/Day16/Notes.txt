@@ -1,0 +1,333 @@
+============================================================
+C# REFLECTION AND ASSEMBLIES – SHORT & SIMPLE VIVA NOTES
+============================================================
+
+------------------------------------------------------------
+1. ASSEMBLY
+------------------------------------------------------------
+
+Assembly
+│
+├─ Definition
+│   An assembly is a compiled unit of code in .NET.
+│   It can be an EXE or DLL file.
+│
+├─ Examples
+│   MyApp.exe
+│   MyLibrary.dll
+│
+├─ What an Assembly Contains
+│   - Compiled code (IL)
+│   - Classes and methods
+│   - Metadata
+│   - Version information
+│
+├─ Why Assembly Is Important
+│   - Code reuse
+│   - Deployment unit
+│   - Version control
+│   - Reflection starts here
+│
+└─ Viva Answer
+    An assembly is a compiled package of code (.exe or .dll)
+    that contains classes, methods, and metadata.
+
+Memory Trick:
+Assembly = Packaged code
+
+------------------------------------------------------------
+2. REFLECTION
+------------------------------------------------------------
+
+Reflection
+│
+├─ Definition
+│   Reflection is the ability of a program to inspect
+│   its own code while running.
+│
+├─ Simple Meaning
+│   Program can see its classes, methods, and properties
+│   at runtime.
+│
+├─ Real-Life Example
+│   Mirror → Reflection
+│   Person → Program
+│
+├─ Why Reflection Is Used
+│   - Plugin systems
+│   - Frameworks
+│   - Dependency Injection
+│   - Dynamic execution
+│
+└─ Viva Answer
+    Reflection allows a program to inspect and use
+    its own structure at runtime.
+
+Memory Trick:
+Reflection = Looking inside code at runtime
+
+------------------------------------------------------------
+3. ASSEMBLY VS REFLECTION
+------------------------------------------------------------
+
+Assembly
+│
+├─ Stores compiled code
+├─ Contains metadata
+│
+Reflection
+│
+├─ Reads metadata
+├─ Inspects assembly
+
+Simple Line:
+Reflection reads information stored inside an assembly.
+
+------------------------------------------------------------
+4. SYSTEM.REFLECTION NAMESPACE
+------------------------------------------------------------
+
+System.Reflection
+│
+├─ Purpose
+│   Provides classes needed for reflection.
+│
+├─ Important Classes
+│   - Assembly
+│   - Type
+│   - MethodInfo
+│   - PropertyInfo
+│   - FieldInfo
+│   - ConstructorInfo
+│   - ParameterInfo
+│   - Attribute
+
+------------------------------------------------------------
+5. ASSEMBLY CLASS
+------------------------------------------------------------
+
+Assembly
+│
+├─ Represents
+│   Compiled EXE or DLL
+│
+├─ Common Methods
+│   - GetExecutingAssembly()
+│   - Load("MyLibrary")
+│   - LoadFrom("MyPlugin.dll")
+│
+├─ Meaning
+│   GetExecutingAssembly → current running program
+│   Load → load known library
+│   LoadFrom → load DLL from file path
+│
+└─ Viva Answer
+    Assembly is the entry point of reflection
+    and represents compiled code.
+
+------------------------------------------------------------
+6. TYPE CLASS (CORE OF REFLECTION)
+------------------------------------------------------------
+
+Type
+│
+├─ Definition
+│   Represents metadata of a class.
+│
+├─ Ways to Get Type
+│   typeof(Employee)
+│   object.GetType()
+│   Type.GetType("Namespace.Employee")
+│
+├─ Why Type Is Important
+│   - All reflection starts here
+│   - Used to find members
+│
+└─ Viva Answer
+    Type represents metadata of a class and
+    is the core of reflection.
+
+------------------------------------------------------------
+7. METHODINFO
+------------------------------------------------------------
+
+MethodInfo
+│
+├─ Represents
+│   Metadata of a method
+│
+├─ What It Allows
+│   - Inspect method details
+│   - Invoke methods dynamically
+│
+├─ Example
+│   method.Invoke(objectInstance, null) -> null means no parameters are passed.
+│
+├─ Important Notes
+│   - Method must be public
+│   - Name is case-sensitive
+│   - Slower than normal calls
+│
+└─ Viva Answer
+    MethodInfo allows dynamic discovery and
+    execution of methods at runtime.
+
+------------------------------------------------------------
+8. PROPERTYINFO
+------------------------------------------------------------
+
+PropertyInfo
+│
+├─ Represents
+│   Metadata of a property
+│
+├─ What It Allows
+│   - Read property value
+│   - Set property value
+│
+├─ Example
+│   prop.SetValue(obj, "John")
+│
+├─ Important Notes
+│   - Property must be public
+│   - Value type must match
+│
+└─ Viva Answer
+    PropertyInfo allows dynamic access and
+    modification of properties.
+
+------------------------------------------------------------
+9. FIELDINFO
+------------------------------------------------------------
+
+FieldInfo
+│
+├─ Represents
+│   Metadata of a field (variable)
+│
+├─ Important Difference
+│   Field → Variable
+│   Property → Getter/Setter
+│
+├─ Accessing Private Fields
+│   Requires BindingFlags
+│
+├─ Example
+│   BindingFlags.NonPublic | BindingFlags.Instance
+│
+└─ Viva Answer
+    FieldInfo provides access to class fields,
+    including private fields.
+
+------------------------------------------------------------
+10. CONSTRUCTORINFO
+------------------------------------------------------------
+
+ConstructorInfo
+│
+├─ Represents
+│   Metadata of constructors
+│
+├─ Why Used
+│   - Create objects dynamically
+│   - Dependency Injection
+│
+├─ Example
+│   ctor.Invoke(null)
+│
+├─ Important Notes
+│   - Constructor must be public
+│   - Parameter order must match
+│
+└─ Viva Answer
+    ConstructorInfo allows object creation
+    at runtime without using new keyword.
+
+------------------------------------------------------------
+11. PARAMETERINFO
+------------------------------------------------------------
+
+ParameterInfo
+│
+├─ Represents
+│   Metadata of method or constructor parameters
+│
+├─ Provides
+│   - Parameter name
+│   - Parameter type
+│   - Position
+│   - Optional info
+│
+├─ Example
+│   method.GetParameters()
+│
+├─ Important Notes
+│   - Does not execute method
+│   - Empty array if no parameters
+│
+└─ Viva Answer
+    ParameterInfo provides information about
+    method parameters at runtime.
+
+------------------------------------------------------------
+12. ATTRIBUTES
+------------------------------------------------------------
+
+Attribute
+│
+├─ Definition
+│   Extra information attached to code
+│
+├─ Important Point
+│   - Does NOT execute code
+│   - Only stores metadata
+│
+├─ Why Used
+│   - Validation
+│   - Authorization
+│   - Routing
+│   - Logging
+│
+└─ Viva Answer
+    Attributes attach metadata to code
+    and are read using reflection.
+
+------------------------------------------------------------
+HOW ALL REFLECTION PARTS WORK TOGETHER
+------------------------------------------------------------
+
+Assembly
+   ↓
+Type
+   ↓
+Members
+   ├─ MethodInfo
+   ├─ PropertyInfo
+   ├─ FieldInfo
+   └─ ConstructorInfo
+   ↓
+Parameters / Attributes
+
+------------------------------------------------------------
+SUPER EASY MEMORY TRICKS
+------------------------------------------------------------
+
+Assembly        = Packaged code
+Reflection      = Inspecting code
+Type            = Class information
+MethodInfo      = Method details
+PropertyInfo    = Property access
+FieldInfo       = Variables
+ConstructorInfo = Object creation
+ParameterInfo   = Method inputs
+Attribute       = Extra notes on code
+
+------------------------------------------------------------
+FINAL BEST INTERVIEW ANSWER
+------------------------------------------------------------
+
+Reflection allows a program to inspect assemblies,
+discover types and members, and dynamically create
+objects and invoke methods at runtime.
+
+============================================================

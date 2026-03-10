@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\EcomOrderProcSystem\bin\Debug\net10.0\EcomOrderProcSystem.exe
+D:\Capgemini Training\C#\EcomOrderProcSystem\bin\Debug\net10.0\EcomOrderProcSystem.deps.json
+D:\Capgemini Training\C#\EcomOrderProcSystem\bin\Debug\net10.0\EcomOrderProcSystem.runtimeconfig.json
+D:\Capgemini Training\C#\EcomOrderProcSystem\bin\Debug\net10.0\EcomOrderProcSystem.dll
+D:\Capgemini Training\C#\EcomOrderProcSystem\bin\Debug\net10.0\EcomOrderProcSystem.pdb
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.AssemblyInfo.cs
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.sourcelink.json
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.dll
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\refint\EcomOrderProcSystem.dll
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.pdb
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\EcomOrderProcSystem.genruntimeconfig.cache
+D:\Capgemini Training\C#\EcomOrderProcSystem\obj\Debug\net10.0\ref\EcomOrderProcSystem.dll

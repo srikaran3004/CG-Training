@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\Day9\Exceptions\bin\Debug\net10.0\Exceptions.exe
+D:\Capgemini Training\C#\Day9\Exceptions\bin\Debug\net10.0\Exceptions.deps.json
+D:\Capgemini Training\C#\Day9\Exceptions\bin\Debug\net10.0\Exceptions.runtimeconfig.json
+D:\Capgemini Training\C#\Day9\Exceptions\bin\Debug\net10.0\Exceptions.dll
+D:\Capgemini Training\C#\Day9\Exceptions\bin\Debug\net10.0\Exceptions.pdb
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.AssemblyInfo.cs
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.sourcelink.json
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.dll
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\refint\Exceptions.dll
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.pdb
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\Exceptions.genruntimeconfig.cache
+D:\Capgemini Training\C#\Day9\Exceptions\obj\Debug\net10.0\ref\Exceptions.dll

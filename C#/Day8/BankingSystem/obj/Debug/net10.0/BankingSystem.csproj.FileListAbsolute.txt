@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\Day8\BankingSystem\bin\Debug\net10.0\BankingSystem.exe
+D:\Capgemini Training\C#\Day8\BankingSystem\bin\Debug\net10.0\BankingSystem.deps.json
+D:\Capgemini Training\C#\Day8\BankingSystem\bin\Debug\net10.0\BankingSystem.runtimeconfig.json
+D:\Capgemini Training\C#\Day8\BankingSystem\bin\Debug\net10.0\BankingSystem.dll
+D:\Capgemini Training\C#\Day8\BankingSystem\bin\Debug\net10.0\BankingSystem.pdb
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.AssemblyInfo.cs
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.sourcelink.json
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.dll
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\refint\BankingSystem.dll
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.pdb
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\BankingSystem.genruntimeconfig.cache
+D:\Capgemini Training\C#\Day8\BankingSystem\obj\Debug\net10.0\ref\BankingSystem.dll

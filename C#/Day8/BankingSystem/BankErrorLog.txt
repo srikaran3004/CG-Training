@@ -1,0 +1,5 @@
+Date & Time: 30-12-2025 10:55:30
+Account Number: 123456789
+BankingSystem.InsufficientBalanceException: Insufficient balance for withdrawal.
+   at BankingSystem.BankAccount.Withdraw(Decimal amount) in D:\Capgemini Training\C#\Day8\BankingSystem\BankingSystem.cs:line 38
+-----------------------------------

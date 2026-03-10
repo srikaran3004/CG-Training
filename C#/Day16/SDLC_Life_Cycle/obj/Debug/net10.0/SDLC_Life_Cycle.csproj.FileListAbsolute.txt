@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\SDLC_Life_Cycle\bin\Debug\net10.0\SDLC_Life_Cycle.exe
+D:\Capgemini Training\C#\SDLC_Life_Cycle\bin\Debug\net10.0\SDLC_Life_Cycle.deps.json
+D:\Capgemini Training\C#\SDLC_Life_Cycle\bin\Debug\net10.0\SDLC_Life_Cycle.runtimeconfig.json
+D:\Capgemini Training\C#\SDLC_Life_Cycle\bin\Debug\net10.0\SDLC_Life_Cycle.dll
+D:\Capgemini Training\C#\SDLC_Life_Cycle\bin\Debug\net10.0\SDLC_Life_Cycle.pdb
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.AssemblyInfo.cs
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.sourcelink.json
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.dll
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\refint\SDLC_Life_Cycle.dll
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.pdb
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\SDLC_Life_Cycle.genruntimeconfig.cache
+D:\Capgemini Training\C#\SDLC_Life_Cycle\obj\Debug\net10.0\ref\SDLC_Life_Cycle.dll

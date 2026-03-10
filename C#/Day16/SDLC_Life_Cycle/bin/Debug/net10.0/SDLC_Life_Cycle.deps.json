@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SDLC_Life_Cycle/1.0.0": {
+        "runtime": {
+          "SDLC_Life_Cycle.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SDLC_Life_Cycle/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
