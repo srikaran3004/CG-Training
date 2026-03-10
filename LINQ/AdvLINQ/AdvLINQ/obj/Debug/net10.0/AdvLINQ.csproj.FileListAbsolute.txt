@@ -1,0 +1,15 @@
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\bin\Debug\net10.0\AdvLINQ.exe
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\bin\Debug\net10.0\AdvLINQ.deps.json
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\bin\Debug\net10.0\AdvLINQ.runtimeconfig.json
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\bin\Debug\net10.0\AdvLINQ.dll
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\bin\Debug\net10.0\AdvLINQ.pdb
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.AssemblyInfoInputs.cache
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.AssemblyInfo.cs
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.sourcelink.json
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.dll
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\refint\AdvLINQ.dll
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.pdb
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\AdvLINQ.genruntimeconfig.cache
+D:\Capgemini Training\LINQ\AdvLINQ\AdvLINQ\obj\Debug\net10.0\ref\AdvLINQ.dll
