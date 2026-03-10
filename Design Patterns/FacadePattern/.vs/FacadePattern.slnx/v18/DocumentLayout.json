@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|d:\\capgemini training\\design patterns\\facadepattern\\facadepattern\\icecreamfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|solutionrelative:facadepattern\\icecreamfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|d:\\capgemini training\\design patterns\\facadepattern\\facadepattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|solutionrelative:facadepattern\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|d:\\capgemini training\\design patterns\\facadepattern\\facadepattern\\flavourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|solutionrelative:facadepattern\\flavourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|d:\\capgemini training\\design patterns\\facadepattern\\facadepattern\\coneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|solutionrelative:facadepattern\\coneservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|d:\\capgemini training\\design patterns\\facadepattern\\facadepattern\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D4ED828-49D7-4AB3-93C0-ED5E6F11EC74}|FacadePattern\\FacadePattern.csproj|solutionrelative:facadepattern\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IcecreamFacade.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\IcecreamFacade.cs",
+              "RelativeDocumentMoniker": "FacadePattern\\IcecreamFacade.cs",
+              "ToolTip": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\IcecreamFacade.cs",
+              "RelativeToolTip": "FacadePattern\\IcecreamFacade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T06:42:22.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\Program.cs",
+              "RelativeDocumentMoniker": "FacadePattern\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\Program.cs",
+              "RelativeToolTip": "FacadePattern\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T06:40:50.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\PaymentService.cs",
+              "RelativeDocumentMoniker": "FacadePattern\\PaymentService.cs",
+              "ToolTip": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\PaymentService.cs",
+              "RelativeToolTip": "FacadePattern\\PaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T06:35:46.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FlavourService.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\FlavourService.cs",
+              "RelativeDocumentMoniker": "FacadePattern\\FlavourService.cs",
+              "ToolTip": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\FlavourService.cs",
+              "RelativeToolTip": "FacadePattern\\FlavourService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T06:35:34.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConeService.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\ConeService.cs",
+              "RelativeDocumentMoniker": "FacadePattern\\ConeService.cs",
+              "ToolTip": "D:\\Capgemini Training\\Design Patterns\\FacadePattern\\FacadePattern\\ConeService.cs",
+              "RelativeToolTip": "FacadePattern\\ConeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T06:35:19.488Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

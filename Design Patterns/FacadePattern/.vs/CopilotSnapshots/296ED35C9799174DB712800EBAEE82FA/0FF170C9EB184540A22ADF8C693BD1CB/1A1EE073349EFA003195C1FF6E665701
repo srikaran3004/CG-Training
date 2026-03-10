@@ -1,0 +1,9 @@
+﻿using FacadePattern;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Child: Mum, I want an ice cream!");
+        
+    }
+}

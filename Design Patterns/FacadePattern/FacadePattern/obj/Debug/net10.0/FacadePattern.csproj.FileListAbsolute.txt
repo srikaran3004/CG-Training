@@ -1,0 +1,15 @@
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\bin\Debug\net10.0\FacadePattern.exe
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\bin\Debug\net10.0\FacadePattern.deps.json
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\bin\Debug\net10.0\FacadePattern.runtimeconfig.json
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\bin\Debug\net10.0\FacadePattern.dll
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\bin\Debug\net10.0\FacadePattern.pdb
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.AssemblyInfoInputs.cache
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.AssemblyInfo.cs
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.sourcelink.json
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.dll
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\refint\FacadePattern.dll
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.pdb
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\FacadePattern.genruntimeconfig.cache
+D:\Capgemini Training\Design Patterns\FacadePattern\FacadePattern\obj\Debug\net10.0\ref\FacadePattern.dll
