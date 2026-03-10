@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\ADO.NET\\Day3\\CommandObjectVariations\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71E0C6AB-3260-4385-A240-CDF7D45A91DD}|CommandObjectVariations\\CommandObjectVariations.csproj|d:\\capgemini training\\ado.net\\day3\\commandobjectvariations\\commandobjectvariations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71E0C6AB-3260-4385-A240-CDF7D45A91DD}|CommandObjectVariations\\CommandObjectVariations.csproj|solutionrelative:commandobjectvariations\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\ADO.NET\\Day3\\CommandObjectVariations\\CommandObjectVariations\\Program.cs",
+              "RelativeDocumentMoniker": "CommandObjectVariations\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\ADO.NET\\Day3\\CommandObjectVariations\\CommandObjectVariations\\Program.cs",
+              "RelativeToolTip": "CommandObjectVariations\\Program.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAqwH0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-09T04:32:21.522Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

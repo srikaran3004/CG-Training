@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\ADO.NET\\Day1\\StoredProcedure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55C654EA-C088-4708-9126-04577DA04614}|StoredProcedure\\StoredProcedure.csproj|d:\\capgemini training\\ado.net\\day1\\storedprocedure\\storedprocedure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55C654EA-C088-4708-9126-04577DA04614}|StoredProcedure\\StoredProcedure.csproj|solutionrelative:storedprocedure\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\ADO.NET\\Day1\\StoredProcedure\\StoredProcedure\\Program.cs",
+              "RelativeDocumentMoniker": "StoredProcedure\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\ADO.NET\\Day1\\StoredProcedure\\StoredProcedure\\Program.cs*",
+              "RelativeToolTip": "StoredProcedure\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T06:24:29.157Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
