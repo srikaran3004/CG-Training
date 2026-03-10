@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\orangehrmsautomation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\orangehrmsautomation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\pages\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\pages\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\pages\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\pages\\addemployeepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\pages\\addemployeepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\tests\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\tests\\basetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\tests\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\tests\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|d:\\capgemini training\\testing\\orangehrmsautomation\\orangehrmsautomation\\tests\\addemployeetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8E62F8F-0DF9-4B53-BC97-C4DFC474008D}|OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj|solutionrelative:orangehrmsautomation\\tests\\addemployeetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginTest.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Tests\\LoginTest.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\Tests\\LoginTest.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Tests\\LoginTest.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\Tests\\LoginTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:47:05.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseTest.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Tests\\BaseTest.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\Tests\\BaseTest.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Tests\\BaseTest.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\Tests\\BaseTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:46:59.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEmployeePage.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Pages\\AddEmployeePage.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\Pages\\AddEmployeePage.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Pages\\AddEmployeePage.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\Pages\\AddEmployeePage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:46:50.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardPage.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Pages\\DashboardPage.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\Pages\\DashboardPage.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Pages\\DashboardPage.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\Pages\\DashboardPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:46:42.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Pages\\LoginPage.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\Pages\\LoginPage.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Pages\\LoginPage.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\Pages\\LoginPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:46:34.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrangeHRMSAutomation",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj",
+              "RelativeToolTip": "OrangeHRMSAutomation\\OrangeHRMSAutomation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-05T09:45:42.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginTest.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\LoginTest.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\LoginTest.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\LoginTest.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\LoginTest.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvyYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:40:13.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddEmployeeTest.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Tests\\AddEmployeeTest.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\Tests\\AddEmployeeTest.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\Tests\\AddEmployeeTest.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\Tests\\AddEmployeeTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:47:12.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "OrangeHRMSAutomation\\UnitTest1.cs",
+              "ToolTip": "D:\\Capgemini Training\\Testing\\OrangeHRMSAutomation\\OrangeHRMSAutomation\\UnitTest1.cs",
+              "RelativeToolTip": "OrangeHRMSAutomation\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T09:31:57.664Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

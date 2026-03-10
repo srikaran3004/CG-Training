@@ -1,0 +1,120 @@
+﻿using Moq;
+using NUnit.Framework;
+using MoqTesting.Services;
+using MoqTesting.Repositories;
+using MoqTesting.Models;
+
+namespace EmployeeApp.Tests
+{
+    [TestFixture]
+    public sealed class EmployeeServiceTests
+    {
+        private Mock<IEmployeeRepository> _repoMock = null!;
+        private EmployeeService _service = default!;
+        [SetUp]
+        public void SetUp()
+        {
+            _repoMock = new Mock<IEmployeeRepository>();
+            _service = new EmployeeService(_repoMock.Object);
+        }
+        [TearDown]
+        public void TearDown()
+        {
+            _repoMock.VerifyAll();
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldReturnEmployee_WhenEmployeeExists()
+        {
+            // Arrange
+            var employee = new Employee { Id = 1, Name = "John Doe", Position = "Developer", Salary = 50000 };
+            _repoMock.Setup(r => r.GetById(1)).Returns(employee);
+            // Act
+            var result = _service.GetEmployeeOrThrow(1);
+            // Assert
+            Assert.AreEqual(employee, result);
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldThrowArgumentOutOfRangeException_WhenIdIsNonPositive()
+        {
+            // Act & Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => _service.GetEmployeeOrThrow(0));
+            Assert.Throws<ArgumentOutOfRangeException>(() => _service.GetEmployeeOrThrow(-1));
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldThrowKeyNotFoundException_WhenEmployeeDoesNotExist()
+        {
+            // Arrange
+            _repoMock.Setup(r => r.GetById(1)).Returns((Employee?)null);
+            // Act & Assert
+            Assert.Throws<KeyNotFoundException>(() => _service.GetEmployeeOrThrow(1));
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldCallRepositoryGetByIdOnce()
+        {
+            // Arrange
+            var employee = new Employee { Id = 1, Name = "John Doe", Position = "Developer", Salary = 50000 };
+            _repoMock.Setup(r => r.GetById(1)).Returns(employee).Verifiable();
+            // Act
+            _service.GetEmployeeOrThrow(1);
+            // Assert is handled by TearDown which calls VerifyAll
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldNotCallRepositoryGetById_WhenIdIsNonPositive()
+        {
+            // Arrange
+            _repoMock.Setup(r => r.GetById(It.IsAny<int>())).Verifiable();
+            // Act
+            Assert.Throws<ArgumentOutOfRangeException>(() => _service.GetEmployeeOrThrow(0));
+            Assert.Throws<ArgumentOutOfRangeException>(() => _service.GetEmployeeOrThrow(-1));
+            // Assert
+            _repoMock.Verify(r => r.GetById(It.IsAny<int>()), Times.Never);
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldCallRepositoryGetByIdWithCorrectId()
+        {
+            // Arrange
+            var employee = new Employee { Id = 1, Name = "John Doe", Position = "Developer", Salary = 50000 };
+            _repoMock.Setup(r => r.GetById(1)).Returns(employee).Verifiable();
+            // Act
+            _service.GetEmployeeOrThrow(1);
+            // Assert is handled by TearDown which calls VerifyAll
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldThrowKeyNotFoundException_WhenRepositoryReturnsNull()
+        {
+            // Arrange
+            _repoMock.Setup(r => r.GetById(1)).Returns((Employee?)null).Verifiable();
+            // Act & Assert
+            Assert.Throws<KeyNotFoundException>(() => _service.GetEmployeeOrThrow(1));
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldReturnCorrectEmployee_WhenMultipleEmployeesExist()
+        {
+            // Arrange
+            var employee1 = new Employee { Id = 1, Name = "John Doe", Position = "Developer", Salary = 50000 };
+            var employee2 = new Employee { Id = 2, Name = "Jane Smith", Position = "Manager", Salary = 70000 };
+            _repoMock.Setup(r => r.GetById(1)).Returns(employee1).Verifiable();
+            _repoMock.Setup(r => r.GetById(2)).Returns
+                (employee2);
+            _service.GetEmployeeOrThrow(1);
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldHandleRepositoryExceptions()
+        {
+            // Arrange
+            _repoMock.Setup(r => r.GetById(1)).Throws(new Exception("Database error")).Verifiable();
+            // Act & Assert
+            var ex = Assert.Throws<Exception>(() => _service.GetEmployeeOrThrow(1));
+            Assert.AreEqual("Database error", ex?.Message);
+        }
+        [Test]
+        public void GetEmployeeOrThrow_ShouldHandleRepositoryExceptionsGracefully()
+        {
+            // Arrange
+            _repoMock.Setup(r => r.GetById(1)).Throws(new Exception("Database error")).Verifiable();
+            // Act & Assert
+            var ex = Assert.Throws<Exception>(() => _service.GetEmployeeOrThrow(1));
+            Assert.AreEqual("Database error", ex?.Message);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\bin\Debug\net10.0\MoqTesting.exe
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\bin\Debug\net10.0\MoqTesting.deps.json
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\bin\Debug\net10.0\MoqTesting.runtimeconfig.json
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\bin\Debug\net10.0\MoqTesting.dll
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\bin\Debug\net10.0\MoqTesting.pdb
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.AssemblyInfoInputs.cache
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.AssemblyInfo.cs
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.sourcelink.json
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.dll
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\refint\MoqTesting.dll
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.pdb
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\MoqTesting.genruntimeconfig.cache
+D:\Capgemini Training\Testing\MoqTesting\MoqTesting\obj\Debug\net10.0\ref\MoqTesting.dll

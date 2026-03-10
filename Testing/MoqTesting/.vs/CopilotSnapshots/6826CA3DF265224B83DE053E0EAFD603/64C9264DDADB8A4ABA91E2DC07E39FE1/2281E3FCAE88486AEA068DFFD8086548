@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MoqTesting.Repositories
+{
+    public interface IEmployeeRepository
+    {
+        IEmployeeRepository? GetById(int id);
+        IReadOnlyList<IEmployeeRepository> GetAll();
+        void Add(Employee employee);
+        void Update(Employee employee);
+        void Delete(int id);
+    }
+}

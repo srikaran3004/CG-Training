@@ -1,0 +1,15 @@
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\bin\Debug\net10.0\CheckEvenNum.exe
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\bin\Debug\net10.0\CheckEvenNum.deps.json
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\bin\Debug\net10.0\CheckEvenNum.runtimeconfig.json
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\bin\Debug\net10.0\CheckEvenNum.dll
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\bin\Debug\net10.0\CheckEvenNum.pdb
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.AssemblyInfoInputs.cache
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.AssemblyInfo.cs
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.sourcelink.json
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.dll
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\refint\CheckEvenNum.dll
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.pdb
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\CheckEvenNum.genruntimeconfig.cache
+D:\Capgemini Training\TestingProject\EvenNumTesting\CheckEvenNum\obj\Debug\net10.0\ref\CheckEvenNum.dll

@@ -1,0 +1,62 @@
+@page
+@model DashboardModel
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_Layout";
+}
+
+<h1 id="welcome-message">@Model.WelcomeMessage</h1>
+<p class="text-muted" id="user-role">Role: @Model.UserRole</p>
+
+<div class="row mt-4">
+    <div class="col-md-4 mb-3">
+        <div class="card text-white bg-primary shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Total Products</h5>
+                <h2 id="stat-products">@Model.TotalProducts</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card text-white bg-success shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Registered Users</h5>
+                <h2 id="stat-users">@Model.TotalUsers</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card text-white bg-warning shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Pending Orders</h5>
+                <h2 id="stat-orders">@Model.PendingOrders</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card shadow">
+            <div class="card-header">
+                <h5 class="mb-0">Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <a href="/Products" class="btn btn-outline-primary me-2" id="action-products">View Products</a>
+                <a href="/Contact" class="btn btn-outline-secondary me-2" id="action-contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delayed-notification" class="alert alert-info mt-4" style="display: none;">
+    ✅ All systems loaded successfully! Dashboard data is up to date.
+</div>
+
+@section Scripts {
+    <script>
+        setTimeout(function () {
+            document.getElementById('delayed-notification').style.display = 'block';
+        }, 3000);
+    </script>
+}

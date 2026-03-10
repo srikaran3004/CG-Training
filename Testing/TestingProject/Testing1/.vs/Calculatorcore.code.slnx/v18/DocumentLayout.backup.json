@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\TestingProject\\Testing1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2468B1D2-6E37-4A50-8FC1-216CBDE7ADB8}|CalcUnitTesting.core\\CalcUnitTesting.core.csproj|d:\\capgemini training\\testingproject\\testing1\\calcunittesting.core\\feature\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468B1D2-6E37-4A50-8FC1-216CBDE7ADB8}|CalcUnitTesting.core\\CalcUnitTesting.core.csproj|solutionrelative:calcunittesting.core\\feature\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{378B54F1-355F-41D4-AE93-BE06FBB6D09D}|CalculatorTestProj\\CalculatorTestProj.csproj|d:\\capgemini training\\testingproject\\testing1\\calculatortestproj\\calculatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{378B54F1-355F-41D4-AE93-BE06FBB6D09D}|CalculatorTestProj\\CalculatorTestProj.csproj|solutionrelative:calculatortestproj\\calculatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\TestingProject\\Testing1\\CalcUnitTesting.core\\Feature\\Calculator.cs",
+              "RelativeDocumentMoniker": "CalcUnitTesting.core\\Feature\\Calculator.cs",
+              "ToolTip": "D:\\Capgemini Training\\TestingProject\\Testing1\\CalcUnitTesting.core\\Feature\\Calculator.cs*",
+              "RelativeToolTip": "CalcUnitTesting.core\\Feature\\Calculator.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T05:24:45.841Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorTest.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\TestingProject\\Testing1\\CalculatorTestProj\\CalculatorTest.cs",
+              "RelativeDocumentMoniker": "CalculatorTestProj\\CalculatorTest.cs",
+              "ToolTip": "D:\\Capgemini Training\\TestingProject\\Testing1\\CalculatorTestProj\\CalculatorTest.cs*",
+              "RelativeToolTip": "CalculatorTestProj\\CalculatorTest.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T05:22:19.355Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

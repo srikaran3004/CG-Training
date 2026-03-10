@@ -1,0 +1,63 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "_Layout";
+}
+
+<h1>Contact Us</h1>
+<p class="text-muted">Fill out the form below and we'll get back to you.</p>
+
+@if (Model.IsSubmitted)
+{
+    <div class="alert alert-success" id="success-message">
+        <strong>Thank you!</strong> Your message has been submitted successfully. We'll respond shortly.
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="Name"
+                               placeholder="Enter your name" value="@Model.Name" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="Email"
+                               placeholder="Enter your email" value="@Model.Email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="Phone"
+                               placeholder="Enter your phone number" value="@Model.Phone" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select class="form-select" id="subject" name="Subject">
+                            <option value="">Select a subject</option>
+                            <option value="general" selected="@(Model.Subject == "general")">General Inquiry</option>
+                            <option value="support" selected="@(Model.Subject == "support")">Technical Support</option>
+                            <option value="feedback" selected="@(Model.Subject == "feedback")">Feedback</option>
+                            <option value="bug" selected="@(Model.Subject == "bug")">Bug Report</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="Message" rows="4"
+                                  placeholder="Type your message here...">@Model.Message</textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="subscribe" name="Subscribe" value="true"
+                               checked="@Model.Subscribe" />
+                        <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

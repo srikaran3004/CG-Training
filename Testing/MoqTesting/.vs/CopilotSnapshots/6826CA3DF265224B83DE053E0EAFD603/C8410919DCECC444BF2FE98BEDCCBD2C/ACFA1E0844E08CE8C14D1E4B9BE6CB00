@@ -1,0 +1,15 @@
+﻿using Moq;
+using NUnit.Framework;
+using MoqTesting.Services;
+using MoqTesting.Repositories;
+using MoqTesting.Models;
+
+namespace EmployeeApp.Tests
+{
+    [TestFixture]
+    public sealed class EmployeeServiceTests
+    {
+        private Mock<IEmployeeRepository> _repoMock = null!;
+        private EmployeeService _service = default!;
+    }
+}

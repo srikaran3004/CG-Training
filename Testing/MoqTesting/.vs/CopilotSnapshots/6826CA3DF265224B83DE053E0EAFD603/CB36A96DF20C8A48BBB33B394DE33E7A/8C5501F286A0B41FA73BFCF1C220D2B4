@@ -1,0 +1,13 @@
+﻿using MoqTesting.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MoqTesting.Repositories
+{
+    public Employee GetById(int id)
+    {
+        retu
+    }
+}
+

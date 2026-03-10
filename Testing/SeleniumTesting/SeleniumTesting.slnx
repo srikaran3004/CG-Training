@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DemoWebApp/DemoWebApp.csproj" />
+  <Project Path="SeleniumTesting/SeleniumTesting.csproj" />
+</Solution>
