@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\TestCaseValidation\bin\Debug\net10.0\TestCaseValidation.exe
+D:\Capgemini Training\C#\TestCaseValidation\bin\Debug\net10.0\TestCaseValidation.deps.json
+D:\Capgemini Training\C#\TestCaseValidation\bin\Debug\net10.0\TestCaseValidation.runtimeconfig.json
+D:\Capgemini Training\C#\TestCaseValidation\bin\Debug\net10.0\TestCaseValidation.dll
+D:\Capgemini Training\C#\TestCaseValidation\bin\Debug\net10.0\TestCaseValidation.pdb
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.AssemblyInfo.cs
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.sourcelink.json
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.dll
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\refint\TestCaseValidation.dll
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.pdb
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\TestCaseValidation.genruntimeconfig.cache
+D:\Capgemini Training\C#\TestCaseValidation\obj\Debug\net10.0\ref\TestCaseValidation.dll

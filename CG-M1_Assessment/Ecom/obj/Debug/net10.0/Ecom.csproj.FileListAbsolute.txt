@@ -1,0 +1,5 @@
+D:\Capgemini Training\Ecom\obj\Debug\net10.0\Ecom.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\Ecom\obj\Debug\net10.0\Ecom.AssemblyInfoInputs.cache
+D:\Capgemini Training\Ecom\obj\Debug\net10.0\Ecom.AssemblyInfo.cs
+D:\Capgemini Training\Ecom\obj\Debug\net10.0\Ecom.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\Ecom\obj\Debug\net10.0\Ecom.sourcelink.json

@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\bin\Debug\net10.0\FactoryRobotHazardAnalyzer.exe
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\bin\Debug\net10.0\FactoryRobotHazardAnalyzer.deps.json
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\bin\Debug\net10.0\FactoryRobotHazardAnalyzer.runtimeconfig.json
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\bin\Debug\net10.0\FactoryRobotHazardAnalyzer.dll
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\bin\Debug\net10.0\FactoryRobotHazardAnalyzer.pdb
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.AssemblyInfo.cs
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.sourcelink.json
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.dll
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\refint\FactoryRobotHazardAnalyzer.dll
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.pdb
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\FactoryRobotHazardAnalyzer.genruntimeconfig.cache
+D:\Capgemini Training\C#\FactoryRobotHazardAnalyzer\obj\Debug\net10.0\ref\FactoryRobotHazardAnalyzer.dll
