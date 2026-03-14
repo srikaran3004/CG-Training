@@ -1,0 +1,6 @@
+@DbPerInstanceDemo_HostAddress = http://localhost:5278
+
+GET {{DbPerInstanceDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

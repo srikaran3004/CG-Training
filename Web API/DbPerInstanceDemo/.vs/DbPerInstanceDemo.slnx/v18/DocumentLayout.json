@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|d:\\capgemini training\\web api\\dbperinstancedemo\\dbperinstancedemo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|solutionrelative:dbperinstancedemo\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|d:\\capgemini training\\web api\\dbperinstancedemo\\dbperinstancedemo\\appsettings.instance2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|solutionrelative:dbperinstancedemo\\appsettings.instance2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|d:\\capgemini training\\web api\\dbperinstancedemo\\dbperinstancedemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|solutionrelative:dbperinstancedemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|d:\\capgemini training\\web api\\dbperinstancedemo\\dbperinstancedemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|solutionrelative:dbperinstancedemo\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|d:\\capgemini training\\web api\\dbperinstancedemo\\dbperinstancedemo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDBECB34-3388-2AA0-17F5-E14C617057B8}|DbPerInstanceDemo\\DbPerInstanceDemo.csproj|solutionrelative:dbperinstancedemo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DbPerInstanceDemo\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DbPerInstanceDemo\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-14T08:23:54.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Instance2.json",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\appsettings.Instance2.json",
+              "RelativeDocumentMoniker": "DbPerInstanceDemo\\appsettings.Instance2.json",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\appsettings.Instance2.json",
+              "RelativeToolTip": "DbPerInstanceDemo\\appsettings.Instance2.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-14T08:23:44.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "DbPerInstanceDemo\\appsettings.json",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\appsettings.json",
+              "RelativeToolTip": "DbPerInstanceDemo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-14T08:23:38.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DbPerInstanceDemo\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DbPerInstanceDemo\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T08:23:30.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "DbPerInstanceDemo\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Capgemini Training\\Web API\\DbPerInstanceDemo\\DbPerInstanceDemo\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "DbPerInstanceDemo\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T08:23:22.145Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
