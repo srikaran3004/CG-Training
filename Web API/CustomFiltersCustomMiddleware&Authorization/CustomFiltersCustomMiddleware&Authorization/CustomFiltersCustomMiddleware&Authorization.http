@@ -1,0 +1,6 @@
+@CustomFiltersCustomMiddleware_Authorization_HostAddress = http://localhost:5024
+
+GET {{CustomFiltersCustomMiddleware_Authorization_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "5r1ya/AxC80=",
+  "success": true,
+  "projectFilePath": "D:\\Capgemini Training\\Web API\\NLogWebApiDemo\\NLogWebApiDemo\\NLogWebApiDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\nlog\\5.3.4\\nlog.5.3.4.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\nlog.extensions.logging\\5.3.15\\nlog.extensions.logging.5.3.15.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.15\\nlog.web.aspnetcore.5.3.15.nupkg.sha512"
+  ],
+  "logs": []
+}

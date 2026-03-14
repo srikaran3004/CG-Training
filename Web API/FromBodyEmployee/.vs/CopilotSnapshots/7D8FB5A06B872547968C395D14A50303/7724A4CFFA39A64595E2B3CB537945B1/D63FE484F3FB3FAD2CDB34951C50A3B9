@@ -1,0 +1,34 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace FromBodyEmployee.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class EmployeeController : ControllerBase
+    {
+        [HttpPost("add")]
+        public IActionResult AddEmployee([FromBody] Employee? employee)
+        {
+            if (employee is null)
+            {
+                return BadRequest("Employee data is required.");
+            }
+
+            Employee.Employees.Add(employee);
+            return Ok(employee);
+        }
+
+        [HttpGet("all")]
+        public ActionResult<List<Employee>> GetAllEmployees()
+        {
+            return Ok(Employee.Employees);
+        }
+
+        [HttpGet("total-salary")]
+        public ActionResult<double> GetTotalSalaryOfAll()
+        {
+            return Ok(Employee.Employees.Sum(e => e.Salary));
+        }
+
+    }
+}

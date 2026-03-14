@@ -1,0 +1,54 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace FromBodyEmployee.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class EmployeeController : ControllerBase
+    {
+        [HttpPost]
+        public IActionResult AddEmployee([FromBody] Employee? employee)
+        {
+            if (employee is null)
+            {
+                return BadRequest("Employee data is required.");
+            }
+
+            if (employee.Id <= 0)
+            {
+                employee.Id = Employee.Employees.Count == 0 ? 1 : Employee.Employees.Max(e => e.Id) + 1;
+            }
+
+            if (string.IsNullOrWhiteSpace(employee.Name))
+            {
+                employee.Name = "Unknown";
+            }
+
+            if (employee.Age <= 0)
+            {
+                employee.Age = 18;
+            }
+
+            if (employee.Salary < 0)
+            {
+                employee.Salary = 0;
+            }
+
+            Employee.Employees.Add(employee);
+            return Ok(employee);
+        }
+
+        [HttpGet("all")]
+        public ActionResult<List<Employee>> GetAllEmployees()
+        {
+            return Ok(Employee.Employees);
+        }
+
+        [HttpGet("total-salary")]
+        public ActionResult<double> GetTotalSalaryOfAll()
+        {
+            return Ok(Employee.Employees.Sum(e => e.Salary));
+        }
+
+    }
+}

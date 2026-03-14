@@ -7,6 +7,11 @@ namespace SimpleWebAPI.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
+        private readonly ILogger<StudentController> _logger;
+        public StudentController(ILogger<StudentController> logger)
+        {
+            _logger = logger;
+        }
         [HttpGet]
         public IActionResult GetStudents()
         {
@@ -16,7 +21,7 @@ namespace SimpleWebAPI.Controllers
                 new Student { Id = 2, Name = "Srikaran", marks = 92 },
                 new Student { Id = 3, Name = "Kishan", marks = 98 }
             };
-
+            _logger.LogInformation("GetStudents method called");
             return Ok(Students);
         }
         [HttpGet("oddnumbers")]
@@ -31,7 +36,7 @@ namespace SimpleWebAPI.Controllers
                     odd.Add(i);
                 }
             }
-
+            _logger.LogInformation("OddNumbers method called");
             return Ok(odd);
         }
     }

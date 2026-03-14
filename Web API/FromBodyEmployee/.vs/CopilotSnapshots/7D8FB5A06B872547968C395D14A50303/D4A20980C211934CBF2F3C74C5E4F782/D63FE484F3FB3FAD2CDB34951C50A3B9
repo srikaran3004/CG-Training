@@ -1,0 +1,10 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace FromBodyEmployee.Controllers
+{
+    public class EmployeeController : Controller
+    {
+        public List<Employee> emp = new List<Employee>();
+
+    }
+}
