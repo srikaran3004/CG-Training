@@ -1,0 +1,92 @@
+﻿-- Create Person Table
+CREATE TABLE Person (
+    PersonID INT IDENTITY(1,1) PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    City VARCHAR(50)
+);
+
+-- Insert 50 Sample Records
+INSERT INTO Person (FirstName, LastName, Age, City) VALUES
+('John','Smith',28,'New York'),
+('Emma','Johnson',34,'Chicago'),
+('Liam','Williams',22,'Houston'),
+('Olivia','Brown',30,'Phoenix'),
+('Noah','Jones',27,'Philadelphia'),
+('Ava','Garcia',31,'San Antonio'),
+('William','Miller',45,'San Diego'),
+('Sophia','Davis',26,'Dallas'),
+('James','Rodriguez',37,'San Jose'),
+('Isabella','Martinez',24,'Austin'),
+('Benjamin','Hernandez',33,'Jacksonville'),
+('Mia','Lopez',29,'Fort Worth'),
+('Lucas','Gonzalez',41,'Columbus'),
+('Charlotte','Wilson',23,'Charlotte'),
+('Henry','Anderson',36,'San Francisco'),
+('Amelia','Thomas',28,'Indianapolis'),
+('Alexander','Taylor',39,'Seattle'),
+('Harper','Moore',21,'Denver'),
+('Daniel','Jackson',44,'Washington'),
+('Evelyn','Martin',32,'Boston'),
+('Matthew','Lee',27,'El Paso'),
+('Abigail','Perez',35,'Detroit'),
+('Joseph','Thompson',40,'Nashville'),
+('Emily','White',25,'Portland'),
+('Samuel','Harris',31,'Memphis'),
+('Elizabeth','Sanchez',29,'Oklahoma City'),
+('David','Clark',42,'Las Vegas'),
+('Sofia','Ramirez',24,'Louisville'),
+('Carter','Lewis',38,'Baltimore'),
+('Avery','Robinson',26,'Milwaukee'),
+('Wyatt','Walker',34,'Albuquerque'),
+('Ella','Young',22,'Tucson'),
+('Jayden','Allen',37,'Fresno'),
+('Scarlett','King',28,'Sacramento'),
+('Luke','Wright',43,'Mesa'),
+('Grace','Scott',30,'Kansas City'),
+('Julian','Torres',36,'Atlanta'),
+('Chloe','Nguyen',23,'Omaha'),
+('Levi','Hill',41,'Raleigh'),
+('Victoria','Flores',27,'Miami'),
+('Isaac','Green',33,'Oakland'),
+('Hannah','Adams',29,'Minneapolis'),
+('Gabriel','Nelson',35,'Tulsa'),
+('Lily','Baker',24,'Arlington'),
+('Anthony','Hall',39,'Tampa'),
+('Zoey','Rivera',26,'New Orleans'),
+('Dylan','Campbell',31,'Cleveland'),
+('Nora','Mitchell',28,'Honolulu'),
+('Jack','Carter',45,'Anaheim'),
+('Aria','Roberts',21,'Lexington');
+GO
+
+-- Stored Procedure for Pagination
+CREATE OR ALTER PROCEDURE sp_GetPersonsPaged
+    @PageNumber INT = 1,
+    @PageSize   INT = 10
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- Return total record count
+    SELECT COUNT(*) AS TotalCount FROM Person;
+
+    -- Return paged records
+    IF @PageSize = 0
+    BEGIN
+        -- Return all records when PageSize is 0 (All button)
+        SELECT PersonID, FirstName, LastName, Age, City
+        FROM Person
+        ORDER BY PersonID;
+    END
+    ELSE
+    BEGIN
+        SELECT PersonID, FirstName, LastName, Age, City
+        FROM Person
+        ORDER BY PersonID
+        OFFSET (@PageNumber - 1) * @PageSize ROWS
+        FETCH NEXT @PageSize ROWS ONLY;
+    END
+END
+GO

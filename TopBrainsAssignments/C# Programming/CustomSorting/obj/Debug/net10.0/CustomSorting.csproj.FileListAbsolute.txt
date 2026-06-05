@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.AssemblyInfo.cs
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.sourcelink.json
+D:\Capgemini Training\C#\CustomSorting\bin\Debug\net10.0\CustomSorting.exe
+D:\Capgemini Training\C#\CustomSorting\bin\Debug\net10.0\CustomSorting.deps.json
+D:\Capgemini Training\C#\CustomSorting\bin\Debug\net10.0\CustomSorting.runtimeconfig.json
+D:\Capgemini Training\C#\CustomSorting\bin\Debug\net10.0\CustomSorting.dll
+D:\Capgemini Training\C#\CustomSorting\bin\Debug\net10.0\CustomSorting.pdb
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.dll
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\refint\CustomSorting.dll
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.pdb
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\CustomSorting.genruntimeconfig.cache
+D:\Capgemini Training\C#\CustomSorting\obj\Debug\net10.0\ref\CustomSorting.dll

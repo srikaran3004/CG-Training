@@ -1,0 +1,15 @@
+D:\Capgemini Training\SearchInsideCollection\bin\Debug\net10.0\SearchInsideCollection.exe
+D:\Capgemini Training\SearchInsideCollection\bin\Debug\net10.0\SearchInsideCollection.deps.json
+D:\Capgemini Training\SearchInsideCollection\bin\Debug\net10.0\SearchInsideCollection.runtimeconfig.json
+D:\Capgemini Training\SearchInsideCollection\bin\Debug\net10.0\SearchInsideCollection.dll
+D:\Capgemini Training\SearchInsideCollection\bin\Debug\net10.0\SearchInsideCollection.pdb
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.AssemblyInfoInputs.cache
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.AssemblyInfo.cs
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.sourcelink.json
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.dll
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\refint\SearchInsideCollection.dll
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.pdb
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\SearchInsideCollection.genruntimeconfig.cache
+D:\Capgemini Training\SearchInsideCollection\obj\Debug\net10.0\ref\SearchInsideCollection.dll

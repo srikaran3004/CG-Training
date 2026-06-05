@@ -1,0 +1,8 @@
+<select [(ngModel)]="selected">
+    <option value="">Select Country</option>
+    @for (i of countries; track i) {
+      <option [value]="i">{{i}}</option>
+    }
+</select>
+
+<input [(ngModel)]="selected">

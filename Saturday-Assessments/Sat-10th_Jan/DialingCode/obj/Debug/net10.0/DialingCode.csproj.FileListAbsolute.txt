@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.AssemblyInfo.cs
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.sourcelink.json
+D:\Capgemini Training\C#\DialingCode\bin\Debug\net10.0\DialingCode.exe
+D:\Capgemini Training\C#\DialingCode\bin\Debug\net10.0\DialingCode.deps.json
+D:\Capgemini Training\C#\DialingCode\bin\Debug\net10.0\DialingCode.runtimeconfig.json
+D:\Capgemini Training\C#\DialingCode\bin\Debug\net10.0\DialingCode.dll
+D:\Capgemini Training\C#\DialingCode\bin\Debug\net10.0\DialingCode.pdb
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.dll
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\refint\DialingCode.dll
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.pdb
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\DialingCode.genruntimeconfig.cache
+D:\Capgemini Training\C#\DialingCode\obj\Debug\net10.0\ref\DialingCode.dll

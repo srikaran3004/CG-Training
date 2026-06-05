@@ -1,0 +1,15 @@
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\bin\Debug\net10.0\DictionaryQuestions.exe
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\bin\Debug\net10.0\DictionaryQuestions.deps.json
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\bin\Debug\net10.0\DictionaryQuestions.runtimeconfig.json
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\bin\Debug\net10.0\DictionaryQuestions.dll
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\bin\Debug\net10.0\DictionaryQuestions.pdb
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.AssemblyInfoInputs.cache
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.AssemblyInfo.cs
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.sourcelink.json
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.dll
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\refint\DictionaryQuestions.dll
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.pdb
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\DictionaryQuestions.genruntimeconfig.cache
+D:\Capgemini Training\M1 Practice Assignments\Dictionary 20 Que's\DictionaryQuestions\obj\Debug\net10.0\ref\DictionaryQuestions.dll

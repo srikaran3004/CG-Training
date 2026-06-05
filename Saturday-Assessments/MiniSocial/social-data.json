@@ -1,0 +1,21 @@
+[
+  {
+    "Username": "sri",
+    "Email": "sri@gmail.com",
+    "Following": [],
+    "Posts": []
+  },
+  {
+    "Username": "pavan",
+    "Email": "pavan@gmail.com",
+    "Following": [
+      "sri"
+    ],
+    "Posts": [
+      {
+        "Content": "hi #trending #srikaran",
+        "CreatedAt": "2026-01-16T09:42:47.6605563Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+<select [(ngModel)]="selected1">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+<select [(ngModel)]="selected2">
+    <option value="A">Option A</option>
+    <option value="B">Option B</option>
+    <option value="C">Option C</option>
+</select>
+
+<input [value]="selected1 | concate:selected2">

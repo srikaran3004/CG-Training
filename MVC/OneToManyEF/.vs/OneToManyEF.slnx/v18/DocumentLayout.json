@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\MVC\\OneToManyEF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\views\\employees\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\views\\employees\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\services\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|d:\\capgemini training\\mvc\\onetomanyef\\onetomanyef\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ABEC8C74-1998-47FD-BF91-B25C235CD2B1}|OneToManyEF\\OneToManyEF.csproj|solutionrelative:onetomanyef\\views\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Services\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "OneToManyEF\\Services\\DataSeeder.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Services\\DataSeeder.cs",
+              "RelativeToolTip": "OneToManyEF\\Services\\DataSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T05:35:10.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "OneToManyEF\\Models\\Employee.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Models\\Employee.cs",
+              "RelativeToolTip": "OneToManyEF\\Models\\Employee.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T04:37:31.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "OneToManyEF\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "OneToManyEF\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T04:17:43.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\appsettings.json",
+              "RelativeDocumentMoniker": "OneToManyEF\\appsettings.json",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\appsettings.json",
+              "RelativeToolTip": "OneToManyEF\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-09T04:05:33.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Views\\Employees\\Create.cshtml",
+              "RelativeDocumentMoniker": "OneToManyEF\\Views\\Employees\\Create.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Views\\Employees\\Create.cshtml",
+              "RelativeToolTip": "OneToManyEF\\Views\\Employees\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-09T04:03:10.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "OneToManyEF\\Controllers\\EmployeesController.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "OneToManyEF\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T04:02:17.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Program.cs",
+              "RelativeDocumentMoniker": "OneToManyEF\\Program.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Program.cs",
+              "RelativeToolTip": "OneToManyEF\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T05:25:19.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "OneToManyEF\\Models\\Department.cs",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Models\\Department.cs",
+              "RelativeToolTip": "OneToManyEF\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T05:20:54.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Views\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "OneToManyEF\\Views\\Employees\\Index.cshtml",
+              "ToolTip": "D:\\Capgemini Training\\MVC\\OneToManyEF\\OneToManyEF\\Views\\Employees\\Index.cshtml",
+              "RelativeToolTip": "OneToManyEF\\Views\\Employees\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-09T04:02:47.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

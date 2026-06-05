@@ -1,0 +1,17 @@
+﻿using System.Text;
+using Microsoft.Extensions.Hosting;
+
+namespace RabbitMQServiceB
+{
+    public class RabbitWorker:BackgroundService
+    {
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+        {
+            while (!stoppingToken.IsCancellationRequested)
+            {
+                // TODO: Add your RabbitMQ message processing logic here
+                await Task.Delay(1000, stoppingToken);
+            }
+        }
+    }
+}

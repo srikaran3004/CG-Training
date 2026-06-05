@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A5D3D6E-9F6E-4C21-8561-54348492DF7F}|SquareWorkerAPI\\SquareWorkerAPI.csproj|d:\\capgemini training\\microservices\\rabbitmq\\rabbitmqmicroservicessolution\\squareworkerapi\\services\\squareworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A5D3D6E-9F6E-4C21-8561-54348492DF7F}|SquareWorkerAPI\\SquareWorkerAPI.csproj|solutionrelative:squareworkerapi\\services\\squareworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADCA2BDC-4544-4AE6-AB6A-7F3C75C17947}|CubeWorkerAPI\\CubeWorkerAPI.csproj|d:\\capgemini training\\microservices\\rabbitmq\\rabbitmqmicroservicessolution\\cubeworkerapi\\services\\cubeworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADCA2BDC-4544-4AE6-AB6A-7F3C75C17947}|CubeWorkerAPI\\CubeWorkerAPI.csproj|solutionrelative:cubeworkerapi\\services\\cubeworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40CABE0D-B390-471B-9845-85CEFC1E39F2}|NumberProducerAPI\\NumberProducerAPI.csproj|d:\\capgemini training\\microservices\\rabbitmq\\rabbitmqmicroservicessolution\\numberproducerapi\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CABE0D-B390-471B-9845-85CEFC1E39F2}|NumberProducerAPI\\NumberProducerAPI.csproj|solutionrelative:numberproducerapi\\services\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40CABE0D-B390-471B-9845-85CEFC1E39F2}|NumberProducerAPI\\NumberProducerAPI.csproj|d:\\capgemini training\\microservices\\rabbitmq\\rabbitmqmicroservicessolution\\numberproducerapi\\controllers\\numbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CABE0D-B390-471B-9845-85CEFC1E39F2}|NumberProducerAPI\\NumberProducerAPI.csproj|solutionrelative:numberproducerapi\\controllers\\numbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NumberController.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\NumberProducerAPI\\Controllers\\NumberController.cs",
+              "RelativeDocumentMoniker": "NumberProducerAPI\\Controllers\\NumberController.cs",
+              "ToolTip": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\NumberProducerAPI\\Controllers\\NumberController.cs",
+              "RelativeToolTip": "NumberProducerAPI\\Controllers\\NumberController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:13:33.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RabbitMQService.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\NumberProducerAPI\\Services\\RabbitMQService.cs",
+              "RelativeDocumentMoniker": "NumberProducerAPI\\Services\\RabbitMQService.cs",
+              "ToolTip": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\NumberProducerAPI\\Services\\RabbitMQService.cs",
+              "RelativeToolTip": "NumberProducerAPI\\Services\\RabbitMQService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:13:29.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CubeWorker.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\CubeWorkerAPI\\Services\\CubeWorker.cs",
+              "RelativeDocumentMoniker": "CubeWorkerAPI\\Services\\CubeWorker.cs",
+              "ToolTip": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\CubeWorkerAPI\\Services\\CubeWorker.cs",
+              "RelativeToolTip": "CubeWorkerAPI\\Services\\CubeWorker.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:13:17.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SquareWorker.cs",
+              "DocumentMoniker": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\SquareWorkerAPI\\Services\\SquareWorker.cs",
+              "RelativeDocumentMoniker": "SquareWorkerAPI\\Services\\SquareWorker.cs",
+              "ToolTip": "D:\\Capgemini Training\\Microservices\\RabbitMQ\\RabbitMQMicroservicesSolution\\SquareWorkerAPI\\Services\\SquareWorker.cs",
+              "RelativeToolTip": "SquareWorkerAPI\\Services\\SquareWorker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T07:13:11.137Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

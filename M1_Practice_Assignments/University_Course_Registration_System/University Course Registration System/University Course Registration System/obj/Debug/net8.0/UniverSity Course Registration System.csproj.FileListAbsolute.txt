@@ -1,0 +1,15 @@
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.exe
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.deps.json
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.runtimeconfig.json
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.dll
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.pdb
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.AssemblyInfoInputs.cache
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.AssemblyInfo.cs
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.sourcelink.json
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.dll
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\refint\UniverSity Course Registration System.dll
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.pdb
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.genruntimeconfig.cache
+D:\Capgemini Training\University Course Registration System\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\ref\UniverSity Course Registration System.dll

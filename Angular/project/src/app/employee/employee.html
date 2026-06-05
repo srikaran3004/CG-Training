@@ -1,0 +1,6 @@
+<button (click)="getDetails()">Fetch</button>
+@for(item of getEmp ; track item.name){
+    <p>{{item.name}}</p>
+    <p>{{item.dept}}</p>
+    <p>{{item.salary}}</p>
+}

@@ -1,0 +1,7 @@
+ul li{
+    flex: flex-column;
+}
+li{
+    list-style: none;
+    
+}

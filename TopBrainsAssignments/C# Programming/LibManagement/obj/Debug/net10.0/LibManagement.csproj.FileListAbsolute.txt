@@ -1,0 +1,15 @@
+D:\Capgemini Training\LibManagement\bin\Debug\net10.0\LibManagement.exe
+D:\Capgemini Training\LibManagement\bin\Debug\net10.0\LibManagement.deps.json
+D:\Capgemini Training\LibManagement\bin\Debug\net10.0\LibManagement.runtimeconfig.json
+D:\Capgemini Training\LibManagement\bin\Debug\net10.0\LibManagement.dll
+D:\Capgemini Training\LibManagement\bin\Debug\net10.0\LibManagement.pdb
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.AssemblyInfoInputs.cache
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.AssemblyInfo.cs
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.sourcelink.json
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.dll
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\refint\LibManagement.dll
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.pdb
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\LibManagement.genruntimeconfig.cache
+D:\Capgemini Training\LibManagement\obj\Debug\net10.0\ref\LibManagement.dll

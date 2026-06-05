@@ -1,0 +1,5 @@
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Release\net10.0\publish\HelloWorld.exe
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Release\net10.0\publish\HelloWorld.dll
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Release\net10.0\publish\HelloWorld.deps.json
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Release\net10.0\publish\HelloWorld.runtimeconfig.json
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Release\net10.0\publish\HelloWorld.pdb

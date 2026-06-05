@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>EF Core Interview Prep: 100 Questions & Answers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f1f5f9;
+            font-family: system-ui, 'Segoe UI', 'Inter', 'Roboto', sans-serif;
+            padding: 2rem 1rem;
+            color: #0f172a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* header area */
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .sub {
+            color: #334155;
+            margin-top: 0.5rem;
+            font-size: 1.05rem;
+            border-bottom: 2px solid #cbd5e1;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .counter-badge {
+            background: #0f3b5f;
+            color: white;
+            border-radius: 40px;
+            padding: 0.2rem 1rem;
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+
+        /* grid layout for questions */
+        .questions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.25rem;
+        }
+
+        /* question card */
+        .card {
+            background: white;
+            border-radius: 1.25rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .question {
+            background: #ffffff;
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            border-left: 5px solid #2c7da0;
+            transition: background 0.15s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .question:hover {
+            background: #f8fafc;
+        }
+
+        .question-text {
+            flex: 1;
+        }
+
+        .indicator {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #2c7da0;
+            transition: transform 0.2s;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            background: #fefce8;
+            border-top: 1px solid transparent;
+            padding: 0 1.2rem;
+        }
+
+        .answer.show {
+            max-height: 500px;   /* enough for long answers */
+            padding: 1rem 1.2rem;
+            border-top-color: #e2e8f0;
+        }
+
+        .answer-content {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #1e293b;
+            background: #fef9e3;
+            border-radius: 12px;
+            padding: 0.5rem 0;
+        }
+
+        .answer-content code, .inline-code {
+            background: #e9ecef;
+            padding: 0.2rem 0.4rem;
+            border-radius: 8px;
+            font-family: 'SF Mono', 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: #b91c1c;
+        }
+
+        pre {
+            background: #1e293b;
+            color: #f1f5f9;
+            padding: 0.6rem;
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px solid #cbd5e1;
+            padding-top: 1.8rem;
+        }
+
+        @media (max-width: 700px) {
+            .questions-grid {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>⚡ EF Core Interview Prep</h1>
+        <div class="sub">100 essential questions + click to reveal answers</div>
+        <div class="counter-badge">📌 100 real-world Q&A</div>
+        <p style="margin-top: 12px; font-size: 0.85rem;">👇 Click on any question — answer slides down instantly</p>
+    </div>
+
+    <div class="questions-grid" id="qaContainer"></div>
+    <div class="footer-note">
+        🧠 Master Entity Framework Core — from basics to performance tuning, change tracking, migrations & beyond
+    </div>
+</div>
+
+<script>
+    // ------------------------------------------------------------------
+    // 100 INTERVIEW QUESTIONS & ANSWERS (EF Core)
+    // ------------------------------------------------------------------
+    const qaData = [
+        { q: "What is Entity Framework Core?", a: "EF Core is a lightweight, extensible, open-source Object-Relational Mapper (ORM) for .NET Core and .NET 5+. It allows developers to work with databases using .NET objects, eliminating most data-access code." },
+        { q: "What are the main differences between EF Core and EF6?", a: "EF Core is modular, cross-platform, has better performance, supports new features like TPC, but lacks some features of EF6 (like lazy loading proxies for all scenarios, but now supports lazy loading via proxies). EF Core is the recommended choice for new applications." },
+        { q: "What is DbContext in EF Core?", a: "DbContext is the primary class that coordinates database communication, manages change tracking, and exposes DbSet properties for entities. It represents a session with the database." },
+        { q: "What is DbSet?", a: "DbSet<TEntity> represents a collection of a specific entity type. It provides methods like Add, Remove, and LINQ queries to interact with corresponding database tables." },
+        { q: "How do you configure the connection string in EF Core?", a: "Typically in appsettings.json under 'ConnectionStrings', then in Startup / Program.cs using `options.UseSqlServer(connectionString)` or similar provider methods." },
+        { q: "What are the supported database providers in EF Core?", a: "SQL Server, SQLite, PostgreSQL (Npgsql), MySQL (Pomelo/MySql.EntityFrameworkCore), Cosmos DB, In-Memory database, and many community providers." },
+        { q: "Explain migrations in EF Core.", a: "Migrations are a way to incrementally apply schema changes to the database while preserving data. Commands like `dotnet ef migrations add` and `dotnet ef database update` manage version-controlled schema evolution." },
+        { q: "What is the purpose of `DbContext.OnConfiguring`?", a: "It's used to configure the context (like setting connection string or logging) if not using dependency injection or explicit options. Prefer using options pattern for testability." },
+        { q: "What is change tracking in EF Core?", a: "EF Core tracks changes made to entities loaded from the database. When `SaveChanges` is called, it generates UPDATE/INSERT/DELETE commands based on modified properties and relationships." },
+        { q: "What are the different change tracking strategies?", a: "Snapshot tracking (default), full notification entities (INotifyPropertyChanged), and change tracking proxies. Snapshot is simplest; proxies can improve performance for complex UIs." },
+        { q: "How to disable change tracking for performance?", a: "Use `AsNoTracking()` on queries for read-only scenarios, or set `ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking` on context." },
+        { q: "What is lazy loading in EF Core?", a: "Lazy loading automatically loads related entities when you access a navigation property for the first time. Requires installing `Microsoft.EntityFrameworkCore.Proxies` and enabling `UseLazyLoadingProxies`." },
+        { q: "What is eager loading?", a: "Eager loading loads related entities upfront using `Include()` and `ThenInclude()` methods, reducing round trips to database." },
+        { q: "What is explicit loading?", a: "Explicit loading manually loads navigation properties via `context.Entry(entity).Reference(x => x.Property).LoadAsync()` or `Collection().LoadAsync()`. Useful after disabling lazy loading." },
+        { q: "How to perform raw SQL queries in EF Core?", a: "Use `FromSqlRaw` or `FromSqlInterpolated` on DbSet for queries, and `ExecuteSqlRaw`/`ExecuteSqlInterpolated` for non-query commands." },
+        { q: "What are the advantages of using EF Core over ADO.NET?", a: "Productivity, compile-time type safety, LINQ integration, automatic change tracking, migrations, cross-platform, and reduced boilerplate." },
+        { q: "What is the 'Unit of Work' pattern in EF Core?", a: "DbContext itself implements Unit of Work: it tracks multiple changes and commits them as a single transaction when SaveChanges is called." },
+        { q: "How to handle concurrency conflicts?", a: "EF Core uses optimistic concurrency with a row version column (timestamp or rowversion). Handle DbUpdateConcurrencyException and reload/resolve conflicts." },
+        { q: "What are Shadow Properties?", a: "Properties not defined in entity class but mapped to database columns and tracked by EF Core. Typically used for foreign keys or audit fields like LastUpdated." },
+        { q: "What are Value Conversions?", a: "Allows mapping a property type to a different database representation, e.g., storing enums as strings or converting DateTime to UTC." },
+        { q: "What is Global Query Filter?", a: "Define filters on entity types in OnModelCreating using HasQueryFilter, e.g., `e => !e.IsDeleted`. Applied to all queries automatically." },
+        { q: "How to execute stored procedures?", a: "Use `FromSqlRaw` for querying sp results, or `ExecuteSqlRaw` for non-query stored procs. Also, mapping sproc results to entity types." },
+        { q: "What's the difference between `FirstOrDefault` and `SingleOrDefault` in EF Core?", a: "FirstOrDefault returns first matching element, SingleOrDefault expects exactly one or zero; throws if more than one." },
+        { q: "What is the role of `SaveChanges`?", a: "Persists all changes made to tracked entities to the database inside a transaction. Returns number of state entries written." },
+        { q: "What are Entity States?", a: "Added, Unchanged, Modified, Deleted, Detached. DbContext tracks these to generate appropriate SQL commands." },
+        { q: "How to improve EF Core query performance?", a: "Use AsNoTracking, filter early, use projection (Select), disable change tracking, batching, index tuning, and compile queries." },
+        { q: "Explain `Compiled Query` in EF Core.", a: "A query compiled once and reused with different parameters, reducing overhead. Use `EF.CompileQuery` for high-performance scenarios." },
+        { q: "What are Table-per-Hierarchy (TPH), TPT, TPC?", a: "TPH (default) maps hierarchy to single table; TPT maps each type to separate table; TPC (Core 7) maps each type to its own table without shared inheritance table." },
+        { q: "How to configure relationships (One-to-Many)?", a: "Using Fluent API: `HasMany(x => x.Orders).WithOne(x => x.Customer).HasForeignKey(x => x.CustomerId)` or data annotations `[ForeignKey]`." },
+        { q: "What is the purpose of `ModelBuilder`?", a: "Configures the entity model: mappings, indexes, relationships, data seeding, and query filters during `OnModelCreating`." },
+        { q: "What is the In-Memory provider?", a: "Testing-oriented database provider that stores data in memory, not persistent. Ideal for unit tests with `UseInMemoryDatabase`." },
+        { q: "How to log SQL queries in EF Core?", a: "Enable logging via `LogTo`, `EnableSensitiveDataLogging`, and `EnableDetailedErrors` in options builder. E.g., `optionsBuilder.LogTo(Console.WriteLine).EnableSensitiveDataLogging();`" },
+        { q: "What are the benefits of using `DbContextPool`?", a: "Reduces allocation cost of DbContext instances in high-load web apps. Recommended for ASP.NET Core apps via `AddDbContextPool<T>`." },
+        { q: "What are `Owned Entity Types`?", a: "Entity types that cannot exist without owner and are mapped as part of owner's table (or separate table). Represent value objects like Address." },
+        { q: "How to define indexes with Fluent API?", a: "`entity.HasIndex(e => e.Email).IsUnique();` Also multi-column indexes: `HasIndex(e => new { e.FirstName, e.LastName })`." },
+        { q: "What's `SaveChangesAsync` advantage?", a: "Asynchronous version avoids blocking threads, improves scalability in I/O bound operations." },
+        { q: "What is the difference between `Remove` and `Delete` in EF Core?", a: "`Remove` marks entity as Deleted. When relationship required, cascade delete may occur. There's no separate delete method; remove sets state accordingly." },
+        { q: "How to handle Many-to-Many relationships without join entity?", a: "EF Core 5+ supports automatic many-to-many mapping by convention, without explicit join class. EF will create implicit join table." },
+        { q: "What is the `N+1` problem and how to avoid it?", a: "When lazy loading executes extra queries per parent row. Avoid with eager loading (`Include`) or projection to avoid repetitive roundtrips." },
+        { q: "How to seed data in EF Core?", a: "Override `OnModelCreating` and use `modelBuilder.Entity<Blog>().HasData(...)`. Also custom `DbContext` initializers in Program.cs." },
+        { q: "What are `Migration bundles`?", a: "Introduced in EF Core 6, a self-contained executable that applies migrations without needing SDK or dotnet ef tool." },
+        { q: "How to use interceptors (e.g., SaveChanges interceptor)?", a: "Implement `ISaveChangesInterceptor` or other interceptors. Register via `AddDbContext` options: `AddInterceptors(new MySaveInterceptor())`." },
+        { q: "What are Keyless Entity Types?", a: "Entities mapped to views or raw SQL queries that don't have a primary key. Represent read-only data." },
+        { q: "Can EF Core work with Cosmos DB?", a: "Yes, EF Core has a Cosmos DB provider. It maps .NET objects to documents, supports most LINQ operations, but transactional behavior differs." },
+        { q: "What is `EnableRetryOnFailure`?", a: "Configures the SQL Server provider to retry transient failures (database connection issues), improves resilience." },
+        { q: "Explain `CommandTimeout` in EF Core.", a: "Sets timeout value for commands executed against database: `optionsBuilder.CommandTimeout(60)` seconds." },
+        { q: "How to execute raw SQL with parameters safely?", a: "Use `FromSqlInterpolated` or `FromSqlRaw` with parameter placeholder to prevent SQL injection: `FromSqlRaw(\"SELECT * FROM Blogs WHERE Id = {0}\", id)`." },
+        { q: "What's the difference between `Add` and `Attach`?", a: "`Add` marks entity as Added (insert). `Attach` marks as Unchanged (good for disconnected scenarios). Both track entity graph." },
+        { q: "What is the purpose of `Entry` method?", a: "Provides access to change tracking info and metadata for specific entity. Useful for manually setting state, reloading, or working with navigation properties." },
+        { q: "How to map a .NET enum to a string column?", a: "Using `HasConversion<string>()` in model configuration or applying `[Column(TypeName = \"nvarchar\")]` enum property." },
+        { q: "What is the `ModelSnapshot` file?", a: "A snapshot of current model that migrations use to detect changes. Located in Migrations folder, updated after each migration." },
+        { q: "What are `Table Splitting` and `Entity Splitting`?", a: "Table splitting maps multiple entities to same table; Entity splitting maps one entity across multiple tables." },
+        { q: "How to automatically apply migrations at startup?", a: "Call `context.Database.Migrate()` in application startup. Ensure idempotent script for production." },
+        { q: "What are `Database.EnsureCreated()` vs `Database.Migrate()`?", a: "EnsureCreated creates schema but not migrations, useful for testing. Migrate uses migrations history table, best for production." },
+        { q: "How to define composite primary key?", a: "Fluent API: `HasKey(e => new { e.Key1, e.Key2 })`. Data annotations with `[PrimaryKey]` (EF Core 7+)." },
+        { q: "Explain `ConcurrencyCheck` attribute.", a: "Marks property to be included in optimistic concurrency checks using original values in WHERE clause." },
+        { q: "What is `TimeTravel` / Temporal Tables support?", a: "EF Core 6+ supports SQL Server temporal tables to query historical data via `TemporalAsOf`, `TemporalFromTo`." },
+        { q: "How to perform batch updates/deletes without loading entities?", a: "EF Core 7+ provides `ExecuteUpdate` and `ExecuteDelete` to directly modify database without loading." },
+        { q: "What is `ExecuteUpdate` example?", a: "`context.Blogs.Where(b => b.Rating < 3).ExecuteUpdate(setters => setters.SetProperty(b => b.IsDeleted, true));`" },
+        { q: "What are Functions mapping in EF Core?", a: "Map database functions or user-defined functions (UDF) to .NET methods using `DbFunction` attribute or `HasDbFunction`." },
+        { q: "Explain `ValueGeneratedOnAdd` vs `ValueGeneratedOnAddOrUpdate`?", a: "Add => only on insert (default for keys). AddOrUpdate => on insert or update (e.g., rowversion)." },
+        { q: "How to handle optional dependent (one-to-one) relationships?", a: "Configure with `HasPrincipalKey` or define foreign key as nullable. Use `HasForeignKey<TDependent>` in FluentAPI." },
+        { q: "What is the `Find` method?", a: "`Find` searches for entity by primary key in tracked entities first, then goes to database. More efficient for repeated lookups." },
+        { q: "How does `AddRange` / `UpdateRange` help?", a: "Performs bulk-like operations by adding or updating multiple entities in one call, reducing round trips." },
+        { q: "What is `ReloadAsync` on EntityEntry?", a: "Refreshes entity with latest values from database, discarding local changes." },
+        { q: "How to ignore a property from mapping?", a: "Data annotation `[NotMapped]` or Fluent API `Ignore(p => p.PropertyName)`." },
+        { q: "Explain `HasDefaultValueSql` vs `ComputedColumnSql`?", a: "HasDefaultValueSql sets default constraint SQL; ComputedColumnSql defines expression for computed column (e.g., full name)." },
+        { q: "What are `Backing Fields`?", a: "EF Core can map to a private field instead of property, useful for encapsulation or domain-driven design." },
+        { q: "What's the purpose of `EntityMaterializerSource`?", a: "Advanced performance: customizing how EF creates entity instances. Rarely needed." },
+        { q: "Explain `IDesignTimeDbContextFactory<T>`.", a: "Used by tools to create DbContext instance at design time (migrations) when constructor has no default parameters." },
+        { q: "How to handle many-to-many with payload (extra columns)?", a: "Define explicit join entity class with additional properties, and two one-to-many relationships." },
+        { q: "What is `Query Splitting` and how to use it?", a: "Splits a query with multiple includes into separate SQL queries to avoid cartesian explosion. Use `.AsSplitQuery()`." },
+        { q: "What are the consequences of using `.AsSplitQuery()`?", a: "Multiple round trips but reduces massive duplication, often better performance for complex includes." },
+        { q: "How to define a database view in EF Core?", a: "Keyless entity via modelBuilder.Entity<MyView>().ToView(\"ViewName\").HasNoKey();" },
+        { q: "What is `CosmosPartitionKey` attribute?", a: "Used to specify partition key for Cosmos DB containers to enable efficient queries." },
+        { q: "What does `UseQueryTrackingBehavior` do?", a: "Set default tracking behavior for queries: TrackAll, NoTracking, NoTrackingWithIdentityResolution." },
+        { q: "What is the purpose of `OnModelCreatingPartial`?", a: "Auto-generated partial methods for dynamic configuration in partial DbContext classes (scaffolded)." },
+        { q: "How to compile models at build time?", a: "EF Core 6+ supports `dotnet ef dbcontext optimize` to generate compiled model, improves startup performance." },
+        { q: "What is the difference between cascade delete and restrict delete?", a: "Cascade deletes dependents when principal deleted. Restrict prevents principal deletion if any dependent exists." },
+        { q: "How to define a custom convention in EF Core?", a: "Implement `IConvention` or override `ConfigureConventions` using `ModelConfigurationBuilder`." },
+        { q: "What is the `SqlNullabilityProcessor`?", a: "Internal component for null semantics in SQL generation. Advanced EF debugging." },
+        { q: "Explain `Bulk operations` in EF Core 7+?", a: "ExecuteUpdate, ExecuteDelete provide bulk updates/deletes without loading entities. Third party extensions like EFCore.BulkExtensions exist." },
+        { q: "What is `HierarchyId` support?", a: "EF Core 6+ can map SQL Server HierarchyId type using `Microsoft.EntityFrameworkCore.SqlServer.Abstractions`." },
+        { q: "What are `Keyless Entities` typically used for?", a: "Read-only views, raw SQL result sets, or reporting tables without PK constraints." },
+        { q: "How to reset DbContext state?", a: "Dispose and create new instance or clear change tracker: `context.ChangeTracker.Clear()` (EF Core 5+)." },
+        { q: "What are interpolation vulnerabilities in raw SQL?", a: "Never use string concatenation or raw interpolation without EF parameterization. Always use `FromSqlInterpolated` for safe interpolation." },
+        { q: "Explain `IModelCacheKeyFactory`.", a: "Allows customizing key for model cache (multiple contexts with different connection strings)." },
+        { q: "What is the `Relational:MaxBatchSize` setting?", a: "Maximum number of statements in a single SQL batch for commands, default 42." },
+        { q: "What is the difference between `DbContextFactory` and `DbContext` DI?", a: "Factory gives transient control and ensures fresh context per operation; resolves scoping issues in background services." },
+        { q: "What are `MigrationScript` methods?", a: "Generate SQL script from migrations without applying: `ScriptMigration` in `IMigrator`." },
+        { q: "Explain `Reverse Engineering` (Scaffolding).", a: "Creating DbContext and entity classes from existing database schema using `dotnet ef dbcontext scaffold`." },
+        { q: "What is the `[BackingField]` attribute?", a: "Specifies the backing field to use for a property, even if private. Improves encapsulation." },
+        { q: "How to handle geometry/geography spatial types?", a: "Use `NetTopologySuite` package with `UseNetTopologySuite` option for SQL Server." },
+        { q: "What is `SaveChanges` point of failure isolation?", a: "All changes in one transaction, if failure occurs partial updates are rolled back automatically." },
+        { q: "How to capture database execution diagnostics?", a: "Implement `DiagnosticListener` or use `IDbCommandInterceptor` for advanced telemetry." },
+        { q: "What are `InMemory` provider limitations?", a: "Doesn't enforce referential integrity, transactions, or relational behaviors. Not for production." },
+        { q: "How to use `Sqlite` with EF Core for local storage?", a: "Add provider package, UseSqlite connection string to file, migrations & scaffolding work same." },
+        { q: "What is the purpose of `EntityEntry.OriginalValues`?", a: "Access original values before modifications. Useful for concurrency conflict resolution." },
+        { q: "What is EF Core power tools extension?", a: "Third-party Visual Studio extension providing visual designer, reverse engineering, and migrations." },
+        { q: "What is the future of EF Core? (roadmap)", a: "Continues with performance, new providers, modernization, and aligning with .NET innovation (AOT support)." }
+    ];
+
+    // Ensure we have exactly 100 items (the dataset already contains 100 QA pairs)
+    console.assert(qaData.length === 100, `Expected 100 items, got ${qaData.length}`);
+
+    // Render all cards
+    const container = document.getElementById('qaContainer');
+
+    function buildHTML() {
+        let html = '';
+        for (let i = 0; i < qaData.length; i++) {
+            const item = qaData[i];
+            const qNumber = i + 1;
+            const uniqueId = `ans-${i}`;
+            // question text with number
+            html += `
+                <div class="card">
+                    <div class="question" data-target="${uniqueId}">
+                        <span class="question-text"><strong>${qNumber}.</strong> ${escapeHtml(item.q)}</span>
+                        <span class="indicator">▼</span>
+                    </div>
+                    <div id="${uniqueId}" class="answer">
+                        <div class="answer-content">${formatAnswer(item.a)}</div>
+                    </div>
+                </div>
+            `;
+        }
+        container.innerHTML = html;
+
+        // Attach click listeners to every question div
+        const allQuestions = document.querySelectorAll('.question');
+        allQuestions.forEach(questionDiv => {
+            questionDiv.addEventListener('click', (e) => {
+                // avoid toggling if clicking on inner span but fine
+                const targetId = questionDiv.getAttribute('data-target');
+                if (targetId) {
+                    const answerDiv = document.getElementById(targetId);
+                    if (answerDiv) {
+                        answerDiv.classList.toggle('show');
+                        const indicator = questionDiv.querySelector('.indicator');
+                        if (indicator) {
+                            indicator.style.transform = answerDiv.classList.contains('show') ? 'rotate(180deg)' : 'rotate(0deg)';
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    // Helper to safely escape HTML in question strings to avoid injection
+    function escapeHtml(str) {
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+            return c;
+        });
+    }
+
+    // Format answer: detect code blocks or inline <code> for readability
+    function formatAnswer(answer) {
+        // If answer contains backticks, we can wrap properly, but mainly we render safely and replace simple patterns
+        let escaped = escapeHtml(answer);
+        // replace inline `code` with <code> tags
+        escaped = escaped.replace(/`([^`]+)`/g, '<code class="inline-code">$1</code>');
+        // optional: detect pattern "e.g.," or keywords, but no need.
+        // also detect potential line breaks: preserve paragraphs
+        escaped = escaped.replace(/\n/g, '<br>');
+        // add more style for code snippets? but consistent
+        if (escaped.includes('<code')) {
+            // fine
+        }
+        // preformatted block detection for triple backticks not present because answers are concise, but we handle basic.
+        return escaped;
+    }
+
+    buildHTML();
+</script>
+</body>
+</html>

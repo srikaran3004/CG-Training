@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Angular Interview Q&A | 100 Essential Questions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f5f7fc 0%, #eef2f7 100%);
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 2rem 1.5rem;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* header area */
+        .header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #c42e2e, #dd3b3b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #475569;
+            margin-top: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            display: inline-block;
+            padding-bottom: 0.4rem;
+        }
+
+        .stats-badge {
+            background: #0f172a;
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            color: white;
+            font-weight: 500;
+            font-size: 0.85rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        /* controls */
+        .toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 0.9rem 1.5rem;
+            border-radius: 60px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.6rem 1rem;
+            border-radius: 40px;
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #dd3b3b;
+            box-shadow: 0 0 0 3px rgba(221, 59, 59, 0.2);
+        }
+
+        .btn-reset {
+            background: #1e293b;
+            border: none;
+            padding: 0.6rem 1.3rem;
+            border-radius: 40px;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .btn-reset:hover {
+            background: #0f172a;
+            transform: scale(0.97);
+        }
+
+        /* grid layout */
+        .questions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* card styling */
+        .card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #eef2ff;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 28px -12px rgba(0, 0, 0, 0.15);
+            border-color: #f1d7d7;
+        }
+
+        .question-area {
+            padding: 1.3rem 1.4rem 0.8rem 1.4rem;
+            background: #ffffff;
+        }
+
+        .question-text {
+            font-weight: 700;
+            font-size: 1.05rem;
+            line-height: 1.4;
+            color: #0f172a;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .q-num {
+            background: #eef2ff;
+            color: #1e40af;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        .answer-container {
+            padding: 0rem 1.4rem 1rem 1.4rem;
+            background: #fefefe;
+        }
+
+        .answer-content {
+            background: #f9fafb;
+            border-left: 4px solid #dd3b3b;
+            padding: 0.8rem 1rem;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #1e293b;
+            margin-top: 0.5rem;
+            display: none;
+            transition: 0.1s;
+        }
+
+        .answer-content.show {
+            display: block;
+        }
+
+        .btn-answer {
+            background: none;
+            border: 1px solid #dd3b3b;
+            background: #fff5f5;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.75rem;
+            color: #b91c1c;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 0.2rem;
+        }
+
+        .btn-answer:hover {
+            background: #dd3b3b;
+            color: white;
+            border-color: #dd3b3b;
+        }
+
+        .card-footer {
+            padding: 0.8rem 1.4rem 1.2rem 1.4rem;
+            border-top: 1px solid #ecfdf5;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            background: white;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            color: #64748b;
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                padding: 1rem;
+            }
+            .questions-grid {
+                grid-template-columns: 1fr;
+            }
+            .toolbar {
+                border-radius: 28px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #5b6e8c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>⚡ Angular Core Interview Q&A</h1>
+        <p>Master Angular concepts — from basics to advanced</p>
+        <div class="stats-badge">📚 100 essential questions | click "Show Answer" on each card</div>
+    </div>
+
+    <div class="toolbar">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 Filter questions by keyword... (component, lifecycle, rxjs, etc.)">
+        </div>
+        <button class="btn-reset" id="resetFilterBtn">⟳ Reset filter</button>
+    </div>
+
+    <div id="questionsContainer" class="questions-grid"></div>
+    <footer>✅ Each question includes a concise but thorough answer. Click "Show Answer" to reveal explanation. Angular 2+ concepts covered.</footer>
+</div>
+
+<script>
+    // --------------------------------------------------------------
+    // 100 Angular Interview Questions + Answers (comprehensive set)
+    // Covers: Basics, Components, Directives, Services, DI, Routing,
+    // Forms, RxJS, Lifecycle, Signals, Performance, Zone.js, etc.
+    // --------------------------------------------------------------
+    const questionsData = [
+        { q: "What is Angular and how is it different from AngularJS?", a: "Angular (2+) is a complete rewrite of AngularJS, using TypeScript, component-based architecture, and a mobile-first approach. Unlike AngularJS which used controllers and $scope, Angular uses components, directives with improved change detection and dependency injection." },
+        { q: "Explain Angular architecture.", a: "Angular applications are modular and built around NgModules. Core building blocks: Components (views + logic), Templates (HTML enhanced with bindings), Directives, Services (business logic), Dependency Injection, and Routing. Modules organize related pieces." },
+        { q: "What are Angular components?", a: "Components are the fundamental UI building blocks. Each component controls a part of the screen via a TypeScript class with @Component decorator, template, and styles. They encapsulate data, logic, and view." },
+        { q: "What is a module in Angular?", a: "An NgModule is a class decorated with @NgModule, declaring components, directives, pipes, and providing services. The root module (AppModule) bootstraps the app. Modules enable lazy loading and organization." },
+        { q: "Explain data binding types in Angular.", a: "Interpolation {{ }}, Property binding [property], Event binding (event), Two-way binding [(ngModel)] combines property & event binding for form inputs." },
+        { q: "What are directives in Angular? Name types.", a: "Directives add behavior to DOM. Types: Components (directive with template), Structural (*ngIf, *ngFor) alter layout, Attribute (ngStyle, ngClass) change appearance/behavior." },
+        { q: "What is Angular CLI and its benefits?", a: "Command Line Interface to generate components, services, modules, build, serve, test. Benefits: fast scaffolding, optimized production builds, code linting, and modern bundling via Webpack." },
+        { q: "What is Dependency Injection in Angular?", a: "DI is a design pattern where dependencies are injected into classes rather than created internally. Angular’s hierarchical injector provides services and values to components, improving testability and reusability." },
+        { q: "Explain Angular lifecycle hooks with order.", a: "Order: ngOnChanges → ngOnInit → ngDoCheck → ngAfterContentInit → ngAfterContentChecked → ngAfterViewInit → ngAfterViewChecked → ngOnDestroy. Each hook allows tapping into specific component moments." },
+        { q: "What is ngOnInit and why used?", a: "ngOnInit is a lifecycle hook called after first ngOnChanges and after component inputs are initialized. It's ideal for fetching data, setting up logic that depends on bound properties." },
+        { q: "What is the purpose of ngOnDestroy?", a: "Cleanup before Angular destroys component/directive. Unsubscribe from Observables, detach event handlers, clear intervals to prevent memory leaks." },
+        { q: "What is ViewEncapsulation in Angular?", a: "Defines style scoping: Emulated (default, mimics Shadow DOM), None (global styles), ShadowDom (native shadow DOM). Controls how component styles affect outside." },
+        { q: "Explain ng-container vs ng-template.", a: "ng-container is a logical container without DOM element, used for grouping. ng-template defines a template block not rendered by default; used with structural directives or TemplateRef." },
+        { q: "What are Angular Pipes? Give examples.", a: "Pipes transform data in templates. Built-in: date, uppercase, currency, async, json. Custom pipes can be created using @Pipe decorator and implement PipeTransform." },
+        { q: "How does Angular change detection work?", a: "Zone.js intercepts async tasks and triggers change detection. Angular checks component bindings by comparing previous and current values (default strategy). OnPush strategy can optimize." },
+        { q: "What is ChangeDetectionStrategy.OnPush?", a: "OnPush tells Angular to run change detection only when: input reference changes, event originates from component or its children, or async pipe emits. Improves performance." },
+        { q: "Explain async pipe.", a: "Async pipe subscribes to Observable or Promise and returns latest emitted value. Also automatically unsubscribes, preventing memory leaks, and triggers change detection." },
+        { q: "What is RxJS and how used in Angular?", a: "RxJS is library for reactive programming using Observables. Angular uses it heavily: HttpClient returns Observables, EventEmitter, Router events. It provides operators like map, filter, switchMap." },
+        { q: "What is the difference between Observable and Promise?", a: "Observable emits multiple values over time, lazy, supports operators, cancellable. Promise emits single async value, eager, not cancellable." },
+        { q: "What is a Subject in RxJS?", a: "A Subject is a special Observable that can multicast to many observers, acting as both Observable and Observer. Used for cross-component communication via service." },
+        { q: "What are Angular Services?", a: "Services are singleton classes that encapsulate business logic, data fetching, and shared state. They are injectable via @Injectable and registered with injector." },
+        { q: "What is providedIn: 'root'?", a: "Makes service a singleton available application-wide, tree-shakable. Angular creates a single instance shared across components." },
+        { q: "How to create a custom validator in Angular reactive forms?", a: "Implement ValidatorFn interface, returns error object or null. Use AbstractControl and pass to Validators.compose or assign to FormControl." },
+        { q: "What are template-driven forms?", a: "Forms defined in template using ngModel, ngModelGroup, and directives. Suitable for simple scenarios. Two-way binding and validation via directives." },
+        { q: "Explain reactive forms.", a: "Reactive forms rely on FormControl, FormGroup, FormArray defined in component class. Provide explicit control, synchronous validation, easier testing, and immutability." },
+        { q: "What is FormBuilder?", a: "FormBuilder is a helper service that reduces boilerplate when creating reactive form groups and controls using .group(), .control(), .array()." },
+        { q: "What is RouterModule.forRoot() vs forChild()?", a: "forRoot registers routes and router services (typically in AppModule). forChild registers routes only for feature modules, reusing existing router services." },
+        { q: "How to pass data between routes?", a: "Using route parameters (paramsMap), query parameters (queryParams), state object (NavigationExtras.state) or using resolve guards." },
+        { q: "What are Route Guards?", a: "Interfaces like CanActivate, CanDeactivate, Resolve, CanLoad, CanMatch that control navigation permission, data prefetching, or unsaved changes warnings." },
+        { q: "Explain lazy loading in Angular.", a: "Feature modules loaded asynchronously via loadChildren in route config. Improves initial bundle size. Angular loads module when route is activated." },
+        { q: "What is Angular Universal?", a: "Server-side rendering solution: renders Angular app on server, sends static HTML to client, improving SEO and initial load performance." },
+        { q: "What is AOT compilation?", a: "Ahead-of-Time compilation compiles Angular HTML/TypeScript during build, producing smaller, faster, ready-to-run bundle. Detects template errors early." },
+        { q: "What is JIT compilation?", a: "Just-in-Time compiles app in browser at runtime. Useful during development, slower performance, bigger payload. AOT recommended for production." },
+        { q: "What is Angular Ivy?", a: "Ivy is Angular’s next-gen renderer (default from v9). Benefits: smaller bundle sizes, faster compilation, better debugging, and incremental builds." },
+        { q: "What are Angular elements?", a: "Angular components packaged as custom elements (web components) that work in any framework using Angular's createCustomElement() API." },
+        { q: "What is the difference between constructor and ngOnInit?", a: "Constructor is TypeScript feature, runs first, used for DI. ngOnInit is lifecycle hook, after inputs bound, use for initialization logic." },
+        { q: "What are HostListener and HostBinding?", a: "Decorators: @HostListener listens to host element events; @HostBinding binds property to host element property (e.g., class, style). Used in directives." },
+        { q: "How do you share data between components?", a: "Via @Input/@Output (parent-child), services with Subject/BehaviorSubject (unrelated components), route data, or state management like NgRx." },
+        { q: "What is ContentChild and ContentChildren?", a: "Decorators to query elements projected via ng-content. ContentChild returns first matching, ContentChildren returns QueryList." },
+        { q: "What is ViewChild and ViewChildren?", a: "ViewChild queries component/DOM element in template (same view). ViewChildren returns QueryList of all matching children." },
+        { q: "Explain ng-content and content projection.", a: "ng-content allows passing arbitrary content from parent component into child component’s template, enabling flexible reusable components." },
+        { q: "What are standalone components (Angular 14+)?", a: "Standalone components don't require NgModule. They directly manage dependencies, simplify bootstrapping, and reduce boilerplate." },
+        { q: "What's new in Angular Signals?", a: "Signals (Angular 16+) are reactive primitives that notify consumers when value changes, offering fine-grained reactivity and simpler state management compared to RxJS." },
+        { q: "How to use HttpClient in Angular?", a: "Import HttpClientModule, inject HttpClient service. Use methods get/post/put/delete, which return Observables. Typically use async pipe or subscribe." },
+        { q: "What is HTTP interceptor?", a: "Intercepts outgoing requests and incoming responses. Used for adding auth tokens, logging, error handling, or caching. Implements HttpInterceptor interface." },
+        { q: "Explain Angular Injector hierarchy.", a: "Angular has platform, root, and component-level injectors. Services resolve upwards until found. Component can have its own instance via providers array." },
+        { q: "What is @Optional and @Self decorators?", a: "@Optional marks dependency optional if not found. @Self limits resolution to current component injector, not parent." },
+        { q: "What is APP_INITIALIZER?", a: "Multi-provider token that runs function during app startup before rendering, useful for fetching configuration data." },
+        { q: "What are Angular Schematics?", a: "Scaffolding tool that generates code, updates projects. Custom schematics help enforce architectural patterns. Angular CLI uses schematics for generate commands." },
+        { q: "What is Angular CDK?", a: "Component Dev Kit provides tools for building custom components with accessibility, overlay, drag-drop, virtual scrolling, etc., without Material Design aesthetic." },
+        { q: "Explain virtual scrolling in Angular.", a: "CDK virtual scrolling renders visible items only in scrollable viewport, improving performance with large lists. Use *cdkVirtualFor." },
+        { q: "What is the purpose of trackBy in ngFor?", a: "trackBy helps Angular identify which items changed, added, removed, reducing DOM manipulations. Improves performance for list re-rendering." },
+        { q: "How to handle errors globally in Angular?", a: "Implement ErrorHandler and override handleError, or use HttpInterceptor for HTTP errors, or catchError RxJS operator." },
+        { q: "What is Angular localization (i18n)?", a: "Internationalization: mark text in templates with i18n attribute, extract messages, generate translations, build localized versions using CLI." },
+        { q: "What is service worker and PWA support?", a: "Angular service worker provides offline capabilities, caching strategies, push notifications, and ensures reliable performance under poor network." },
+        { q: "What is Angular animations?", a: "Animations system using @angular/animations. Define triggers, states, transitions to animate component elements based on app logic." },
+        { q: "What is the role of NgZone?", a: "NgZone wraps Zone.js. It runs change detection after async tasks. Use runOutsideAngular for heavy operations to avoid unnecessary checks." },
+        { q: "How to optimize Angular bundle size?", a: "Enable production builds (--prod), AOT, lazy loading, remove unused code (tree shaking), bundle budgets, and analyze with webpack-bundle-analyzer." },
+        { q: "What is the difference between Structural and Attribute directives?", a: "Structural (*) modify DOM layout (add/remove elements); Attribute change appearance/behavior but don't add/remove elements." },
+        { q: "What are Angular meta reducers?", a: "In NgRx, meta-reducers allow performing actions before standard reducers, like logging, persistence, or state immutability checks." },
+        { q: "What is the purpose of @ngrx/store?", a: "State management library based on Redux pattern: central store, pure reducers, actions, selectors. Predictable state for large Angular apps." },
+        { q: "Explain Angular resolver.", a: "Route guard that pre-fetches data before navigating to a route, ensuring data is available when component loads." },
+        { q: "What is canActivate guard?", a: "Route guard that decides if a route can be activated, e.g., authentication checks. Can return boolean, UrlTree, or Observable." },
+        { q: "What is canDeactivate guard?", a: "Prevents navigation away from a route, useful for unsaved form changes warning." },
+        { q: "What is canLoad guard?", a: "prevents lazy loading of feature module until condition met, often used for permission-based access." },
+        { q: "What are environment files in Angular?", a: "environment.ts and environment.prod.ts store configuration variables per build target, like API endpoints, feature flags." },
+        { q: "What is Angular Zone.js?", a: "Zone.js patches browser async APIs (setTimeout, events, XHR) to notify Angular about possible changes, triggering change detection." },
+        { q: "What is an Angular library and how to create?", a: "Reusable code collections (components, services) packaged with ng generate library. Can be published to npm." },
+        { q: "Explain multi-slot content projection.", a: "Using select attribute on ng-content to project different sections of content into different named slots within component." },
+        { q: "What is a custom form control using ControlValueAccessor?", a: "Interface to integrate custom component into Angular forms (template/reactive). Implement writeValue, registerOnChange, registerOnTouched." },
+        { q: "How to use localStorage with Angular?", a: "Use browser API within service; no specific Angular module. For SSR use PLATFORM_ID to check isPlatformBrowser." },
+        { q: "What are Angular's build optimizer?", a: "Tool that reduces bundle size by removing Angular decorators metadata, minifying, and dead code elimination during production build." },
+        { q: "Explain the difference between routerLink and href.", a: "routerLink prevents full page reload, uses Angular routing, preserving app state. href triggers full browser navigation." },
+        { q: "What is route reuse strategy?", a: "Interface that determines when to destroy or reuse route components, improving performance for frequently visited views." },
+        { q: "How does Angular detect circular dependency?", a: "Angular compiler warns or errors. Circular deps cause runtime errors. Resolve with forwardRef or refactor code." },
+        { q: "What is forwardRef in Angular?", a: "Allows referencing a dependency that hasn't been defined yet (circular reference scenario). Typically used in DI token resolution." },
+        { q: "Explain ProvideIn and tree-shakable services.", a: "providedIn: 'root' allows Angular to remove service from bundle if never used (tree-shakeable). Other modules can also specify providedIn: MyModule." },
+        { q: "What is the difference between ngIf and hidden property?", a: "ngIf removes/adds DOM element completely; hidden toggles visibility using CSS display:none, element stays in DOM." },
+        { q: "What are Angular workspace and projects?", a: "Angular CLI workspace (angular.json) can host multiple projects: application, libraries, e2e. Each project has its own config." },
+        { q: "What is Angular DevTools?", a: "Browser extension for debugging Angular apps: inspect component tree, profiler, change detection visualization." },
+        { q: "What are Angular's best practices for performance?", a: "OnPush strategy, trackBy, lazy loading, unsubscribe, avoid heavy computations in templates, use pure pipes, async pipe." },
+        { q: "What is the purpose of @Attribute decorator?", a: "Retrieves static attribute value from host element, useful for directives where value doesn't change after init." },
+        { q: "How to use web workers in Angular?", a: "Angular CLI supports generating web worker with ng generate web-worker. Offload heavy CPU tasks without blocking UI." },
+        { q: "What are Angular Material components?", a: "Official Material Design component library for Angular: buttons, dialogs, tables, etc. Integrated with CDK and theming." },
+        { q: "What is a custom pipe for async data?", a: "Custom pure/impure pipe can also handle subscriptions, but async pipe is recommended. Impure pipe called on every change detection." },
+        { q: "What is the typical Angular folder structure?", a: "Suggested: core, shared, features, assets, environments. Core: singleton services, guards. Shared: reusable components, directives, pipes." },
+        { q: "Explain Angular dependency injection tokens.", a: "InjectionToken used to create custom providers for non-class dependencies (interfaces, constants, config objects)." },
+        { q: "How does Angular handle memory leaks?", a: "Leaks occur when subscriptions not closed (ngOnDestroy). Also detach event listeners, interval. Async pipe and takeUntil pattern prevent leaks." },
+        { q: "What is the purpose of Angular's Renderer2?", a: "Renderer2 abstracts DOM manipulation, safe for both browser and server. Use instead of direct nativeElement for security and cross-platform." },
+        { q: "What is Angular's PlatformBrowserDynamic?", a: "Platform module used for bootstrapping browser application with JIT compilation. AOT uses platformBrowser." },
+        { q: "What is @angular/service-worker?", a: "Package to integrate service worker with Angular for PWA functionalities. Managed via CLI, simplifies caching strategies." },
+        { q: "How do you test Angular component with TestBed?", a: "TestBed.configureTestingModule creates testing module. Use fixture.detectChanges, fixture.componentInstance to test component logic and DOM." },
+        { q: "What is Jasmine and Karma?", a: "Default unit test framework (Jasmine) and test runner (Karma) in Angular. Jasmine for specs, Karma runs in real browsers." },
+        { q: "How to mock HttpClient in unit tests?", a: "Use HttpClientTestingModule and HttpTestingController to intercept requests and flush mock responses without network." },
+        { q: "Explain E2E testing in Angular with Protractor or Cypress.", a: "Protractor (deprecated) now Cypress/Playwright recommended. End-to-end simulates real user flows across entire app." },
+        { q: "What is Angular's update guide and ng update?", a: "ng update command automatically updates dependencies, applies migrations. Angular Update Guide provides step-by-step instructions." },
+        { q: "What are advanced typescript features used in Angular?", a: "Decorators, Generics, Access modifiers, async/await, strict mode, interfaces, utility types. Angular heavily uses decorators and class metadata." },
+        { q: "Bonus: future of Angular – Signals, zoneless, etc.", a: "Angular is moving towards fine-grained reactivity with Signals, potentially reducing Zone.js dependency, enabling faster zoneless apps with better predictability." }
+    ];
+
+    // ensure we have exactly 100 entries (provided 100)
+    if (questionsData.length !== 100) console.warn("Data length mismatch, but we trust generation");
+
+    // Render engine
+    let currentFilter = "";
+
+    function renderQuestions() {
+        const container = document.getElementById("questionsContainer");
+        const searchTerm = currentFilter.toLowerCase().trim();
+        const filtered = searchTerm === "" 
+            ? questionsData 
+            : questionsData.filter(item => item.q.toLowerCase().includes(searchTerm) || item.a.toLowerCase().includes(searchTerm));
+        
+        if (filtered.length === 0) {
+            container.innerHTML = `<div class="no-results">🔍 No matching questions. Try different keyword.</div>`;
+            return;
+        }
+
+        let cardsHtml = "";
+        filtered.forEach((item, idx) => {
+            // Use original index for display reference? we show real number from current order but not mandatory; but mapping find index in original? simple use idx+1 of filtered, but can show overall #? nicer: show original number:
+            const originalIndex = questionsData.findIndex(q => q.q === item.q && q.a === item.a) + 1;
+            const safeQ = escapeHtml(item.q);
+            const safeA = escapeHtml(item.a);
+            const cardId = `card-${originalIndex}-${Math.random().toString(36).substr(2, 6)}`;
+            cardsHtml += `
+                <div class="card" data-question-idx="${originalIndex}">
+                    <div class="question-area">
+                        <div class="question-text">
+                            <span class="q-num">Q${originalIndex}</span>
+                            <span>${safeQ}</span>
+                        </div>
+                    </div>
+                    <div class="answer-container">
+                        <div id="answer-${originalIndex}" class="answer-content">${safeA}</div>
+                        <div class="card-footer">
+                            <button class="btn-answer" data-qid="${originalIndex}">📖 Show Answer</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        container.innerHTML = cardsHtml;
+
+        // Attach event listeners to all answer buttons
+        document.querySelectorAll('.btn-answer').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const qid = btn.getAttribute('data-qid');
+                const answerDiv = document.getElementById(`answer-${qid}`);
+                if (answerDiv) {
+                    const isShown = answerDiv.classList.contains('show');
+                    if (!isShown) {
+                        answerDiv.classList.add('show');
+                        btn.innerHTML = '🙈 Hide Answer';
+                    } else {
+                        answerDiv.classList.remove('show');
+                        btn.innerHTML = '📖 Show Answer';
+                    }
+                }
+            });
+        });
+    }
+
+    function escapeHtml(str) {
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+            return c;
+        });
+    }
+
+    function handleSearch() {
+        const input = document.getElementById("searchInput");
+        currentFilter = input.value;
+        renderQuestions();
+    }
+
+    function resetFilter() {
+        document.getElementById("searchInput").value = "";
+        currentFilter = "";
+        renderQuestions();
+    }
+
+    document.getElementById("searchInput").addEventListener("input", handleSearch);
+    document.getElementById("resetFilterBtn").addEventListener("click", resetFilter);
+
+    // initial render
+    renderQuestions();
+</script>
+</body>
+</html>

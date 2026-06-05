@@ -1,0 +1,15 @@
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\bin\Debug\net10.0\SensorDataNormalizer.exe
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\bin\Debug\net10.0\SensorDataNormalizer.deps.json
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\bin\Debug\net10.0\SensorDataNormalizer.runtimeconfig.json
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\bin\Debug\net10.0\SensorDataNormalizer.dll
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\bin\Debug\net10.0\SensorDataNormalizer.pdb
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.AssemblyInfoInputs.cache
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.AssemblyInfo.cs
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.sourcelink.json
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.dll
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\refint\SensorDataNormalizer.dll
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.pdb
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\SensorDataNormalizer.genruntimeconfig.cache
+D:\Capgemini Training\M1_Practice_Assignments\SensorDataNormalizer\obj\Debug\net10.0\ref\SensorDataNormalizer.dll

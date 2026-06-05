@@ -1,0 +1,38 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using OneToManyEF.Data;
+using OneToManyEF.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace OneToManyEF.Controllers
+{
+    public class EmployeesController : Controller
+    {
+        private readonly ApplicationDbContext _context;
+
+        public EmployeesController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public IActionResult Index()
+        {
+            var employees = _context.Employees.Include(e => e.Department).ToList();
+            return View(employees);
+        }
+
+        public IActionResult Create()
+        {
+            ViewBag.Departments = new SelectList(_context.Departments, "DepartmentId", "DepartmentName");
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            _context.Employees.Add(employee);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+    }
+}

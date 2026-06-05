@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DemoMSI/DemoMSI.csproj" />
+  <Project Path="DemoMSISetup/DemoMSISetup.vdproj" Type="Installer" />
+</Solution>

@@ -1,0 +1,16 @@
+<form>
+  <input type="text" name="name" [(ngModel)]="name" placeholder="Name">
+  <input type="text" name="department" [(ngModel)]="dept" placeholder="Department">
+  <button (click)="addEmployee()">Add Employee</button>
+  <br><br>
+</form>
+
+
+<ul>
+  <li *ngFor="let item of employees">
+    <p>{{item.Id}}</p>
+    <p>{{item.Name}}</p>
+    <p>{{item.Department}}</p>
+    <button (click)="deleteEmployee(item.Id)">Delete</button>
+  </li>
+</ul>

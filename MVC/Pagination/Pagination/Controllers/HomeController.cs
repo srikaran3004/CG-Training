@@ -1,0 +1,86 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Pagination.Models;
+using System.Data;
+using System.Diagnostics;
+
+namespace Pagination.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly string _connectionString;
+
+        public HomeController(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("DefaultConnection")!;
+        }
+
+        public IActionResult Index(int page = 1, bool showAll = false)
+        {
+            int pageSize = 10;
+            var model = new OrderPaginationViewModel
+            {
+                CurrentPage = page,
+                PageSize = pageSize,
+                ShowAll = showAll
+            };
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                // Get total record count
+                using (var countCmd = new SqlCommand("SELECT COUNT(*) FROM Orders", connection))
+                {
+                    model.TotalRecords = (int)countCmd.ExecuteScalar();
+                    model.TotalPages = (int)Math.Ceiling(model.TotalRecords / (double)pageSize);
+                }
+
+                // Calculate start and end OrderID range for the page
+                int st, en;
+                if (showAll)
+                {
+                    st = 1;
+                    en = model.TotalRecords;
+                }
+                else
+                {
+                    st = (page - 1) * pageSize + 1;
+                    en = page * pageSize;
+                }
+
+                using var command = new SqlCommand("showthispageorders", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@st", st);
+                command.Parameters.AddWithValue("@en", en);
+
+                using var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    model.Orders.Add(new Order
+                    {
+                        OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+                        CustomerName = reader.GetString(reader.GetOrdinal("CustomerName")),
+                        Product = reader.GetString(reader.GetOrdinal("Product")),
+                        Quantity = reader.GetInt32(reader.GetOrdinal("Quantity")),
+                        Price = reader.GetDecimal(reader.GetOrdinal("Price")),
+                        OrderDate = reader.GetDateTime(reader.GetOrdinal("OrderDate"))
+                    });
+                }
+            }
+
+            return View(model);
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}

@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\MovieLibrary\bin\Debug\net10.0\MovieLibrary.exe
+D:\Capgemini Training\C#\MovieLibrary\bin\Debug\net10.0\MovieLibrary.deps.json
+D:\Capgemini Training\C#\MovieLibrary\bin\Debug\net10.0\MovieLibrary.runtimeconfig.json
+D:\Capgemini Training\C#\MovieLibrary\bin\Debug\net10.0\MovieLibrary.dll
+D:\Capgemini Training\C#\MovieLibrary\bin\Debug\net10.0\MovieLibrary.pdb
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.AssemblyInfo.cs
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.sourcelink.json
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.dll
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\refint\MovieLibrary.dll
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.pdb
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\MovieLibrary.genruntimeconfig.cache
+D:\Capgemini Training\C#\MovieLibrary\obj\Debug\net10.0\ref\MovieLibrary.dll

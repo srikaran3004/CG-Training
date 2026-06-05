@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.AssemblyInfo.cs
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.sourcelink.json
+D:\Capgemini Training\C#\C#Program\bin\Debug\net10.0\C#Program.exe
+D:\Capgemini Training\C#\C#Program\bin\Debug\net10.0\C#Program.deps.json
+D:\Capgemini Training\C#\C#Program\bin\Debug\net10.0\C#Program.runtimeconfig.json
+D:\Capgemini Training\C#\C#Program\bin\Debug\net10.0\C#Program.dll
+D:\Capgemini Training\C#\C#Program\bin\Debug\net10.0\C#Program.pdb
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.dll
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\refint\C#Program.dll
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.pdb
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\C#Program.genruntimeconfig.cache
+D:\Capgemini Training\C#\C#Program\obj\Debug\net10.0\ref\C#Program.dll

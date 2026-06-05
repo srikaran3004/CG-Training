@@ -1,0 +1,6 @@
+﻿namespace StudentPortal.Repositories
+{
+    public class StudentRepository
+    {
+    }
+}

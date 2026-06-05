@@ -1,0 +1,11 @@
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\bin\Debug\net10.0\dllLibrary.deps.json
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\bin\Debug\net10.0\dllLibrary.dll
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\bin\Debug\net10.0\dllLibrary.pdb
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\dllLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\dllLibrary.AssemblyInfoInputs.cache
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\dllLibrary.AssemblyInfo.cs
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\dllLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\dllLibrary.dll
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\refint\dllLibrary.dll
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\dllLibrary.pdb
+C:\Users\Srikaran\source\repos\dllLibrary\dllLibrary\obj\Debug\net10.0\ref\dllLibrary.dll

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Capgemini Training\\Web API\\WebAPIJWT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|d:\\capgemini training\\web api\\webapijwt\\webapijwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|solutionrelative:webapijwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|d:\\capgemini training\\web api\\webapijwt\\webapijwt\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|solutionrelative:webapijwt\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|d:\\capgemini training\\web api\\webapijwt\\webapijwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|solutionrelative:webapijwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|d:\\capgemini training\\web api\\webapijwt\\webapijwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|solutionrelative:webapijwt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F259508D-6E98-E264-6DC0-EE928D28C892}|WebAPIJWT\\WebAPIJWT.csproj|d:\\capgemini training\\web api\\webapijwt\\webapijwt\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,11 +41,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Capgemini Training\\Web API\\WebAPIJWT\\WebAPIJWT\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "WebAPIJWT\\Controllers\\AuthController.cs",
@@ -53,25 +53,24 @@
               "RelativeToolTip": "WebAPIJWT\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T04:04:34.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T04:04:34.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Capgemini Training\\Web API\\WebAPIJWT\\WebAPIJWT\\Program.cs",
               "RelativeDocumentMoniker": "WebAPIJWT\\Program.cs",
               "ToolTip": "D:\\Capgemini Training\\Web API\\WebAPIJWT\\WebAPIJWT\\Program.cs",
               "RelativeToolTip": "WebAPIJWT\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAUwFsAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T04:03:42.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\Capgemini Training\\Web API\\WebAPIJWT\\WebAPIJWT\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "WebAPIJWT\\Services\\JwtService.cs",
@@ -84,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Capgemini Training\\Web API\\WebAPIJWT\\WebAPIJWT\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPIJWT\\appsettings.json",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "WebAPIJWT\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T04:01:01.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T04:01:01.953Z"
             },
             {
               "$type": "Document",

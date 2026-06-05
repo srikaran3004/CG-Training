@@ -1,0 +1,12 @@
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\IISdemo.exe
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\appsettings.Development.json
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\appsettings.json
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\IISdemo.dll
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\IISdemo.deps.json
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\IISdemo.runtimeconfig.json
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\IISdemo.pdb
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Capgemini Training\Web API\IISdemo\IISdemo\obj\Release\net10.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<OneToManyEF.Models.Employee>
+
+<h2>Employees List</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Department</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.EmployeeName</td>
+            <td>@item.Salary</td>
+            <td>@item.Department.DepartmentName</td>
+        </tr>
+    }
+
+</table>

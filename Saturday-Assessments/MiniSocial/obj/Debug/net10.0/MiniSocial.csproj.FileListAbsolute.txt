@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\MiniSocial\bin\Debug\net10.0\MiniSocial.exe
+D:\Capgemini Training\C#\MiniSocial\bin\Debug\net10.0\MiniSocial.deps.json
+D:\Capgemini Training\C#\MiniSocial\bin\Debug\net10.0\MiniSocial.runtimeconfig.json
+D:\Capgemini Training\C#\MiniSocial\bin\Debug\net10.0\MiniSocial.dll
+D:\Capgemini Training\C#\MiniSocial\bin\Debug\net10.0\MiniSocial.pdb
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.AssemblyInfo.cs
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.sourcelink.json
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.dll
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\refint\MiniSocial.dll
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.pdb
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\MiniSocial.genruntimeconfig.cache
+D:\Capgemini Training\C#\MiniSocial\obj\Debug\net10.0\ref\MiniSocial.dll

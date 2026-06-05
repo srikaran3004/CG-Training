@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CubeWorkerAPI/CubeWorkerAPI.csproj" />
+  <Project Path="NumberProducerAPI/NumberProducerAPI.csproj" />
+  <Project Path="SquareWorkerAPI/SquareWorkerAPI.csproj" />
+</Solution>

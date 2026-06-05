@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\RealEstate\bin\Debug\net10.0\RealEstate.exe
+D:\Capgemini Training\C#\RealEstate\bin\Debug\net10.0\RealEstate.deps.json
+D:\Capgemini Training\C#\RealEstate\bin\Debug\net10.0\RealEstate.runtimeconfig.json
+D:\Capgemini Training\C#\RealEstate\bin\Debug\net10.0\RealEstate.dll
+D:\Capgemini Training\C#\RealEstate\bin\Debug\net10.0\RealEstate.pdb
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.AssemblyInfo.cs
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.sourcelink.json
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.dll
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\refint\RealEstate.dll
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.pdb
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\RealEstate.genruntimeconfig.cache
+D:\Capgemini Training\C#\RealEstate\obj\Debug\net10.0\ref\RealEstate.dll

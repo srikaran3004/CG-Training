@@ -1,0 +1,15 @@
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Debug\net10.0\HelloWorld.exe
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Debug\net10.0\HelloWorld.deps.json
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Debug\net10.0\HelloWorld.runtimeconfig.json
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Debug\net10.0\HelloWorld.dll
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\bin\Debug\net10.0\HelloWorld.pdb
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.AssemblyInfo.cs
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.sourcelink.json
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.dll
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\refint\HelloWorld.dll
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.pdb
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\HelloWorld.genruntimeconfig.cache
+D:\Capgemini Training\MSI File\HelloWorld\HelloWorld\obj\Debug\net10.0\ref\HelloWorld.dll

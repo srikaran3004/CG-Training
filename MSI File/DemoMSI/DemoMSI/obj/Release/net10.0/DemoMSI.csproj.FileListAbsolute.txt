@@ -1,0 +1,15 @@
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\DemoMSI.exe
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\DemoMSI.deps.json
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\DemoMSI.runtimeconfig.json
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\DemoMSI.dll
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\DemoMSI.pdb
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.AssemblyInfoInputs.cache
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.AssemblyInfo.cs
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.sourcelink.json
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.dll
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\refint\DemoMSI.dll
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.pdb
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\DemoMSI.genruntimeconfig.cache
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\obj\Release\net10.0\ref\DemoMSI.dll

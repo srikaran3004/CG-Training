@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\Programming\bin\Debug\net10.0\Programming.exe
+D:\Capgemini Training\C#\Programming\bin\Debug\net10.0\Programming.deps.json
+D:\Capgemini Training\C#\Programming\bin\Debug\net10.0\Programming.runtimeconfig.json
+D:\Capgemini Training\C#\Programming\bin\Debug\net10.0\Programming.dll
+D:\Capgemini Training\C#\Programming\bin\Debug\net10.0\Programming.pdb
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.AssemblyInfo.cs
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.sourcelink.json
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.dll
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\refint\Programming.dll
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.pdb
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\Programming.genruntimeconfig.cache
+D:\Capgemini Training\C#\Programming\obj\Debug\net10.0\ref\Programming.dll

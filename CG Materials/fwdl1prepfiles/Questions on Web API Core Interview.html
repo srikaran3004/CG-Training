@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API Core Interview Questions & Answers - 100 Questions</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --background: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+            --answer-bg: #f0f9ff;
+            --section-bg: #eff6ff;
+            --hover-color: #dbeafe;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-box:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .stat-badge {
+            background: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-badge .count {
+            background: var(--primary-color);
+            color: white;
+            padding: 2px 10px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+        }
+
+        .section-header {
+            background: var(--section-bg);
+            padding: 20px 25px;
+            margin: 30px 0 15px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-header:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateX(5px);
+        }
+
+        .section-header h2 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+        }
+
+        .section-header .toggle-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .section-header.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+
+        .section-content {
+            transition: max-height 0.5s ease, opacity 0.3s ease;
+            max-height: 50000px;
+            opacity: 1;
+            overflow: hidden;
+        }
+
+        .section-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+        }
+
+        .qa-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .qa-card:hover {
+            box-shadow: var(--shadow-hover);
+            border-color: #93c5fd;
+        }
+
+        .question {
+            padding: 18px 25px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.05rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+            user-select: none;
+        }
+
+        .question:hover {
+            background: var(--hover-color);
+        }
+
+        .question .q-number {
+            background: var(--primary-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .question .arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .question.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .question-text {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            background: var(--answer-bg);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .answer.show {
+            max-height: 2000px;
+        }
+
+        .answer-content {
+            padding: 20px 25px 20px 70px;
+            color: #334155;
+        }
+
+        .answer-content pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .answer-content code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #2563eb;
+        }
+
+        .answer-content pre code {
+            background: transparent;
+            color: #e2e8f0;
+            padding: 0;
+        }
+
+        .answer-content ul, .answer-content ol {
+            margin: 10px 0 10px 25px;
+        }
+
+        .answer-content li {
+            margin: 5px 0;
+        }
+
+        .answer-content strong {
+            color: #1e40af;
+        }
+
+        .answer-content table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .answer-content table th,
+        .answer-content table td {
+            border: 1px solid #cbd5e1;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        .answer-content table th {
+            background: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .highlighter {
+            background: yellow;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            margin-top: 40px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            display: none;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .missing-badge {
+            background: #ef4444;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .answer-content {
+                padding: 15px 15px 15px 45px;
+            }
+
+            .question {
+                padding: 15px 18px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 Web API Core Interview Q&A</h1>
+        <p>100 Essential Questions from Fresher to Intermediate Level</p>
+        <p style="margin-top: 8px; font-size: 0.9rem;">Click on any question to reveal the answer | 7 Sections | 100 Questions</p>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="🔍 Search questions... (e.g., JWT, Dependency Injection, Middleware)" id="searchInput">
+            <button class="btn btn-primary" onclick="expandAll()">📖 Expand All</button>
+            <button class="btn btn-outline" onclick="collapseAll()">📕 Collapse All</button>
+        </div>
+
+        <div class="stats">
+            <span class="stat-badge">📝 Total Questions: <span class="count" id="totalCount">100</span></span>
+            <span class="stat-badge">👁️ Visible: <span class="count" id="visibleCount">100</span></span>
+        </div>
+
+        <div id="sections-container">
+            <!-- Sections will be dynamically generated -->
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+    <footer>
+        <p>📚 Web API Core Interview Preparation Guide | Click on Questions to View Answers</p>
+        <p style="margin-top: 5px;">Covers: Basics • Dependency Injection • Middleware • EF Core • Authentication • Advanced Topics • Best Practices</p>
+    </footer>
+
+    <script>
+        const qaData = {
+            "Section 1: Basics of Web API": {
+                questions: [
+                    {q:"What is Web API?",a:"Web API (Application Programming Interface) is a framework for building HTTP services that can be consumed by various clients like browsers, mobile apps, and desktop applications. It uses HTTP protocol and follows REST principles to enable communication between client and server. Web APIs return data typically in JSON or XML format, making them platform-independent and suitable for building distributed systems."},
+                    {q:"What is ASP.NET Core Web API?",a:"ASP.NET Core Web API is a cross-platform, high-performance, open-source framework for building RESTful APIs using .NET Core. Key features include:<br>• Built-in dependency injection<br>• Middleware pipeline architecture<br>• Attribute routing<br>• Model binding & validation<br>• Cross-platform support (Windows, Linux, macOS)<br>• Built-in support for OpenAPI/Swagger"},
+                    {q:"What are the differences between Web API and MVC?",a:"<table><tr><th>Feature</th><th>Web API</th><th>MVC</th></tr><tr><td>Return Type</td><td>Data (JSON/XML)</td><td>Views (HTML)</td></tr><tr><td>Purpose</td><td>HTTP services</td><td>Web applications</td></tr><tr><td>Base Controller</td><td>ControllerBase</td><td>Controller</td></tr><tr><td>View Engine</td><td>Not required</td><td>Uses Razor</td></tr><tr><td>State</td><td>Stateless</td><td>Can maintain state</td></tr><tr><td>Route Attributes</td><td>Required with [ApiController]</td><td>Optional</td></tr></table>"},
+                    {q:"What is REST?",a:"REST (Representational State Transfer) is an architectural style for designing networked applications. Key principles:<br>• <strong>Stateless:</strong> Each request contains all information needed<br>• <strong>Client-Server:</strong> Separation of concerns<br>• <strong>Cacheable:</strong> Responses can be cached<br>• <strong>Uniform Interface:</strong> Consistent resource identification (URIs)<br>• <strong>Layered System:</strong> Client doesn't know if connected directly or through intermediaries<br><br>It uses HTTP methods (GET, POST, PUT, DELETE) to perform CRUD operations on resources."},
+                    {q:"What are the HTTP methods commonly used in Web API?",a:"<strong>GET</strong> - Retrieve a resource (Read)<br><strong>POST</strong> - Create a new resource<br><strong>PUT</strong> - Update an entire resource (full replacement)<br><strong>PATCH</strong> - Partially update a resource<br><strong>DELETE</strong> - Remove a resource<br><strong>HEAD</strong> - Similar to GET but returns only headers<br><strong>OPTIONS</strong> - Returns supported HTTP methods for a resource"},
+                    {q:"What is the base class for Web API controller?",a:"In ASP.NET Core, Web API controllers inherit from <code>ControllerBase</code> class.<br><br>For APIs, <code>ControllerBase</code> is recommended over <code>Controller</code> because it provides HTTP-specific methods like <code>Ok()</code>, <code>BadRequest()</code>, <code>NotFound()</code>, etc., without the overhead of View support.<br><br>The <code>Controller</code> class inherits from <code>ControllerBase</code> and adds View-related functionality, so it's better suited for MVC applications."},
+                    {q:"How do you create a basic Web API controller?",a:"<pre><code>[ApiController]\n[Route(\"api/[controller]\")]\npublic class ProductsController : ControllerBase\n{\n    [HttpGet]\n    public IActionResult GetProducts()\n    {\n        var products = new List&lt;string&gt; { \"Product1\", \"Product2\" };\n        return Ok(products);\n    }\n\n    [HttpGet(\"{id}\")]\n    public IActionResult GetProduct(int id)\n    {\n        return Ok($\"Product {id}\");\n    }\n\n    [HttpPost]\n    public IActionResult CreateProduct([FromBody] Product product)\n    {\n        return CreatedAtAction(nameof(GetProduct), \n            new { id = product.Id }, product);\n    }\n}</code></pre>"},
+                    {q:"What is the purpose of [ApiController] attribute?",a:"The <code>[ApiController]</code> attribute enables API-specific behaviors:<br><br>• <strong>Automatic model validation</strong> - Returns 400 Bad Request with validation errors<br>• <strong>Binding source inference</strong> - Automatically infers binding source from parameter types (e.g., [FromBody] for complex types)<br>• <strong>Problem details</strong> - Returns <code>ProblemDetails</code> response for error status codes<br>• <strong>Attribute routing requirement</strong> - Controllers must use attribute routing<br>• <strong>Multipart form data binding</strong> - Supports <code>[FromForm]</code> binding"},
+                    {q:"What is attribute routing in Web API?",a:"Attribute routing uses <code>[Route]</code> attribute to define routes directly on controllers and actions.<br><br><pre><code>[Route(\"api/[controller]\")]\npublic class UsersController : ControllerBase\n{\n    [HttpGet(\"{id}\")]          // GET api/users/5\n    public IActionResult GetUser(int id) { }\n    \n    [HttpPost(\"create\")]       // POST api/users/create\n    public IActionResult CreateUser(User user) { }\n    \n    [HttpPut(\"{id}\")]          // PUT api/users/5\n    public IActionResult UpdateUser(int id, User user) { }\n    \n    [HttpDelete(\"{id}\")]       // DELETE api/users/5\n    public IActionResult DeleteUser(int id) { }\n}</code></pre><br>Attribute routing gives more control over URL patterns compared to conventional routing."},
+                    {q:"What is the difference between IActionResult and ActionResult<T>?",a:"<strong>IActionResult:</strong><br>• Returns any kind of HTTP response<br>• Type information is lost at compile time<br>• Better for multiple return types<br><br><strong>ActionResult&lt;T&gt;:</strong><br>• Combines IActionResult with specific return type<br>• Enables compile-time type checking<br>• Better Swagger/OpenAPI documentation<br>• Visual Studio IntelliSense support<br><br><pre><code>// IActionResult - type info lost\npublic IActionResult GetProduct() { return Ok(product); }\n\n// ActionResult&lt;T&gt; - type info preserved\npublic ActionResult&lt;Product&gt; GetProduct() { return Ok(product); }</code></pre>"},
+                    {q:"How do you configure Web API routing in Program.cs?",a:"<pre><code>var builder = WebApplication.CreateBuilder(args);\n\n// Add controllers as services\nbuilder.Services.AddControllers();\n\nvar app = builder.Build();\n\napp.UseRouting();              // Enables routing\napp.MapControllers();          // Maps controller routes\n// OR use endpoints mapping\napp.UseEndpoints(endpoints =>\n{\n    endpoints.MapControllers();\n});\n\napp.Run();</code></pre>"},
+                    {q:"What is Model Binding in Web API?",a:"Model binding automatically maps data from HTTP requests to action method parameters. It extracts data from:<br><br>• <strong>Route data</strong> - URL segments<br>• <strong>Query string</strong> - ?key=value pairs<br>• <strong>Request body</strong> - JSON/XML payload<br>• <strong>HTTP headers</strong> - Request headers<br>• <strong>Form data</strong> - Form submissions<br>• <strong>Dependency injection</strong> - Services registered in DI container<br><br>Binding sources can be explicitly specified using attributes like <code>[FromQuery]</code>, <code>[FromBody]</code>, etc."},
+                    {q:"Explain different model binding attributes.",a:"<strong>[FromBody]</strong> - Binds from request body (JSON/XML), used for complex types<br><strong>[FromQuery]</strong> - Binds from query string parameters<br><strong>[FromRoute]</strong> - Binds from URL route parameters<br><strong>[FromHeader]</strong> - Binds from HTTP request headers<br><strong>[FromForm]</strong> - Binds from form data in the request body (file uploads)<br><strong>[FromServices]</strong> - Resolves service from DI container<br><br><pre><code>public IActionResult Search(\n    [FromQuery] string query,        // ?query=something\n    [FromHeader(Name=\"X-API-Key\")] string apiKey,  // header\n    [FromRoute] int id)              // URL segment\n{ }</code></pre>"},
+                    {q:"What is content negotiation in Web API?",a:"Content negotiation is the process where the server selects the best response format based on client's <strong>Accept</strong> header.<br><br>• Client sends <code>Accept: application/json</code> → Server returns JSON<br>• Client sends <code>Accept: application/xml</code> → Server returns XML<br>• If no acceptable format found → Returns 406 Not Acceptable<br><br>ASP.NET Core supports JSON (default) and can be configured for XML:<br><pre><code>builder.Services.AddControllers()\n    .AddXmlSerializerFormatters();</code></pre>"},
+                    {q:"How do you return JSON format only in Web API?",a:"Configure in Program.cs to ensure JSON-only responses:<br><br><pre><code>builder.Services.AddControllers()\n    .AddJsonOptions(options =>\n    {\n        options.JsonSerializerOptions.PropertyNamingPolicy = \n            JsonNamingPolicy.CamelCase;\n        options.JsonSerializerOptions.WriteIndented = true;\n        options.JsonSerializerOptions.DefaultIgnoreCondition = \n            JsonIgnoreCondition.WhenWritingNull;\n    });</code></pre><br>To restrict to JSON only, don't add XML formatters and set default response type in controllers."},
+                    {q:"What is the default response format in Web API?",a:"JSON is the default response format in ASP.NET Core Web API. The framework uses <code>System.Text.Json</code> by default for serialization and deserialization.<br><br>Key points:<br>• JSON is lightweight and widely supported<br>• No additional configuration needed<br>• Can be customized via <code>AddJsonOptions()</code><br>• Previous versions used Newtonsoft.Json (Json.NET)<br>• Can switch to Newtonsoft by adding <code>Microsoft.AspNetCore.Mvc.NewtonsoftJson</code> package"},
+                    {q:"How do you handle errors globally in Web API?",a:"<strong>Method 1: Exception Handling Middleware</strong><br><pre><code>app.UseExceptionHandler(\"/error\");\n\n// Error controller\n[Route(\"/error\")]\npublic IActionResult HandleError() => \n    Problem(detail: \"An error occurred\");</code></pre><strong>Method 2: Custom Middleware</strong><br><pre><code>app.Use(async (context, next) =>\n{\n    try\n    {\n        await next();\n    }\n    catch (Exception ex)\n    {\n        context.Response.StatusCode = 500;\n        context.Response.ContentType = \"application/json\";\n        await context.Response.WriteAsJsonAsync(\n            new { error = ex.Message });\n    }\n});</code></pre><strong>Method 3: UseExceptionHandler with custom details</strong><br><pre><code>app.UseExceptionHandler(exceptionHandlerApp =>\n{\n    exceptionHandlerApp.Run(async context =>\n    {\n        var exception = context.Features\n            .Get&lt;IExceptionHandlerFeature&gt;()?.Error;\n        context.Response.StatusCode = 500;\n        await context.Response.WriteAsJsonAsync(\n            new { error = exception?.Message });\n    });\n});</code></pre>"},
+                    {q:"What is the purpose of Program.cs in .NET 6+?",a:"In .NET 6 and later, <strong>Program.cs</strong> is the unified entry point that combines:<br><br>• <strong>Configuration</strong> - App settings, environment variables<br>• <strong>Service registration</strong> - DI container setup (previously in Startup.ConfigureServices)<br>• <strong>Middleware pipeline</strong> - Request processing pipeline (previously in Startup.Configure)<br>• <strong>Host configuration</strong> - Kestrel, URLs, environment<br><br>It uses top-level statements, eliminating boilerplate code from earlier versions. The <code>Startup.cs</code> class is no longer required but can still be used."},
+                    {q:"What is Kestrel?",a:"Kestrel is a cross-platform, lightweight, high-performance web server for ASP.NET Core applications.<br><br><strong>Key features:</strong><br>• Default web server in ASP.NET Core<br>• Cross-platform (Windows, Linux, macOS)<br>• High performance<br>• Can be used as edge server or behind reverse proxy (IIS, Nginx, Apache)<br>• Supports HTTP/1.1, HTTP/2, HTTP/3, WebSockets<br>• Configurable in Program.cs or appsettings.json<br><br><pre><code>builder.WebHost.ConfigureKestrel(options =>\n{\n    options.Listen(IPAddress.Any, 5000);\n    options.Listen(IPAddress.Any, 5001, \n        listenOptions => listenOptions.UseHttps());\n});</code></pre>"},
+                    {q:"What are the different hosting models for Web API?",a:"<strong>1. In-Process Hosting (IIS)</strong><br>• App runs inside IIS worker process (w3wp.exe)<br>• Better performance (no proxy overhead)<br>• .NET Core 3.0+ default for IIS<br><br><strong>2. Out-of-Process Hosting (IIS)</strong><br>• App runs in separate Kestrel process<br>• IIS acts as reverse proxy<br><br><strong>3. Self-Hosting</strong><br>• Using Kestrel directly<br>• Good for microservices, console apps<br><br><strong>4. Docker Container Hosting</strong><br>• Containerized deployment<br>• Consistent environment across platforms<br><br><strong>5. Linux Hosting</strong><br>• Nginx/Apache as reverse proxy<br>• Systemd service for process management"}
+                ]
+            },
+            "Section 2: Dependency Injection & Services": {
+                questions: [
+                    {q:"What is Dependency Injection (DI)?",a:"Dependency Injection is a design pattern where dependencies are provided to a class from outside rather than the class creating them internally.<br><br><strong>Benefits:</strong><br>• Loose coupling between classes<br>• Better testability (easy mocking)<br>• Improved maintainability<br>• Centralized dependency management<br><br>ASP.NET Core has built-in DI container. Classes declare their dependencies in constructors, and the framework resolves them automatically:<br><br><pre><code>public class OrderService : IOrderService\n{\n    private readonly IRepository _repository;\n    private readonly ILogger _logger;\n    \n    public OrderService(IRepository repository, ILogger logger)\n    {\n        _repository = repository;\n        _logger = logger;\n    }\n}</code></pre>"},
+                    {q:"What are the three service lifetimes in ASP.NET Core DI?",a:"1. <strong>Transient</strong> - New instance created every time they're requested<br>2. <strong>Scoped</strong> - One instance per client request (connection)<br>3. <strong>Singleton</strong> - One instance for the entire application lifetime<br><br><pre><code>// Registration\nbuilder.Services.AddTransient&lt;ITransientService, TransientService&gt;();\nbuilder.Services.AddScoped&lt;IScopedService, ScopedService&gt;();\nbuilder.Services.AddSingleton&lt;ISingletonService, SingletonService&gt;();</code></pre>"},
+                    {q:"Explain the difference between AddTransient, AddScoped, and AddSingleton.",a:"<table><tr><th>Lifetime</th><th>Created</th><th>Use Case</th></tr><tr><td><strong>Transient</strong></td><td>Every injection</td><td>Lightweight, stateless services</td></tr><tr><td><strong>Scoped</strong></td><td>Once per HTTP request</td><td>DbContext, Unit of Work</td></tr><tr><td><strong>Singleton</strong></td><td>Once per app lifetime</td><td>Caching, configuration, logging</td></tr></table><br><strong>Important:</strong> Never inject Scoped services into Singleton services - it causes \"captive dependency\" issues. Use <code>IServiceScopeFactory</code> to create scopes manually in singletons."},
+                    {q:"How do you inject a service into a controller?",a:"<pre><code>public class ProductsController : ControllerBase\n{\n    private readonly IProductService _productService;\n    private readonly ILogger&lt;ProductsController&gt; _logger;\n\n    // Constructor Injection\n    public ProductsController(\n        IProductService productService,\n        ILogger&lt;ProductsController&gt; logger)\n    {\n        _productService = productService;\n        _logger = logger;\n    }\n\n    [HttpGet]\n    public async Task&lt;IActionResult&gt; Get()\n    {\n        var products = await _productService.GetAllAsync();\n        return Ok(products);\n    }\n}</code></pre><br>Services must be registered in DI container first:<br><pre><code>builder.Services.AddScoped&lt;IProductService, ProductService&gt;();</code></pre>"},
+                    {q:"What is the difference between TryAddTransient and AddTransient?",a:"<strong>AddTransient</strong> - Registers service every time, even if already registered. Last registration wins.<br><br><strong>TryAddTransient</strong> - Only registers if no implementation of the same type exists. Doesn't override existing registration.<br><br><pre><code>// This will BE OVERWRITTEN\nbuilder.Services.AddTransient&lt;IService, ServiceA&gt;();\nbuilder.Services.AddTransient&lt;IService, ServiceB&gt;(); // Wins\n\n// This will NOT BE OVERWRITTEN  \nbuilder.Services.TryAddTransient&lt;IService, ServiceA&gt;();\nbuilder.Services.TryAddTransient&lt;IService, ServiceB&gt;(); // Ignored</code></pre>"},
+                    {q:"Can you inject multiple implementations of an interface?",a:"Yes, using <code>IEnumerable&lt;T&gt;</code>, <code>ICollection&lt;T&gt;</code>, or <code>IList&lt;T&gt;</code>:<br><br><pre><code>// Register multiple implementations\nbuilder.Services.AddTransient&lt;IPaymentService, CreditCardPayment&gt;();\nbuilder.Services.AddTransient&lt;IPaymentService, PayPalPayment&gt;();\nbuilder.Services.AddTransient&lt;IPaymentService, BankTransferPayment&gt;();\n\n// Inject all implementations\npublic class OrderController : ControllerBase\n{\n    private readonly IEnumerable&lt;IPaymentService&gt; _paymentServices;\n\n    public OrderController(IEnumerable&lt;IPaymentService&gt; paymentServices)\n    {\n        _paymentServices = paymentServices; // Contains all 3\n    }\n\n    public void ProcessPayment()\n    {\n        foreach(var payment in _paymentServices)\n        {\n            payment.Process(); // Use specific implementation\n        }\n    }\n}</code></pre>"},
+                    {q:"What is the purpose of IServiceProvider?",a:"<code>IServiceProvider</code> is the service container interface that resolves services at runtime.<br><br><strong>Usage:</strong><br>• Constructor injection (preferred)<br>• Manual resolution when DI isn't available<br>• Creating scopes for background services<br><br><pre><code>// In middleware or custom code\nvar service = app.ApplicationServices\n    .GetRequiredService&lt;IMyService&gt;();\n\n// Check if service exists\nvar service = app.ApplicationServices\n    .GetService&lt;IMyService&gt;();\n\n// Create a scope\nusing var scope = app.ApplicationServices.CreateScope();\nvar scopedService = scope.ServiceProvider\n    .GetRequiredService&lt;IScopedService&gt;();</code></pre>"},
+                    {q:"How do you register DbContext in DI?",a:"<pre><code>// Program.cs\nbuilder.Services.AddDbContext&lt;ApplicationDbContext&gt;(options =>\n    options.UseSqlServer(\n        builder.Configuration.GetConnectionString(\"DefaultConnection\"),\n        sqlOptions => sqlOptions.EnableRetryOnFailure(\n            maxRetryCount: 3,\n            maxRetryDelay: TimeSpan.FromSeconds(30))));\n\n// Using DbContextPool for better performance\nbuilder.Services.AddDbContextPool&lt;ApplicationDbContext&gt;(options =>\n    options.UseSqlServer(connectionString));</code></pre><br><code>AddDbContext</code> registers DbContext as Scoped by default. <code>AddDbContextPool</code> reuses context instances for better performance."},
+                    {q:"What is service scope validation?",a:"Service scope validation checks that scoped services aren't accidentally injected into singleton services.<br><br><pre><code>builder.Host.UseDefaultServiceProvider(options =>\n{\n    options.ValidateScopes = true;    // Check for captive dependencies\n    options.ValidateOnBuild = true;   // Validates on service provider build\n});</code></pre><br>Enabled by default in Development environment. Helps catch \"captive dependency\" issues where a scoped service (like DbContext) is held by a singleton."},
+                    {q:"How do you resolve a scoped service inside a singleton?",a:"<pre><code>public class BackgroundProcessingService : BackgroundService\n{\n    private readonly IServiceScopeFactory _scopeFactory;\n    \n    public BackgroundProcessingService(\n        IServiceScopeFactory scopeFactory)\n    {\n        _scopeFactory = scopeFactory;\n    }\n    \n    protected override async Task ExecuteAsync(\n        CancellationToken stoppingToken)\n    {\n        while (!stoppingToken.IsCancellationRequested)\n        {\n            // Create new scope for scoped services\n            using var scope = _scopeFactory.CreateScope();\n            var scopedDbContext = scope.ServiceProvider\n                .GetRequiredService&lt;ApplicationDbContext&gt;();\n            var scopedService = scope.ServiceProvider\n                .GetRequiredService&lt;IScopedService&gt;();\n            \n            // Use scoped services here\n            await scopedService.ProcessAsync();\n        }\n    }\n}</code></pre>"}
+                ]
+            },
+            "Section 3: Middleware & Request Pipeline": {
+                questions: [
+                    {q:"What is Middleware in ASP.NET Core?",a:"Middleware are software components assembled into an application pipeline to handle HTTP requests and responses. Each middleware component:<br><br>• Can process incoming requests before passing to next middleware<br>• Can process outgoing responses<br>• Can short-circuit the pipeline (terminal middleware)<br>• Executes in order of addition to the pipeline<br><br><strong>Example:</strong> Authentication, Logging, CORS, Static Files, Routing<br><br>The pipeline shape is like a chain where each link can perform work before and after calling the next link."},
+                    {q:"Explain the request pipeline in ASP.NET Core.",a:"The ASP.NET Core request pipeline consists of middleware components connected in sequence:<br><br><pre><code>Request → Middleware1 → Middleware2 → Middleware3 → Endpoint\n         ↕              ↕              ↕\nResponse ← Middleware1 ← Middleware2 ← Middleware3</code></pre><br><strong>Execution flow:</strong><br>1. Request arrives at first middleware<br>2. Each middleware can process and pass to next (or short-circuit)<br>3. Final middleware (terminal) generates response<br>4. Response passes back through each middleware in reverse order<br><br>Middleware order matters! For example, Authentication must come before Authorization."},
+                    {q:"How do you create custom middleware?",a:"<pre><code>// Custom Middleware Class\npublic class RequestTimingMiddleware\n{\n    private readonly RequestDelegate _next;\n    private readonly ILogger _logger;\n    \n    public RequestTimingMiddleware(RequestDelegate next, \n        ILogger&lt;RequestTimingMiddleware&gt; logger)\n    {\n        _next = next;\n        _logger = logger;\n    }\n    \n    public async Task InvokeAsync(HttpContext context)\n    {\n        var stopwatch = Stopwatch.StartNew();\n        \n        // Pre-processing\n        _logger.LogInformation(\"Request started\");\n        \n        await _next(context);  // Call next middleware\n        \n        // Post-processing\n        stopwatch.Stop();\n        _logger.LogInformation(\n            $\"Request completed in {stopwatch.ElapsedMilliseconds}ms\");\n    }\n}\n\n// Extension Method for easy registration\npublic static class RequestTimingMiddlewareExtensions\n{\n    public static IApplicationBuilder UseRequestTiming(\n        this IApplicationBuilder builder)\n    {\n        return builder.UseMiddleware&lt;RequestTimingMiddleware&gt;();\n    }\n}\n\n// Use in Program.cs\napp.UseRequestTiming();</code></pre>"},
+                    {q:"What is the difference between Use, Run, and Map?",a:"<strong>Use:</strong> Adds middleware to pipeline, can call next middleware<br><pre><code>app.Use(async (context, next) =>\n{\n    // Pre-processing\n    await next();  // Calls next middleware\n    // Post-processing\n});</code></pre><strong>Run:</strong> Terminal middleware, doesn't call next (ends pipeline)<br><pre><code>app.Run(async context =>\n{\n    await context.Response.WriteAsync(\"Hello World!\");\n});</code></pre><strong>Map:</strong> Branches pipeline based on request path<br><pre><code>app.Map(\"/admin\", adminApp =>\n{\n    adminApp.UseAuthentication();\n    adminApp.UseAuthorization();\n    adminApp.Run(async context => \n        await context.Response.WriteAsync(\"Admin Area\"));\n});</code></pre>"},
+                    {q:"What is the order of middleware in pipeline?",a:"Typical recommended order:<br><br>1. <code>UseExceptionHandler</code> - Exception handling first<br>2. <code>UseHsts</code> - HTTP Strict Transport Security<br>3. <code>UseHttpsRedirection</code> - Redirect HTTP to HTTPS<br>4. <code>UseStaticFiles</code> - Serve static files<br>5. <code>UseRouting</code> - Match requests to routes<br>6. <code>UseCors</code> - Cross-Origin Resource Sharing<br>7. <code>UseAuthentication</code> - Authenticate the user<br>8. <code>UseAuthorization</code> - Authorize the user<br>9. <code>UseSession</code> - Session state<br>10. Custom Middleware - Your application middleware<br>11. <code>MapControllers</code> / <code>UseEndpoints</code> - Execute endpoints"},
+                    {q:"What is CORS and how do you enable it?",a:"CORS (Cross-Origin Resource Sharing) allows web pages from one domain to request resources from a different domain.<br><br><strong>Enable in Program.cs:</strong><br><pre><code>// Define policies\nbuilder.Services.AddCors(options =>\n{\n    options.AddPolicy(\"AllowSpecificOrigin\", policy =>\n        policy.WithOrigins(\"https://myapp.com\")\n              .AllowAnyMethod()\n              .AllowAnyHeader()\n              .AllowCredentials());\n              \n    options.AddPolicy(\"AllowAll\", policy =>\n        policy.AllowAnyOrigin()\n              .AllowAnyMethod()\n              .AllowAnyHeader());\n});\n\n// Apply policy globally\napp.UseCors(\"AllowAll\");\n\n// OR apply to specific endpoints\n[EnableCors(\"AllowSpecificOrigin\")]\npublic class ProductsController : ControllerBase { }</code></pre>"},
+                    {q:"What is endpoint routing?",a:"Endpoint routing decouples route matching from the code that handles matched requests. It provides:<br><br>• <strong>Unified routing</strong> - Same routing for MVC, Razor Pages, SignalR, gRPC, etc.<br>• <strong>Middleware-based routing</strong> - Authorization and CORS can be applied per endpoint<br>• <strong>Link generation</strong> - Generate URLs for endpoints<br>• <strong>Route values</strong> - Access route data in middleware<br><br><pre><code>app.UseRouting();  // Enables route matching\n\napp.UseAuthentication();\napp.UseAuthorization();\n\napp.UseEndpoints(endpoints =>\n{\n    endpoints.MapControllers();\n    endpoints.MapRazorPages();\n    endpoints.MapHub&lt;ChatHub&gt;(\"/chathub\");\n    endpoints.MapGrpcService&lt;GreeterService&gt;();\n});</code></pre>"},
+                    {q:"How do you handle 404 errors in Web API?",a:"<pre><code>// Method 1: Status Code Pages\napp.UseStatusCodePages(async context =>\n{\n    if (context.HttpContext.Response.StatusCode == 404)\n    {\n        context.HttpContext.Response.ContentType = \"application/json\";\n        await context.HttpContext.Response.WriteAsync(\n            JsonSerializer.Serialize(\n                new { error = \"Resource not found\" }));\n    }\n});\n\n// Method 2: Custom Middleware\napp.Use(async (context, next) =>\n{\n    await next();\n    \n    if (context.Response.StatusCode == 404 && \n        !context.Response.HasStarted)\n    {\n        context.Response.ContentType = \"application/json\";\n        var result = new\n        {\n            status = 404,\n            title = \"Not Found\",\n            detail = \"The requested resource was not found\"\n        };\n        await context.Response.WriteAsJsonAsync(result);\n    }\n});\n\n// Method 3: Fallback endpoint\napp.MapFallback(() => \n    Results.NotFound(new { error = \"Resource not found\" }));</code></pre>"},
+                    {q:"What is the purpose of app.UseStatusCodePages()?",a:"<code>UseStatusCodePages()</code> adds middleware that intercepts HTTP error responses (400-599) and provides descriptive text or body.<br><br><strong>Options:</strong><br>• <code>UseStatusCodePages()</code> - Adds plain text body<br>• <code>UseStatusCodePages(\"text/plain\", \"Status code: {0}\")</code> - Custom text format<br>• <code>UseStatusCodePages(async context => {...})</code> - Custom handler<br>• <code>UseStatusCodePagesWithRedirects(\"/error/{0}\")</code> - Redirect to error page<br>• <code>UseStatusCodePagesWithReExecute(\"/error/{0}\")</code> - Re-execute pipeline<br><br>Useful for development/debugging but should be customized for production."},
+                    {q:"How do you enable HTTPS redirection?",a:"<pre><code>// Program.cs\nvar builder = WebApplication.CreateBuilder(args);\n\n// Configure HTTPS port\nbuilder.Services.AddHttpsRedirection(options =>\n{\n    options.RedirectStatusCode = \n        StatusCodes.Status307TemporaryRedirect;\n    options.HttpsPort = 5001;\n});\n\nvar app = builder.Build();\n\nif (!app.Environment.IsDevelopment())\n{\n    app.UseHsts();  // HTTP Strict Transport Security\n}\n\napp.UseHttpsRedirection();  // Redirect HTTP to HTTPS\n\n// appsettings.json\n{\n    \"HttpsRedirection\": {\n        \"RedirectStatusCode\": 307,\n        \"HttpsPort\": 443\n    }\n}</code></pre><br><strong>Note:</strong> In development, Kestrel typically uses ports 5000 (HTTP) and 5001 (HTTPS)."}
+                ]
+            },
+            "Section 4: Database & Entity Framework Core": {
+                questions: [
+                    {q:"What is Entity Framework Core?",a:"Entity Framework Core (EF Core) is a lightweight, extensible, cross-platform Object-Relational Mapper (ORM) for .NET.<br><br><strong>Key features:</strong><br>• Maps .NET objects to database tables<br>• Supports LINQ queries<br>• Change tracking (automatically detects changes)<br>• Migrations for database schema management<br>• Supports multiple database providers (SQL Server, PostgreSQL, MySQL, SQLite, etc.)<br>• Supports both synchronous and asynchronous operations<br><br><pre><code>public class AppDbContext : DbContext\n{\n    public DbSet&lt;Product&gt; Products { get; set; }\n    public DbSet&lt;Category&gt; Categories { get; set; }\n    \n    protected override void OnModelCreating(ModelBuilder modelBuilder)\n    {\n        // Fluent API configurations\n    }\n}</code></pre>"},
+                    {q:"What are different approaches in EF Core?",a:"<strong>1. Code First</strong><br>• Create C# classes first<br>• Generate database from code using migrations<br>• Most popular approach<br>• Full control over code<br><br><strong>2. Database First</strong><br>• Start with existing database<br>• Scaffold C# models from database<br>• Reverse engineering approach<br><br><pre><code>dotnet ef dbcontext scaffold \n    \"Server=.;Database=MyDb;Trusted_Connection=true;\"\n    Microsoft.EntityFrameworkCore.SqlServer</code></pre><br><strong>3. Model First</strong><br>• Design model visually (EDMX)<br>• Generate database and classes<br>• Less common in EF Core"},
+                    {q:"What is DbContext?",a:"DbContext is the primary class for interacting with the database. It represents:<br><br>• <strong>Database session</strong> - Connection to database<br>• <strong>Unit of Work</strong> - Tracks changes to entities<br>• <strong>Repository</strong> - Provides CRUD operations<br>• <strong>Query provider</strong> - Translates LINQ to SQL<br><br><strong>Key properties and methods:</strong><br>• <code>DbSet&lt;T&gt;</code> - Represents a table/collection<br>• <code>SaveChanges()</code> - Persists changes to database<br>• <code>SaveChangesAsync()</code> - Asynchronous save<br>• <code>OnModelCreating()</code> - Configure model relationships<br>• <code>Entry()</code> - Access entity change tracking<br><br>DbContext is typically registered as Scoped service."},
+                    {q:"How do you configure connection string?",a:"<pre><code>// appsettings.json\n{\n    \"ConnectionStrings\": {\n        \"DefaultConnection\": \"Server=localhost;Database=MyDatabase;Trusted_Connection=true;TrustServerCertificate=true;\",\n        \"PostgresConnection\": \"Host=localhost;Database=MyDb;Username=user;Password=pass\"\n    }\n}\n\n// Program.cs\nbuilder.Services.AddDbContext&lt;AppDbContext&gt;(options =>\n{\n    // SQL Server\n    options.UseSqlServer(\n        builder.Configuration.GetConnectionString(\"DefaultConnection\"),\n        sqlOptions => sqlOptions.EnableRetryOnFailure());\n        \n    // OR PostgreSQL  \n    // options.UseNpgsql(\n    //    builder.Configuration.GetConnectionString(\"PostgresConnection\"));\n});</code></pre><br>Configuration can also come from environment variables, Azure Key Vault, or other sources."},
+                    {q:"What is a migration in EF Core?",a:"Migrations track changes in your data model and apply them to the database schema incrementally.<br><br><strong>Common commands:</strong><br><pre><code># Create new migration\ndotnet ef migrations add InitialCreate\n\n# Apply migrations to database\ndotnet ef database update\n\n# Generate SQL script\ndotnet ef migrations script\n\n# Remove last migration (if not applied to DB)\ndotnet ef migrations remove\n\n# List migrations\ndotnet ef migrations list</code></pre><br>Each migration contains <code>Up()</code> (apply changes) and <code>Down()</code> (revert changes) methods."},
+                    {q:"What is the difference between Add-Migration and Update-Database?",a:"<strong>Add-Migration</strong> (or <code>dotnet ef migrations add</code>):<br>• Creates a new migration file based on model changes<br>• Doesn't modify the database<br>• Generates C# code describing schema changes<br>• Includes both Up() and Down() methods<br><br><strong>Update-Database</strong> (or <code>dotnet ef database update</code>):<br>• Applies pending migrations to the actual database<br>• Creates/modifies tables, columns, indexes, etc.<br>• Can specify target migration to roll back<br>• Executes SQL against the database"},
+                    {q:"Explain different data loading strategies in EF Core.",a:"<strong>1. Eager Loading</strong> - Load related data with main entity in single query<br><pre><code>var orders = await context.Orders\n    .Include(o => o.OrderItems)\n    .ThenInclude(i => i.Product)\n    .ToListAsync();</code></pre><strong>2. Lazy Loading</strong> - Related data loaded automatically when navigation property accessed<br><pre><code>// Requires virtual navigation properties\npublic class Order\n{\n    public int Id { get; set; }\n    public virtual ICollection&lt;OrderItem&gt; OrderItems { get; set; }\n}\n\n// Enable in configuration\noptions.UseLazyLoadingProxies();</code></pre><strong>3. Explicit Loading</strong> - Manually load related data when needed<br><pre><code>await context.Entry(order)\n    .Collection(o => o.OrderItems)\n    .LoadAsync();</code></pre>"},
+                    {q:"What is the repository pattern?",a:"Repository pattern creates an abstraction layer between data access and business logic.<br><br><pre><code>public interface IRepository&lt;T&gt; where T : class\n{\n    Task&lt;T&gt; GetByIdAsync(int id);\n    Task&lt;IEnumerable&lt;T&gt;&gt; GetAllAsync();\n    Task&lt;T&gt; AddAsync(T entity);\n    void Update(T entity);\n    void Delete(T entity);\n    Task&lt;int&gt; SaveChangesAsync();\n}\n\npublic class Repository&lt;T&gt; : IRepository&lt;T&gt; where T : class\n{\n    protected readonly AppDbContext _context;\n    protected readonly DbSet&lt;T&gt; _dbSet;\n    \n    public Repository(AppDbContext context)\n    {\n        _context = context;\n        _dbSet = context.Set&lt;T&gt;();\n    }\n    \n    public async Task&lt;T&gt; GetByIdAsync(int id)\n    {\n        return await _dbSet.FindAsync(id);\n    }\n    \n    public async Task&lt;IEnumerable&lt;T&gt;&gt; GetAllAsync()\n    {\n        return await _dbSet.ToListAsync();\n    }\n}</code></pre><br><strong>Benefits:</strong> Centralized data access, easier testing, separation of concerns."},
+                    {q:"What is Unit of Work pattern?",a:"Unit of Work maintains a list of objects affected by a business transaction and coordinates writing changes to the database atomically.<br><br><pre><code>public interface IUnitOfWork : IDisposable\n{\n    IProductRepository Products { get; }\n    IOrderRepository Orders { get; }\n    Task&lt;int&gt; CompleteAsync();\n}\n\npublic class UnitOfWork : IUnitOfWork\n{\n    private readonly AppDbContext _context;\n    public IProductRepository Products { get; }\n    public IOrderRepository Orders { get; }\n    \n    public UnitOfWork(AppDbContext context)\n    {\n        _context = context;\n        Products = new ProductRepository(context);\n        Orders = new OrderRepository(context);\n    }\n    \n    public async Task&lt;int&gt; CompleteAsync()\n    {\n        return await _context.SaveChangesAsync();\n    }\n}</code></pre>Ensures all repositories share the same DbContext and transactions are consistent."},
+                    {q:"How do you handle concurrency conflicts in EF Core?",a:"<strong>Optimistic Concurrency:</strong><br><pre><code>// Using Timestamp/RowVersion\npublic class Product\n{\n    public int Id { get; set; }\n    public string Name { get; set; }\n    public decimal Price { get; set; }\n    \n    [Timestamp]  // Auto-updates on each save\n    public byte[] RowVersion { get; set; }\n}\n\n// Handling conflict\ntry\n{\n    await _context.SaveChangesAsync();\n}\ncatch (DbUpdateConcurrencyException ex)\n{\n    foreach (var entry in ex.Entries)\n    {\n        var databaseValues = await entry.GetDatabaseValuesAsync();\n        // Resolve conflict - client wins, database wins, or merge\n        entry.OriginalValues.SetValues(databaseValues);\n        // Retry save\n    }\n}</code></pre><strong>Pessimistic Concurrency:</strong> Uses database locks (less common in web applications)."},
+                    {q:"What are Fluent API configurations?",a:"Fluent API provides a way to configure model mappings in <code>OnModelCreating</code> method, offering more control than Data Annotations.<br><br><pre><code>protected override void OnModelCreating(ModelBuilder modelBuilder)\n{\n    // Table configuration\n    modelBuilder.Entity&lt;Product&gt;(entity =>\n    {\n        entity.ToTable(\"Products\", \"dbo\");\n        entity.HasKey(p => p.Id);\n        entity.Property(p => p.Name)\n              .IsRequired()\n              .HasMaxLength(100)\n              .HasColumnName(\"ProductName\");\n        entity.Property(p => p.Price)\n              .HasColumnType(\"decimal(18,2)\");\n        entity.HasIndex(p => p.SKU).IsUnique();\n    });\n    \n    // Relationship configuration\n    modelBuilder.Entity&lt;Order&gt;(entity =>\n    {\n        entity.HasOne(o => o.Customer)\n              .WithMany(c => c.Orders)\n              .HasForeignKey(o => o.CustomerId)\n              .OnDelete(DeleteBehavior.Restrict);\n    });\n    \n    // Global query filter\n    modelBuilder.Entity&lt;Product&gt;()\n        .HasQueryFilter(p => !p.IsDeleted);\n}</code></pre>"},
+                    {q:"What is raw SQL query in EF Core?",a:"<pre><code>// Query with parameters (safe from SQL injection)\nvar minPrice = 10.0m;\nvar products = await context.Products\n    .FromSqlRaw(\n        \"SELECT * FROM Products WHERE Price > {0}\", minPrice)\n    .ToListAsync();\n\n// Using interpolated string (parameterized internally)\nvar category = \"Electronics\";\nvar products = await context.Products\n    .FromSqlInterpolated(\n        $\"SELECT * FROM Products WHERE Category = {category}\")\n    .ToListAsync();\n\n// Execute non-query commands\nawait context.Database.ExecuteSqlRawAsync(\n    \"UPDATE Products SET Price = {0} WHERE Category = {1}\",\n    newPrice, category);\n\n// Execute stored procedure\nvar result = await context.Products\n    .FromSqlRaw(\"EXEC GetProductsByCategory @Category\", \n        new SqlParameter(\"@Category\", category))\n    .ToListAsync();</code></pre>"},
+                    {q:"What are tracked vs no-tracked queries?",a:"<strong>Tracked Queries (Default):</strong><br>• Entities are tracked by ChangeTracker<br>• Changes are sent to database on SaveChanges()<br>• Slower but enables updates<br><br><strong>No-Tracked Queries:</strong><br>• Read-only entities<br>• Better performance<br>• No memory overhead for tracking<br><br><pre><code>// No tracking for all queries\ncontext.ChangeTracker.QueryTrackingBehavior = \n    QueryTrackingBehavior.NoTracking;\n\n// No tracking per query\nvar products = await context.Products\n    .AsNoTracking()\n    .ToListAsync();\n\n// No tracking with identity resolution (.NET 5+)\nvar orders = await context.Orders\n    .AsNoTrackingWithIdentityResolution()\n    .Include(o => o.OrderItems)\n    .ToListAsync();</code></pre>"},
+                    {q:"What is the difference between IQueryable and IEnumerable?",a:"<strong>IQueryable:</strong><br>• Builds expression tree<br>• Query executed on database server<br>• Filters applied in SQL (WHERE clause)<br>• Better performance for large data sets<br>• Extension methods from <code>System.Linq</code><br><br><strong>IEnumerable:</strong><br>• Query executed in memory<br>• All data loaded from database first<br>• Filters applied in C#<br>• Can cause performance issues with large data<br><br><pre><code>// IQueryable - SQL: SELECT * FROM Products WHERE Price > 100\nIQueryable&lt;Product&gt; query = context.Products.Where(p => p.Price > 100);\n\n// IEnumerable - First loads ALL products, then filters in memory\nIEnumerable&lt;Product&gt; result = query.ToList().Where(p => p.Price > 100);</code></pre>"},
+                    {q:"How do you implement pagination in Web API?",a:"<pre><code>public class PagedResult&lt;T&gt;\n{\n    public List&lt;T&gt; Items { get; set; }\n    public int TotalCount { get; set; }\n    public int Page { get; set; }\n    public int PageSize { get; set; }\n    public int TotalPages => (int)Math.Ceiling(TotalCount / (double)PageSize);\n    public bool HasNextPage => Page < TotalPages;\n    public bool HasPreviousPage => Page > 1;\n}\n\n[HttpGet]\npublic async Task&lt;ActionResult&lt;PagedResult&lt;ProductDto&gt;&gt;&gt; GetProducts(\n    [FromQuery] int page = 1, \n    [FromQuery] int pageSize = 10,\n    [FromQuery] string sortBy = \"Name\",\n    [FromQuery] string search = \"\")\n{\n    var query = _context.Products.AsQueryable();\n    \n    if (!string.IsNullOrEmpty(search))\n    {\n        query = query.Where(p => p.Name.Contains(search));\n    }\n    \n    var totalCount = await query.CountAsync();\n    \n    var items = await query\n        .Skip((page - 1) * pageSize)\n        .Take(pageSize)\n        .Select(p => _mapper.Map&lt;ProductDto&gt;(p))\n        .ToListAsync();\n    \n    return Ok(new PagedResult&lt;ProductDto&gt;\n    {\n        Items = items,\n        TotalCount = totalCount,\n        Page = page,\n        PageSize = pageSize\n    });\n}</code></pre>"}
+                ]
+            },
+            "Section 5: Authentication & Authorization": {
+                questions: [
+                    {q:"What is the difference between Authentication and Authorization?",a:"<strong>Authentication:</strong><br>• Answers: \"Who are you?\"<br>• Verifies identity of the user<br>• Credentials: username/password, tokens, certificates<br>• Occurs before authorization<br><br><strong>Authorization:</strong><br>• Answers: \"What are you allowed to do?\"<br>• Determines permissions and access rights<br>• Based on roles, policies, claims<br>• Occurs after authentication<br><br><pre><code>// Authentication - Verify identity\n[AllowAnonymous]\npublic IActionResult Login(LoginModel model)\n{\n    // Validate credentials, create token\n}\n\n// Authorization - Check permissions\n[Authorize(Roles = \"Admin\")]\npublic IActionResult AdminDashboard() { }</code></pre>"},
+                    {q:"What is JWT (JSON Web Token)?",a:"JWT (JSON Web Token) is an open standard (RFC 7519) for securely transmitting information as a JSON object.<br><br><strong>Structure:</strong> Header.Payload.Signature<br><br>• <strong>Header:</strong> {\"alg\": \"HS256\", \"typ\": \"JWT\"}<br>• <strong>Payload:</strong> {\"sub\": \"123\", \"name\": \"John\", \"iat\": 1516239022}<br>• <strong>Signature:</strong> HMACSHA256(base64UrlEncode(header) + \".\" + base64UrlEncode(payload), secret)<br><br><strong>Benefits:</strong><br>• Stateless (server doesn't store session)<br>• Cross-domain/CORS<br>• Mobile-friendly<br>• Can contain user claims<br>• Scalable for distributed systems"},
+                    {q:"How do you implement JWT Authentication in Web API?",a:"<pre><code>// Program.cs\nbuilder.Services.AddAuthentication(options =>\n{\n    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;\n    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;\n})\n.AddJwtBearer(options =>\n{\n    options.TokenValidationParameters = new TokenValidationParameters\n    {\n        ValidateIssuer = true,\n        ValidateAudience = true,\n        ValidateLifetime = true,\n        ValidateIssuerSigningKey = true,\n        ValidIssuer = builder.Configuration[\"Jwt:Issuer\"],\n        ValidAudience = builder.Configuration[\"Jwt:Audience\"],\n        IssuerSigningKey = new SymmetricSecurityKey(\n            Encoding.UTF8.GetBytes(builder.Configuration[\"Jwt:Key\"]))\n    };\n});\n\nvar app = builder.Build();\n\n// Order matters\napp.UseAuthentication();\napp.UseAuthorization();</code></pre>"},
+                    {q:"How do you generate a JWT token?",a:"<pre><code>public class JwtService\n{\n    private readonly IConfiguration _config;\n    \n    public JwtService(IConfiguration config)\n    {\n        _config = config;\n    }\n    \n    public string GenerateToken(User user)\n    {\n        var claims = new[]\n        {\n            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),\n            new Claim(ClaimTypes.Email, user.Email),\n            new Claim(ClaimTypes.Name, user.Username),\n            new Claim(ClaimTypes.Role, user.Role),\n            new Claim(\"Department\", user.Department)\n        };\n\n        var key = new SymmetricSecurityKey(\n            Encoding.UTF8.GetBytes(_config[\"Jwt:Key\"]));\n        var creds = new SigningCredentials(\n            key, SecurityAlgorithms.HmacSha256);\n\n        var token = new JwtSecurityToken(\n            issuer: _config[\"Jwt:Issuer\"],\n            audience: _config[\"Jwt:Audience\"],\n            claims: claims,\n            expires: DateTime.UtcNow.AddHours(1),\n            notBefore: DateTime.UtcNow,\n            signingCredentials: creds\n        );\n\n        return new JwtSecurityTokenHandler().WriteToken(token);\n    }\n}</code></pre>"},
+                    {q:"What is Role-based Authorization?",a:"Role-based authorization controls access based on user role membership.<br><br><pre><code>// Controllers\n[Authorize(Roles = \"Admin\")]\npublic class AdminController : ControllerBase { }\n\n[Authorize(Roles = \"Admin,Manager\")]\n[HttpGet]\npublic IActionResult ManageUsers() { }\n\n// Multiple roles (user must have at least one)\n[Authorize(Roles = \"Admin,SuperAdmin\")]\n\n// Actions\n[Authorize(Roles = \"User\")]\npublic IActionResult NormalAccess() { }\n\n// Check in code\nif (User.IsInRole(\"Admin\"))\n{\n    // Admin-specific logic\n}</code></pre><br>Roles are typically stored as claims with type <code>ClaimTypes.Role</code>."},
+                    {q:"What is Policy-based Authorization?",a:"Policy-based authorization offers more flexible and reusable access control.<br><br><pre><code>// Register Policies in Program.cs\nbuilder.Services.AddAuthorization(options =>\n{\n    options.AddPolicy(\"AtLeast18\", policy =>\n        policy.RequireClaim(\"Age\", \"18\"));\n    \n    options.AddPolicy(\"AdminOnly\", policy =>\n        policy.RequireRole(\"Admin\"));\n    \n    options.AddPolicy(\"ITDepartment\", policy =>\n        policy.RequireClaim(\"Department\", \"IT\"));\n    \n    options.AddPolicy(\"SeniorEmployee\", policy =>\n        policy.RequireClaim(\"YearsOfExperience\", \"5\")\n              .RequireRole(\"Employee\")\n              .RequireAuthenticatedUser());\n});\n\n// Use policies\n[Authorize(Policy = \"AtLeast18\")]\npublic IActionResult AdultContent() { }\n\n[Authorize(Policy = \"SeniorEmployee\")]\npublic IActionResult ManagementOnly() { }</code></pre>"},
+                    {q:"What is Claims-based Authorization?",a:"Claims-based authorization uses claims (key-value pairs about the user) to make authorization decisions.<br><br><pre><code>// Programmatic check\n[HttpGet]\npublic IActionResult GetData()\n{\n    if (User.HasClaim(c => c.Type == \"Department\" && c.Value == \"IT\"))\n    {\n        // IT-specific data\n    }\n    \n    var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;\n    var email = User.FindFirstValue(ClaimTypes.Email);\n    \n    // Multiple values for same claim\n    if (User.HasClaim(\"Permission\", \"Read\") && \n        User.HasClaim(\"Permission\", \"Write\")) { }\n    \n    return Ok();\n}</code></pre>"},
+                    {q:"How do you get current user in controller?",a:"<pre><code>[Authorize]\npublic class UserController : ControllerBase\n{\n    [HttpGet]\n    public IActionResult GetCurrentUserInfo()\n    {\n        // Basic identity checks\n        var isAuthenticated = User.Identity?.IsAuthenticated;\n        var username = User.Identity?.Name;\n        var authType = User.Identity?.AuthenticationType;\n        \n        // Get claims\n        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;\n        var email = User.FindFirst(ClaimTypes.Email)?.Value;\n        var roles = User.FindAll(ClaimTypes.Role)\n            .Select(c => c.Value).ToList();\n        \n        // Check specific claims\n        var hasPermission = User.HasClaim(\"Permission\", \"AdminAccess\");\n        \n        // All claims\n        var allClaims = User.Claims.Select(c => \n            new { c.Type, c.Value }).ToList();\n        \n        return Ok(new\n        {\n            UserId = userId,\n            Username = username,\n            Email = email,\n            IsAuthenticated = isAuthenticated,\n            Roles = roles\n        });\n    }\n}</code></pre>"},
+                    {q:"What is the [AllowAnonymous] attribute?",a:"The <code>[AllowAnonymous]</code> attribute overrides authorization requirements to allow unauthenticated access.<br><br><pre><code>[Authorize]  // Authorization required for all actions\npublic class ProductsController : ControllerBase\n{\n    [AllowAnonymous]\n    [HttpGet(\"public\")]\n    public IActionResult PublicProducts() { }\n    \n    [HttpGet(\"private\")]\n    public IActionResult PrivateProducts() { }\n}\n\n[AllowAnonymous]\npublic class PublicController : ControllerBase\n{\n    public IActionResult Index() { }\n}</code></pre><br>Use cases: Login endpoints, public API documentation, health checks, registration pages."},
+                    {q:"How do you implement refresh tokens?",a:"<pre><code>public class TokenService\n{\n    public string GenerateRefreshToken()\n    {\n        return Convert.ToBase64String(\n            RandomNumberGenerator.GetBytes(64));\n    }\n\n    public async Task&lt;AuthResponse&gt; RefreshTokenAsync(\n        string refreshToken)\n    {\n        var storedToken = await _context.RefreshTokens\n            .Include(t => t.User)\n            .FirstOrDefaultAsync(t => \n                t.Token == refreshToken && \n                !t.IsRevoked);\n        \n        if (storedToken == null || \n            storedToken.ExpiresAt < DateTime.UtcNow)\n        {\n            throw new SecurityTokenException(\n                \"Invalid or expired refresh token\");\n        }\n\n        storedToken.IsRevoked = true;\n        storedToken.ReplacedByToken = GenerateRefreshToken();\n\n        var jwtToken = GenerateJwtToken(storedToken.User);\n\n        var newRefreshToken = new RefreshToken\n        {\n            Token = storedToken.ReplacedByToken,\n            UserId = storedToken.UserId,\n            ExpiresAt = DateTime.UtcNow.AddDays(7),\n            IsRevoked = false\n        };\n        \n        _context.RefreshTokens.Add(newRefreshToken);\n        await _context.SaveChangesAsync();\n\n        return new AuthResponse\n        {\n            Token = jwtToken,\n            RefreshToken = newRefreshToken.Token,\n            ExpiresAt = DateTime.UtcNow.AddHours(1)\n        };\n    }\n}</code></pre>"}
+                ]
+            },
+            "Section 6: Advanced Topics": {
+                questions: [
+                    {q:"What are Action Filters?",a:"Action filters run code before or after an action executes, allowing cross-cutting concerns.<br><br><pre><code>public class LogActionFilter : IActionFilter\n{\n    private readonly ILogger _logger;\n    \n    public LogActionFilter(ILogger&lt;LogActionFilter&gt; logger)\n    {\n        _logger = logger;\n    }\n    \n    public void OnActionExecuting(\n        ActionExecutingContext context)\n    {\n        _logger.LogInformation(\n            $\"Executing action: {context.ActionDescriptor.DisplayName}\");\n    }\n    \n    public void OnActionExecuted(\n        ActionExecutedContext context)\n    {\n        _logger.LogInformation(\n            $\"Executed action: {context.ActionDescriptor.DisplayName}\");\n    }\n}\n\n// Apply globally\nbuilder.Services.AddControllers(options =>\n{\n    options.Filters.Add&lt;LogActionFilter&gt;();\n});\n\n// Apply to controller/action\n[ServiceFilter(typeof(LogActionFilter))]\npublic class ProductsController : ControllerBase { }</code></pre>"},
+                    {q:"What are different filter types in ASP.NET Core?",a:"<strong>Filter execution order:</strong><br><br>1. <strong>Authorization Filters</strong> (<code>IAuthorizationFilter</code>)<br>   • Run first, determine if user is authorized<br>   • Can short-circuit the pipeline<br><br>2. <strong>Resource Filters</strong> (<code>IResourceFilter</code>)<br>   • Run after authorization, before model binding<br>   • Good for caching, short-circuiting<br><br>3. <strong>Action Filters</strong> (<code>IActionFilter</code>)<br>   • Run before/after action execution<br>   • For logging, validation<br><br>4. <strong>Exception Filters</strong> (<code>IExceptionFilter</code>)<br>   • Handle exceptions globally<br><br>5. <strong>Result Filters</strong> (<code>IResultFilter</code>)<br>   • Run before/after action result execution<br>   • Modify response format"},
+                    {q:"What is Model Validation and how does it work?",a:"<code>[ApiController]</code> automatically validates models and returns 400 Bad Request with validation errors.<br><br><pre><code>public class CreateProductDto\n{\n    [Required(ErrorMessage = \"Name is required\")]\n    [StringLength(100, MinimumLength = 2)]\n    public string Name { get; set; }\n    \n    [Range(0.01, 99999.99)]\n    public decimal Price { get; set; }\n    \n    [EmailAddress]\n    public string ContactEmail { get; set; }\n    \n    [Url]\n    public string Website { get; set; }\n    \n    [Phone]\n    public string PhoneNumber { get; set; }\n}\n\n// Manual validation in controller\n[HttpPost]\npublic IActionResult Create([FromBody] CreateProductDto product)\n{\n    if (!ModelState.IsValid)\n    {\n        var errors = ModelState\n            .Where(e => e.Value.Errors.Count > 0)\n            .Select(e => new {\n                Field = e.Key,\n                Errors = e.Value.Errors\n                    .Select(x => x.ErrorMessage)\n            });\n        return BadRequest(errors);\n    }\n    return Ok();\n}</code></pre>"},
+                    {q:"What is Serilog and how to implement it?",a:"<pre><code>// Program.cs\nbuilder.Host.UseSerilog((context, loggerConfig) =>\n{\n    loggerConfig\n        .ReadFrom.Configuration(context.Configuration)\n        .Enrich.FromLogContext()\n        .WriteTo.Console()\n        .WriteTo.File(\"logs/log-.txt\", \n            rollingInterval: RollingInterval.Day);\n});\n\n// appsettings.json\n{\n    \"Serilog\": {\n        \"MinimumLevel\": {\n            \"Default\": \"Information\",\n            \"Override\": {\n                \"Microsoft\": \"Warning\",\n                \"Microsoft.AspNetCore\": \"Warning\"\n            }\n        },\n        \"WriteTo\": [\n            { \"Name\": \"Console\" }\n        ]\n    }\n}</code></pre>"},
+                    {q:"What is API Versioning?",a:"<pre><code>// Program.cs\nbuilder.Services.AddApiVersioning(options =>\n{\n    options.DefaultApiVersion = \n        new ApiVersion(1, 0);\n    options.AssumeDefaultVersionWhenUnspecified = true;\n    options.ReportApiVersions = true;\n    options.ApiVersionReader = new UrlSegmentApiVersionReader();\n});\n\n// Controllers - URL-based versioning\n[ApiVersion(\"1.0\")]\n[Route(\"api/v{version:apiVersion}/products\")]\npublic class ProductsV1Controller : ControllerBase\n{\n    [HttpGet]\n    public IActionResult Get() => Ok(\"V1 Products\");\n}\n\n[ApiVersion(\"2.0\")]\n[Route(\"api/v{version:apiVersion}/products\")]\npublic class ProductsV2Controller : ControllerBase\n{\n    [HttpGet]\n    public IActionResult Get() => Ok(new { Products = \"V2\", Count = 100 });\n}</code></pre>"},
+                    {q:"What is Swagger/OpenAPI?",a:"<pre><code>// Program.cs\nbuilder.Services.AddSwaggerGen(c =>\n{\n    c.SwaggerDoc(\"v1\", new OpenApiInfo\n    {\n        Title = \"My API\",\n        Version = \"v1\",\n        Description = \"Web API documentation\"\n    });\n    \n    var xmlFile = $\"{Assembly.GetExecutingAssembly()\n        .GetName().Name}.xml\";\n    var xmlPath = Path.Combine(\n        AppContext.BaseDirectory, xmlFile);\n    c.IncludeXmlComments(xmlPath);\n});\n\nif (app.Environment.IsDevelopment())\n{\n    app.UseSwagger();\n    app.UseSwaggerUI(c =>\n    {\n        c.SwaggerEndpoint(\n            \"/swagger/v1/swagger.json\", \"API V1\");\n    });\n}</code></pre>"},
+                    {q:"How do you configure Swagger with JWT authentication?",a:"<pre><code>builder.Services.AddSwaggerGen(c =>\n{\n    c.AddSecurityDefinition(\"Bearer\", new OpenApiSecurityScheme\n    {\n        In = ParameterLocation.Header,\n        Name = \"Authorization\",\n        Type = SecuritySchemeType.ApiKey,\n        Scheme = \"Bearer\"\n    });\n    c.AddSecurityRequirement(new OpenApiSecurityRequirement\n    {\n        {\n            new OpenApiSecurityScheme\n            {\n                Reference = new OpenApiReference\n                {\n                    Type = ReferenceType.SecurityScheme,\n                    Id = \"Bearer\"\n                }\n            },\n            new string[] {}\n        }\n    });\n});</code></pre>"},
+                    {q:"What is AutoMapper and how to use it?",a:"<pre><code>public class MappingProfile : Profile\n{\n    public MappingProfile()\n    {\n        CreateMap&lt;Product, ProductDto&gt;()\n            .ForMember(dest => dest.FullName,\n                opt => opt.MapFrom(src => \n                    $\"{src.Brand} {src.Name}\"));\n        \n        CreateMap&lt;CreateProductDto, Product&gt;()\n            .ForMember(dest => dest.CreatedAt,\n                opt => opt.MapFrom(_ => DateTime.UtcNow));\n    }\n}\n\nbuilder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);\n\n// Use in controller\npublic class ProductsController : ControllerBase\n{\n    private readonly IMapper _mapper;\n    \n    [HttpGet(\"{id}\")]\n    public async Task&lt;ActionResult&lt;ProductDto&gt;&gt; Get(int id)\n    {\n        var product = await _context.Products.FindAsync(id);\n        return Ok(_mapper.Map&lt;ProductDto&gt;(product));\n    }\n}</code></pre>"},
+                    {q:"What is the difference between Put and Patch?",a:"<strong>PUT (Complete Update):</strong><br>• Replaces entire resource<br>• Client sends all fields<br>• Missing fields become null/default<br>• Idempotent<br><br><strong>PATCH (Partial Update):</strong><br>• Updates only specified fields<br>• Client sends only changed data<br>• Other fields remain unchanged<br><br><pre><code>// PUT\n[HttpPut(\"{id}\")]\npublic IActionResult Update(int id, ProductDto product)\n{\n    var entity = new Product { Id = id, Name = product.Name };\n    _context.Update(entity);\n}\n\n// PATCH\n[HttpPatch(\"{id}\")]\npublic IActionResult Patch(int id, \n    [FromBody] JsonPatchDocument&lt;ProductDto&gt; patch)\n{\n    var product = _context.Products.Find(id);\n    var productDto = _mapper.Map&lt;ProductDto&gt;(product);\n    patch.ApplyTo(productDto);\n    _mapper.Map(productDto, product);\n    _context.SaveChanges();\n}</code></pre>"},
+                    {q:"How do you implement caching in Web API?",a:"<pre><code>// Response Caching\nbuilder.Services.AddResponseCaching();\napp.UseResponseCaching();\n\n[ResponseCache(Duration = 60, VaryByQueryKeys = new[] { \"category\" })]\n[HttpGet]\npublic IActionResult GetProducts(string category) { }\n\n// Distributed Caching (Redis)\nbuilder.Services.AddStackExchangeRedisCache(options =>\n{\n    options.Configuration = \"localhost:6379\";\n});\n\n// Usage\npublic class ProductsController : ControllerBase\n{\n    private readonly IDistributedCache _cache;\n    \n    public async Task&lt;ActionResult&gt; Get()\n    {\n        var cacheKey = \"products_all\";\n        var cachedProducts = await _cache.GetStringAsync(cacheKey);\n        \n        if (cachedProducts != null)\n            return Ok(JsonSerializer.Deserialize&lt;List&lt;Product&gt;&gt;(cachedProducts));\n        \n        var products = await _service.GetAllAsync();\n        \n        await _cache.SetStringAsync(cacheKey,\n            JsonSerializer.Serialize(products),\n            new DistributedCacheEntryOptions\n            {\n                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)\n            });\n        \n        return Ok(products);\n    }\n}</code></pre>"},
+                    {q:"What is rate limiting?",a:"<pre><code>// .NET 7+ built-in rate limiting\nbuilder.Services.AddRateLimiter(options =>\n{\n    options.RejectionStatusCode = 429;\n    \n    // Fixed Window\n    options.AddFixedWindowLimiter(\"Fixed\", config =>\n    {\n        config.PermitLimit = 100;\n        config.Window = TimeSpan.FromMinutes(1);\n    });\n    \n    // Token Bucket\n    options.AddTokenBucketLimiter(\"TokenBucket\", config =>\n    {\n        config.TokenLimit = 100;\n        config.TokensPerPeriod = 20;\n        config.ReplenishmentPeriod = TimeSpan.FromSeconds(10);\n    });\n});\n\napp.UseRateLimiter();\n\n[EnableRateLimiting(\"Fixed\")]\n[HttpGet]\npublic IActionResult GetProducts() { }</code></pre>"},
+                    {q:"How do you handle file upload in Web API?",a:"<pre><code>[HttpPost(\"upload\")]\npublic async Task&lt;IActionResult&gt; UploadFile(\n    IFormFile file,\n    [FromForm] string description)\n{\n    if (file == null || file.Length == 0)\n        return BadRequest(\"No file uploaded\");\n    \n    if (file.Length > 10 * 1024 * 1024)\n        return BadRequest(\"File too large\");\n    \n    var allowedExtensions = new[] { \".jpg\", \".png\", \".pdf\" };\n    var extension = Path.GetExtension(file.FileName);\n    if (!allowedExtensions.Contains(extension))\n        return BadRequest(\"Invalid file type\");\n    \n    var fileName = $\"{Guid.NewGuid()}{extension}\";\n    var filePath = Path.Combine(\n        _environment.WebRootPath, \"uploads\", fileName);\n    \n    using (var stream = new FileStream(filePath, FileMode.Create))\n    {\n        await file.CopyToAsync(stream);\n    }\n    \n    return Ok(new { fileName, filePath, file.Length });\n}\n\n// Multiple file upload\n[HttpPost(\"upload-multiple\")]\npublic async Task&lt;IActionResult&gt; UploadFiles(List&lt;IFormFile&gt; files)\n{\n    foreach (var file in files)\n    {\n        // Process each file\n    }\n    return Ok(new { Count = files.Count });\n}</code></pre>"},
+                    {q:"What is background task processing?",a:"<pre><code>public class EmailBackgroundService : BackgroundService\n{\n    private readonly ILogger _logger;\n    private readonly IServiceScopeFactory _scopeFactory;\n    \n    protected override async Task ExecuteAsync(\n        CancellationToken stoppingToken)\n    {\n        while (!stoppingToken.IsCancellationRequested)\n        {\n            try\n            {\n                using var scope = _scopeFactory.CreateScope();\n                var emailService = scope.ServiceProvider\n                    .GetRequiredService&lt;IEmailService&gt;();\n                \n                await emailService.ProcessPendingEmailsAsync();\n                \n                await Task.Delay(\n                    TimeSpan.FromSeconds(30), stoppingToken);\n            }\n            catch (Exception ex)\n            {\n                _logger.LogError(ex, \"Background processing error\");\n            }\n        }\n    }\n}\n\nbuilder.Services.AddHostedService&lt;EmailBackgroundService&gt;();</code></pre>"},
+                    {q:"What is Health Checks in ASP.NET Core?",a:"<pre><code>builder.Services.AddHealthChecks()\n    .AddSqlServer(connectionString, name: \"Database\")\n    .AddUrlGroup(new Uri(\"https://api.example.com\"), \"External API\")\n    .AddDbContextCheck&lt;AppDbContext&gt;(\"Entity Framework\");\n\napp.MapHealthChecks(\"/health\", new HealthCheckOptions\n{\n    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse\n});</code></pre>"},
+                    {q:"How do you implement logging in Web API?",a:"<pre><code>public class ProductsController : ControllerBase\n{\n    private readonly ILogger&lt;ProductsController&gt; _logger;\n    \n    public ProductsController(\n        ILogger&lt;ProductsController&gt; logger)\n    {\n        _logger = logger;\n    }\n    \n    [HttpGet]\n    public IActionResult GetAll()\n    {\n        _logger.LogInformation(\n            \"Retrieving all products at {Time}\", DateTime.UtcNow);\n        \n        try\n        {\n            return Ok(products);\n        }\n        catch (Exception ex)\n        {\n            _logger.LogError(ex, \"Error retrieving products\");\n            throw;\n        }\n    }\n    \n    [HttpGet(\"{id}\")]\n    public IActionResult GetById(int id)\n    {\n        using var scope = _logger.BeginScope(\n            new Dictionary&lt;string, object&gt;\n            {\n                [\"ProductId\"] = id,\n                [\"RequestId\"] = Guid.NewGuid()\n            });\n        \n        _logger.LogInformation(\"Getting product {ProductId}\", id);\n    }\n}</code></pre>"}
+                ]
+            },
+            "Section 7: Best Practices & Patterns": {
+                questions: [
+                    {q:"What is SOLID principle?",a:"<strong>S</strong> - <strong>Single Responsibility Principle</strong><br>A class should have only one reason to change.<br><br><strong>O</strong> - <strong>Open/Closed Principle</strong><br>Classes should be open for extension but closed for modification.<br><br><strong>L</strong> - <strong>Liskov Substitution Principle</strong><br>Derived classes must be substitutable for their base classes.<br><br><strong>I</strong> - <strong>Interface Segregation Principle</strong><br>Clients shouldn't be forced to depend on interfaces they don't use.<br><br><strong>D</strong> - <strong>Dependency Inversion Principle</strong><br>Depend on abstractions, not concrete implementations."},
+                    {q:"What are DTOs and why use them?",a:"<strong>Data Transfer Objects (DTOs)</strong> decouple presentation from domain models.<br><br><strong>Benefits:</strong><br>• Prevents over-posting attacks<br>• Hides sensitive fields (passwords, internal IDs)<br>• Shapes data for specific clients<br>• Reduces network payload<br>• Supports versioning<br><br><pre><code>// Domain Model\npublic class User\n{\n    public int Id { get; set; }\n    public string Username { get; set; }\n    public string PasswordHash { get; set; }  // Sensitive!\n    public string Email { get; set; }\n    public bool IsAdmin { get; set; }  // Internal\n}\n\n// DTO for API response\npublic class UserDto\n{\n    public int Id { get; set; }\n    public string Username { get; set; }\n    public string Email { get; set; }\n    // No PasswordHash or IsAdmin exposed\n}</code></pre>"},
+                    {q:"How do you prevent over-posting attacks?",a:"<pre><code>// 1. Use DTOs (Best Practice)\npublic class UpdateUserDto\n{\n    public string FullName { get; set; }\n    public string Email { get; set; }\n}\n\n[HttpPut]\npublic IActionResult Update(UpdateUserDto dto)\n{\n    // Only FullName and Email can be modified\n}\n\n// 2. Use [Bind] attribute\n[HttpPut]\npublic IActionResult Update(\n    [Bind(\"FullName,Email\")] User user) { }\n\n// 3. Use [BindNever] in domain model\npublic class User\n{\n    public string Name { get; set; }\n    [BindNever]\n    public bool IsAdmin { get; set; }\n    [BindNever]\n    public DateTime CreatedAt { get; set; }\n}</code></pre>"},
+                    {q:"What is the CQRS pattern?",a:"CQRS (Command Query Responsibility Segregation) separates read and write operations.<br><br><strong>Commands:</strong> Change state (Create, Update, Delete)<br><strong>Queries:</strong> Return data without side effects<br><br><pre><code>// Commands\npublic record CreateProductCommand(\n    string Name, decimal Price) : IRequest&lt;int&gt;;\n\npublic class CreateProductHandler : \n    IRequestHandler&lt;CreateProductCommand, int&gt;\n{\n    public async Task&lt;int&gt; Handle(\n        CreateProductCommand request) { }\n}\n\n// Queries\npublic record GetProductQuery(int Id) : IRequest&lt;ProductDto&gt;;\n\npublic class GetProductHandler : \n    IRequestHandler&lt;GetProductQuery, ProductDto&gt;\n{\n    public async Task&lt;ProductDto&gt; Handle(\n        GetProductQuery request) { }\n}</code></pre><br><strong>Benefits:</strong> Scalability, optimized read models, separation of concerns."},
+                    {q:"What is MediatR and how to use it?",a:"<pre><code>// Program.cs\nbuilder.Services.AddMediatR(cfg => \n    cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));\n\n// Request & Handler\npublic record GetProductsQuery(\n    string Category, int Page) : IRequest&lt;List&lt;ProductDto&gt;&gt;;\n\npublic class GetProductsHandler : \n    IRequestHandler&lt;GetProductsQuery, List&lt;ProductDto&gt;&gt;\n{\n    private readonly AppDbContext _context;\n    private readonly IMapper _mapper;\n    \n    public async Task&lt;List&lt;ProductDto&gt;&gt; Handle(\n        GetProductsQuery request, \n        CancellationToken cancellationToken)\n    {\n        var query = _context.Products.AsQueryable();\n        \n        if (!string.IsNullOrEmpty(request.Category))\n            query = query.Where(p => \n                p.Category == request.Category);\n        \n        var products = await query\n            .Skip((request.Page - 1) * 10)\n            .Take(10)\n            .ToListAsync(cancellationToken);\n        \n        return _mapper.Map&lt;List&lt;ProductDto&gt;&gt;(products);\n    }\n}\n\n// Controller\n[HttpGet]\npublic async Task&lt;IActionResult&gt; Get(\n    [FromQuery] string category, [FromQuery] int page = 1)\n{\n    var query = new GetProductsQuery(category, page);\n    var result = await _mediator.Send(query);\n    return Ok(result);\n}</code></pre>"},
+                    {q:"What is FluentValidation?",a:"<pre><code>public class CreateProductValidator : \n    AbstractValidator&lt;CreateProductDto&gt;\n{\n    public CreateProductValidator()\n    {\n        RuleFor(p => p.Name)\n            .NotEmpty().MaximumLength(100);\n        \n        RuleFor(p => p.Price)\n            .GreaterThan(0).LessThan(999999);\n        \n        RuleFor(p => p.Email)\n            .EmailAddress()\n            .When(p => !string.IsNullOrEmpty(p.Email));\n        \n        RuleFor(p => p.Category)\n            .Must(c => new[] { \"Electronics\", \"Books\" }\n                .Contains(c))\n            .WithMessage(\"Invalid category\");\n    }\n}\n\nbuilder.Services.AddValidatorsFromAssemblyContaining&lt;CreateProductValidator&gt;();</code></pre>"},
+                    {q:"What are different configuration sources in ASP.NET Core?",a:"<pre><code>builder.Configuration\n    .AddJsonFile(\"appsettings.json\", optional: false, reloadOnChange: true)\n    .AddJsonFile($\"appsettings.{env}.json\", optional: true)\n    .AddEnvironmentVariables()\n    .AddCommandLine(args)\n    .AddUserSecrets&lt;Program&gt;()\n    .AddAzureKeyVault(new Uri(\"https://myvault.vault.azure.net/\"),\n        new DefaultAzureCredential());</code></pre>"},
+                    {q:"What is IOptions pattern?",a:"<pre><code>public class EmailSettings\n{\n    public const string SectionName = \"EmailSettings\";\n    public string SmtpServer { get; set; }\n    public int Port { get; set; }\n    public string Username { get; set; }\n}\n\nbuilder.Services.Configure&lt;EmailSettings&gt;(\n    builder.Configuration.GetSection(EmailSettings.SectionName));\n\npublic class EmailService : IEmailService\n{\n    private readonly EmailSettings _settings;\n    \n    public EmailService(IOptions&lt;EmailSettings&gt; options)\n    {\n        _settings = options.Value;\n    }\n}</code></pre>"},
+                    {q:"What is the difference between IOptions, IOptionsSnapshot, and IOptionsMonitor?",a:"<strong>IOptions:</strong> Singleton, doesn't detect changes. Use for static config.<br><br><strong>IOptionsSnapshot:</strong> Scoped, detects changes per request. Use for request-specific config.<br><br><strong>IOptionsMonitor:</strong> Singleton, detects changes in real-time. Provides OnChange() callback. Use for dynamic config.<br><br><pre><code>// IOptionsMonitor example\npublic class MyService\n{\n    public MyService(IOptionsMonitor&lt;AppSettings&gt; monitor)\n    {\n        monitor.OnChange(settings =>\n        {\n            Console.WriteLine(\"Configuration changed!\");\n        });\n    }\n}</code></pre>"},
+                    {q:"How do you implement global exception handling?",a:"<pre><code>public class GlobalExceptionMiddleware\n{\n    private readonly RequestDelegate _next;\n    private readonly ILogger _logger;\n    \n    public async Task InvokeAsync(HttpContext context)\n    {\n        try\n        {\n            await _next(context);\n        }\n        catch (NotFoundException ex)\n        {\n            context.Response.StatusCode = 404;\n            await context.Response.WriteAsJsonAsync(new { error = ex.Message });\n        }\n        catch (ValidationException ex)\n        {\n            context.Response.StatusCode = 400;\n            await context.Response.WriteAsJsonAsync(new { errors = ex.Errors });\n        }\n        catch (Exception ex)\n        {\n            _logger.LogError(ex, \"Unhandled exception\");\n            context.Response.StatusCode = 500;\n            await context.Response.WriteAsJsonAsync(new { error = \"Internal server error\" });\n        }\n    }\n}\n\napp.UseMiddleware&lt;GlobalExceptionMiddleware&gt;();</code></pre>"},
+                    {q:"What is CORS and why is it important for APIs?",a:"CORS (Cross-Origin Resource Sharing) is a browser security mechanism that controls which web domains can access your API.<br><br><strong>Why it's important:</strong><br>• Prevents unauthorized cross-domain requests<br>• Protects against CSRF attacks<br>• Allows legitimate client applications to access API<br>• Required for SPAs hosted on different domains<br><br><strong>Common headers:</strong><br>• <code>Access-Control-Allow-Origin</code> - Allowed domains<br>• <code>Access-Control-Allow-Methods</code> - Allowed HTTP methods<br>• <code>Access-Control-Allow-Headers</code> - Allowed request headers<br>• <code>Access-Control-Allow-Credentials</code> - Allow cookies/auth tokens"},
+                    {q:"How do you secure sensitive configuration data?",a:"<pre><code>// 1. User Secrets (Development only)\ndotnet user-secrets init\ndotnet user-secrets set \"Jwt:Key\" \"super-secret-key-123\"\n\n// 2. Environment Variables\n// Windows: set Jwt__Key=secret\n// Linux: export Jwt__Key=secret\n\n// 3. Azure Key Vault\nbuilder.Configuration.AddAzureKeyVault(\n    new Uri(\"https://myvault.vault.azure.net/\"),\n    new DefaultAzureCredential());\n\n// 4. Validate configuration\nbuilder.Services.AddOptions&lt;JwtSettings&gt;()\n    .Bind(builder.Configuration.GetSection(\"Jwt\"))\n    .ValidateDataAnnotations()\n    .ValidateOnStart();</code></pre>"},
+                    {q:"What is API Gateway pattern?",a:"API Gateway is a single entry point for all client requests in a microservices architecture.<br><br><strong>Responsibilities:</strong><br>• Request routing to appropriate services<br>• Authentication and authorization<br>• Rate limiting and throttling<br>• Request/response transformation<br>• API composition (aggregating multiple service calls)<br>• Caching, logging, and monitoring<br><br><strong>Examples:</strong> Azure API Management, Ocelot (.NET), AWS API Gateway, Kong, NGINX Plus."},
+                    {q:"How do you handle database connection resilience?",a:"<pre><code>builder.Services.AddDbContext&lt;AppDbContext&gt;(options =>\n    options.UseSqlServer(connectionString, sqlOptions =>\n    {\n        sqlOptions.EnableRetryOnFailure(\n            maxRetryCount: 5,\n            maxRetryDelay: TimeSpan.FromSeconds(30));\n        sqlOptions.CommandTimeout(300);\n    }));\n\n// Custom execution strategy with exponential backoff\npublic class CustomExecutionStrategy : ExecutionStrategy\n{\n    protected override bool ShouldRetryOn(Exception exception)\n    {\n        return exception is SqlException sqlEx && sqlEx.IsTransient;\n    }\n    \n    protected override TimeSpan? GetNextDelay(Exception lastException)\n    {\n        var delay = Math.Pow(2, ExceptionsEncounteredCount);\n        return TimeSpan.FromSeconds(delay);\n    }\n}</code></pre>"},
+                    {q:"What is the purpose of Startup class in older ASP.NET Core?",a:"In .NET 5 and earlier, the <strong>Startup.cs</strong> class contained:<br><br><pre><code>public class Startup\n{\n    public void ConfigureServices(IServiceCollection services)\n    {\n        services.AddControllers();\n        services.AddDbContext&lt;AppDbContext&gt;();\n    }\n    \n    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)\n    {\n        if (env.IsDevelopment())\n            app.UseDeveloperExceptionPage();\n            \n        app.UseRouting();\n        app.UseAuthorization();\n        app.UseEndpoints(endpoints =>\n        {\n            endpoints.MapControllers();\n        });\n    }\n}</code></pre><br>In .NET 6+, this was merged into <strong>Program.cs</strong> using top-level statements for simplicity."},
+                    {q:"What is the difference between synchronous and asynchronous action methods?",a:"<strong>Synchronous:</strong><br>• Blocks thread until operation completes<br>• Can lead to thread pool starvation under load<br>• Simpler to write and debug<br><br><strong>Asynchronous:</strong><br>• Frees thread during I/O operations<br>• Improves scalability and throughput<br>• Doesn't block request processing<br>• Recommended for all I/O-bound operations<br><br><pre><code>// Synchronous\npublic IActionResult Get() \n{ \n    return Ok(_service.GetAll()); \n}\n\n// Asynchronous\npublic async Task&lt;IActionResult&gt; Get() \n{ \n    return Ok(await _service.GetAllAsync()); \n}</code></pre>"},
+                    {q:"How do you implement request/response compression?",a:"<pre><code>builder.Services.AddResponseCompression(options =>\n{\n    options.EnableForHttps = true;\n    options.Providers.Add&lt;GzipCompressionProvider&gt;();\n    options.Providers.Add&lt;BrotliCompressionProvider&gt;();\n    options.MimeTypes = ResponseCompressionDefaults.MimeTypes\n        .Concat(new[] { \"image/svg+xml\" });\n});\n\nbuilder.Services.Configure&lt;GzipCompressionProviderOptions&gt;(options =>\n{\n    options.Level = CompressionLevel.Fastest;\n});\n\napp.UseResponseCompression();</code></pre>"},
+                    {q:"What are the benefits of using async/await in Web API?",a:"• <strong>Better scalability</strong> - Threads not blocked during I/O operations<br>• <strong>Improved performance under load</strong> - Handles more concurrent requests<br>• <strong>Non-blocking I/O operations</strong> - Database calls, HTTP requests, file operations<br>• <strong>Better resource utilization</strong> - Threads returned to pool during async operations<br>• <strong>Natural error handling</strong> - try/catch blocks work naturally<br>• <strong>Sequential-looking code</strong> - Easier to read than callbacks or continuations"},
+                    {q:"How do you unit test a Web API controller?",a:"<pre><code>[Fact]\npublic async Task GetProduct_ReturnsOkResult()\n{\n    // Arrange\n    var mockService = new Mock&lt;IProductService&gt;();\n    mockService.Setup(s => s.GetByIdAsync(1))\n        .ReturnsAsync(new Product { Id = 1, Name = \"Test\" });\n    \n    var controller = new ProductsController(mockService.Object);\n    \n    // Act\n    var result = await controller.GetProduct(1);\n    \n    // Assert\n    var okResult = Assert.IsType&lt;OkObjectResult&gt;(result.Result);\n    var product = Assert.IsType&lt;Product&gt;(okResult.Value);\n    Assert.Equal(1, product.Id);\n}\n\n// Testing NotFound\n[Fact]\npublic async Task GetProduct_ReturnsNotFound_WhenProductMissing()\n{\n    var mockService = new Mock&lt;IProductService&gt;();\n    mockService.Setup(s => s.GetByIdAsync(99))\n        .ReturnsAsync((Product)null);\n    \n    var controller = new ProductsController(mockService.Object);\n    \n    var result = await controller.GetProduct(99);\n    \n    Assert.IsType&lt;NotFoundResult&gt;(result.Result);\n}</code></pre>"},
+                    {q:"What are best practices for Web API development?",a:"<strong>1.</strong> Use DTOs - Separate API models from domain models<br><strong>2.</strong> Implement proper error handling - Global exception middleware<br><strong>3.</strong> Use async/await - For better scalability<br><strong>4.</strong> Implement logging - Structured logging with Serilog/NLog<br><strong>5.</strong> Add API documentation - Swagger/OpenAPI<br><strong>6.</strong> Use proper HTTP status codes - 200 OK, 201 Created, 400 Bad Request, 404 Not Found, 500 Internal Server Error<br><strong>7.</strong> Implement validation - FluentValidation or Data Annotations<br><strong>8.</strong> Use dependency injection - Loosely coupled code<br><strong>9.</strong> Implement caching - Response caching for frequently accessed data<br><strong>10.</strong> Secure your API - JWT authentication, HTTPS, CORS policies<br><strong>11.</strong> Version your API - Support multiple versions<br><strong>12.</strong> Follow REST naming conventions - Use nouns for resources, plural names<br><strong>13.</strong> Implement pagination - For large data sets<br><strong>14.</strong> Use environment-appropriate configuration - Different configs for dev/staging/prod<br><strong>15.</strong> Write tests - Unit tests, integration tests, and API tests"}
+                ]
+            }
+        };
+
+        // Counter to ensure we have exactly 100 questions
+        function countTotalQuestions() {
+            let total = 0;
+            for (const [section, data] of Object.entries(qaData)) {
+                total += data.questions.length;
+            }
+            return total;
+        }
+
+        function createAllSections() {
+            const container = document.getElementById('sections-container');
+            container.innerHTML = '';
+            let globalIndex = 0;
+            
+            for (const [sectionName, sectionData] of Object.entries(qaData)) {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.className = 'section-wrapper';
+                
+                // Section Header
+                const header = document.createElement('div');
+                header.className = 'section-header';
+                header.onclick = function() {
+                    this.classList.toggle('collapsed');
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('collapsed');
+                };
+                header.innerHTML = `
+                    <h2>📌 ${sectionName} <span style="font-size: 0.8rem; color: #64748b;">(${sectionData.questions.length} questions)</span></h2>
+                    <span class="toggle-icon">▼</span>
+                `;
+                
+                // Section Content
+                const content = document.createElement('div');
+                content.className = 'section-content';
+                
+                sectionData.questions.forEach((qa, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'qa-card';
+                    
+                    const questionDiv = document.createElement('div');
+                    questionDiv.className = 'question';
+                    questionDiv.onclick = function(e) {
+                        this.classList.toggle('active');
+                        const answerDiv = this.nextElementSibling;
+                        answerDiv.classList.toggle('show');
+                        updateVisibleCount();
+                    };
+                    
+                    const currentIndex = globalIndex + 1;
+                    questionDiv.innerHTML = `
+                        <span class="question-text">
+                            <span class="q-number">Q${currentIndex}</span>
+                            ${qa.q}
+                        </span>
+                        <span class="arrow">▼</span>
+                    `;
+                    
+                    const answerDiv = document.createElement('div');
+                    answerDiv.className = 'answer';
+                    answerDiv.innerHTML = `
+                        <div class="answer-content">
+                            <strong>Answer:</strong><br><br>
+                            ${formatAnswer(qa.a)}
+                        </div>
+                    `;
+                    
+                    card.appendChild(questionDiv);
+                    card.appendChild(answerDiv);
+                    content.appendChild(card);
+                    globalIndex++;
+                });
+                
+                sectionDiv.appendChild(header);
+                sectionDiv.appendChild(content);
+                container.appendChild(sectionDiv);
+            }
+            
+            // Update total count
+            document.getElementById('totalCount').textContent = globalIndex;
+            document.getElementById('visibleCount').textContent = globalIndex;
+        }
+
+        function formatAnswer(text) {
+            // Handle code blocks
+            text = text.replace(/```(\w*)\n([\s\S]*?)\n```/g, function(match, lang, code) {
+                return `<pre><code>${escapeHtml(code.trim())}</code></pre>`;
+            });
+            
+            // Handle inline code
+            text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // Handle strong text
+            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            // Handle line breaks
+            text = text.replace(/\n/g, '<br>');
+            
+            return text;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function expandAll() {
+            document.querySelectorAll('.answer').forEach(answer => {
+                answer.classList.add('show');
+            });
+            document.querySelectorAll('.question').forEach(q => {
+                q.classList.add('active');
+            });
+            updateVisibleCount();
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.answer').forEach(answer => {
+                answer.classList.remove('show');
+            });
+            document.querySelectorAll('.question').forEach(q => {
+                q.classList.remove('active');
+            });
+            updateVisibleCount();
+        }
+
+        function updateVisibleCount() {
+            const visibleCards = document.querySelectorAll('.qa-card:not([style*="display: none"])').length;
+            document.getElementById('visibleCount').textContent = visibleCards;
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.qa-card');
+            let visibleCount = 0;
+            
+            cards.forEach(card => {
+                const questionText = card.querySelector('.question').textContent.toLowerCase();
+                const answerContent = card.querySelector('.answer-content')?.textContent.toLowerCase() || '';
+                
+                if (!searchTerm || questionText.includes(searchTerm) || answerContent.includes(searchTerm)) {
+                    card.style.display = '';
+                    visibleCount++;
+                    
+                    if (searchTerm) {
+                        highlightText(card, searchTerm);
+                    } else {
+                        removeHighlights(card);
+                    }
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            document.querySelectorAll('.section-wrapper').forEach(wrapper => {
+                const visibleCards = wrapper.querySelectorAll('.qa-card:not([style*="display: none"])').length;
+                wrapper.style.display = visibleCards > 0 ? '' : 'none';
+            });
+            
+            document.getElementById('visibleCount').textContent = visibleCount;
+        });
+
+        function highlightText(element, searchTerm) {
+            removeHighlights(element);
+            if (!searchTerm) return;
+            
+            const regex = new RegExp(`(${searchTerm})`, 'gi');
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+            
+            const nodesToReplace = [];
+            while (walker.nextNode()) {
+                if (walker.currentNode.textContent.toLowerCase().includes(searchTerm)) {
+                    nodesToReplace.push(walker.currentNode);
+                }
+            }
+            
+            nodesToReplace.forEach(node => {
+                const span = document.createElement('span');
+                span.innerHTML = node.textContent.replace(regex, '<span class="highlighter">$1</span>');
+                node.parentNode.replaceChild(span, node);
+            });
+        }
+
+        function removeHighlights(element) {
+            const highlights = element.querySelectorAll('.highlighter');
+            highlights.forEach(highlight => {
+                const parent = highlight.parentNode;
+                parent.replaceChild(
+                    document.createTextNode(highlight.textContent),
+                    highlight
+                );
+                parent.normalize();
+            });
+        }
+
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('backToTop');
+            if (window.scrollY > 500) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+
+        // Initialize
+        window.onload = function() {
+            createAllSections();
+            const totalQuestions = countTotalQuestions();
+            document.getElementById('totalCount').textContent = totalQuestions;
+            document.getElementById('visibleCount').textContent = totalQuestions;
+            console.log(`Total questions loaded: ${totalQuestions}`);
+        };
+    </script>
+</body>
+</html>

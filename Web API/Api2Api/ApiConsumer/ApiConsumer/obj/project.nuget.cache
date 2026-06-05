@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nilPb3Vr6n4=",
+  "success": true,
+  "projectFilePath": "D:\\Capgemini Training\\Web API\\Api2Api\\ApiConsumer\\ApiConsumer\\ApiConsumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Srikaran\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

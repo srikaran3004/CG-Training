@@ -1,0 +1,5 @@
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\publish\DemoMSI.exe
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\publish\DemoMSI.dll
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\publish\DemoMSI.deps.json
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\publish\DemoMSI.runtimeconfig.json
+D:\Capgemini Training\MSI File\DemoMSI\DemoMSI\bin\Release\net10.0\publish\DemoMSI.pdb

@@ -1,0 +1,15 @@
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.AssemblyInfoInputs.cache
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.AssemblyInfo.cs
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.csproj.CoreCompileInputs.cache
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.sourcelink.json
+D:\Capgemini Training\C#\SugarBlissBakery\bin\Debug\net10.0\SugarBlissBakery.exe
+D:\Capgemini Training\C#\SugarBlissBakery\bin\Debug\net10.0\SugarBlissBakery.deps.json
+D:\Capgemini Training\C#\SugarBlissBakery\bin\Debug\net10.0\SugarBlissBakery.runtimeconfig.json
+D:\Capgemini Training\C#\SugarBlissBakery\bin\Debug\net10.0\SugarBlissBakery.dll
+D:\Capgemini Training\C#\SugarBlissBakery\bin\Debug\net10.0\SugarBlissBakery.pdb
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.dll
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\refint\SugarBlissBakery.dll
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.pdb
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\SugarBlissBakery.genruntimeconfig.cache
+D:\Capgemini Training\C#\SugarBlissBakery\obj\Debug\net10.0\ref\SugarBlissBakery.dll

@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "NumberProducerAPI\\NumberProducerAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SquareWorkerAPI\\SquareWorkerAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CubeWorkerAPI\\CubeWorkerAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
